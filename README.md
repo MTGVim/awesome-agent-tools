@@ -33,6 +33,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Orca](https://github.com/stablyai/orca) | 에이전트 병렬 개발 환경 |
 | [Autoharness](https://github.com/tigerless-labs/autoharness) | 스킬 자동 관리 |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
+| [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | 에이전트 폭주 방지·큰 컨텍스트에서 Compact 제안 |
 | [MCP Atlassian](https://github.com/sooperset/mcp-atlassian) | Atlassian 연동 |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | 코드 그래프 탐색 |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
@@ -50,7 +51,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 **조합 참고:** Show Your Work와 Prismantis/Skins는 전역 렌더러가 충돌할 수 있습니다. Paste Preview와 Image View는 이미지 미리보기 영역이 겹칩니다. Flightdeck과 Glowup은 사이드 패널이 중복됩니다. Claude HUD가 `statusLine`을 설정하는 것은 정상 기능이며, 다른 도구가 기존 설정을 확인 없이 교체하는 경우에 주의합니다.
 
-**이번 셋업에 넣지 않은 항목:** Darwin Skill·Archify·Stats·Vorssaint Utils는 설치 확인만으로 실사용 빈도를 확정하지 않았습니다. Code Modernization과 Agent Usage Guard는 시험 중이며, Figma Desktop MCP는 연결 확인이 필요합니다. Prismantis·Image View는 비활성화했지만 일반 카탈로그에는 유지합니다.
+이 목록은 제가 현재 쓰는 도구 조합입니다. 다른 도구와의 비교, 설치 방법, 호환성 메모는 아래 카탈로그와 개별 가이드에 정리했습니다.
 
 ## 내 프로젝트 · My Works
 

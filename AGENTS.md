@@ -28,6 +28,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Disabling a tool removes it from Daily Setup but does NOT automatically archive it. Only archive it when the curator explicitly says it is no longer recommended. Record reasons as user observations, not universal upstream defects.
 - When archiving, remove entries from BOTH public catalogs, relocate guide to `archive/<slug>.md`, add archive index entry, and preserve dated curator-specific reasoning.
 - Do not infer daily use from installed state or a trial. Update caveats without silently changing upstream compatibility claims.
+- Present My Daily Setup positively: describe tools actually used and relevant interoperability tips. Do not append a defensive list of installed-but-unused, disabled, trial, or unverified tools. Record those states in the canonical tool guides or main catalog when pertinent. User-confirmed active tools may be promoted from trial to personal verification without implying independent benchmarking.
 - Claude HUD setting the Claude Code `statusLine` is intended. Warn only when another tool overwrites existing HUD configuration without consent.
 - Always synchronize Daily Setup descriptions, inclusion and compatibility notes in the Korean and English READMEs.
 

@@ -37,6 +37,7 @@ Tools reported as actively used (as of 2026-11-03). This is separate from recomm
 | [Orca](https://github.com/stablyai/orca) | Parallel agent workspace |
 | [Autoharness](https://github.com/tigerless-labs/autoharness) | Skill lifecycle manager |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | Subagent model and effort tuning |
+| [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | Agent usage guardrails with a compact-before-send option |
 | [MCP Atlassian](https://github.com/sooperset/mcp-atlassian) | Atlassian integration |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | Code graph exploration |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | Overengineering guard |
@@ -54,7 +55,7 @@ Tools reported as actively used (as of 2026-11-03). This is separate from recomm
 
 **Compatibility:** Show Your Work may conflict with global renderers such as Prismantis/Skins. Paste Preview and Image View occupy the same preview region. Flightdeck and Glowup overlap as side panels. Claude HUD intentionally configures `statusLine`; the issue is another tool replacing it without consent.
 
-**Excluded from this setup:** Darwin Skill, Archify, Stats and Vorssaint Utils (usage frequency not confirmed); Code Modernization and Agent Usage Guard (under evaluation); Figma Desktop MCP (connection unconfirmed). Prismantis and Image View remain in the main catalog but are disabled in this setup.
+This is the toolset I currently use. The catalog below and individual guides cover alternatives, installation, and compatibility notes.
 
 ## My Works
 
