@@ -13,31 +13,36 @@
 
 ## Why use it?
 
-응답 후속 행동 제안. 설치 식별자 별도 확인 필요 소개된 기능과 실제 호환성은 원본 문서 및 설치 환경에서 별도로 확인해야 합니다.
+Claude Code의 각 턴이 끝나면 다음 작업 후보 3개까지 입력창 위에 제안합니다. 선택한 항목은 자동 제출되지 않고 초안으로 입력됩니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Claude Code의 Function Hooks 지원 버전과 터미널 TUI가 필요합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+원본 저장소의 `next-steps` 플러그인은 `anthropics/claude-plugins-community` 마켓플레이스에 있습니다. 아래 명령은 Claude Code CLI용입니다.
+
+```bash
+claude plugin marketplace add anthropics/claude-plugins-community
+claude plugin install next-steps@claude-community
+```
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+Claude Code의 마켓플레이스 업데이트 후 플러그인을 갱신합니다. 자동 실행 훅의 변경 사항을 확인합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+`claude plugin uninstall next-steps@claude-community`를 사용하고 공유 마켓플레이스는 다른 플러그인 사용 여부를 확인한 뒤 정리합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+완료된 턴에서 1~3개의 후속 제안이 나타나는지 확인하고, 선택 시 자동 전송 없이 프롬프트 초안만 채우는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+`turn.complete` 시 짧은 모델 fork를 사용해 사용량을 소비합니다. 원본은 터미널 UI 이외 표면에서 제안이 보이지 않는다고 안내합니다.
 
 ## References
 

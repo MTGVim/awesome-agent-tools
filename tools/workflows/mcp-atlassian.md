@@ -13,36 +13,31 @@
 
 ## Why use it?
 
-Jira 이슈와 Confluence 문서에 접근할 수 있는 MCP 도구를 제공합니다. 세 에이전트 모두 MCP 클라이언트로 연결할 수 있지만, 조직별 Atlassian Cloud/Server 인증과 권한 설정은 별도로 확인해야 합니다.
+Jira와 Confluence의 이슈·문서를 표준 MCP 서버를 통해 조회하거나 수정합니다. Atlassian Cloud와 Server/Data Center 구성을 지원합니다.
 
 ## Requirements
 
-- 원본 저장소의 `uvx` 또는 Docker 설치 방식을 확인합니다.
-- Jira/Confluence URL, API 토큰 또는 PAT 및 계정 권한이 필요합니다.
-- Claude Code, Codex, Hermes에서 로컬 stdio MCP 서버 연결을 지원합니다. 각각의 실제 등록 방법과 환경 변수 전달 구문은 사용 중인 CLI의 현재 도움말을 확인해야 합니다.
-- 개인 토큰을 Git 저장소나 공유 문서에 직접 기록하지 않습니다.
+Atlassian 인스턴스 URL과 API 토큰 또는 PAT, 로컬 stdio MCP 서버 실행 환경이 필요합니다. 인증과 도구 호출은 연결 대상별로 확인해야 합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+원본 README는 `uvx mcp-atlassian` 실행 명령과 MCP 클라이언트별 `command`/`args`/`env` 구성을 제공합니다. 실제 토큰을 저장소에 기록하지 않고 사용 중인 Claude Code·Codex·Hermes의 MCP 등록 인터페이스에 연결합니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+패키지 관리자(uvx/pip/Docker)와 설치된 런타임 버전을 확인한 뒤 원본 릴리스 안내에 따라 갱신합니다. 에이전트의 MCP 설정과 사용자 자격증명은 보존합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+MCP 클라이언트에서 `mcp-atlassian` 등록을 제거한 뒤 실제 패키지·컨테이너를 사용하지 않는지 확인합니다. Jira/Confluence API 토큰의 폐기 여부는 별도로 결정합니다.
 
 ## Verify
 
-1. 각 에이전트의 MCP 목록에서 서버가 등록되어 있는지 확인합니다.
-2. MCP 도구 검색 및 초기화가 성공하는지 확인합니다.
-3. 실제 Jira/Confluence에서 접근 권한이 있는 읽기 작업 하나를 실행합니다. 등록 성공과 인증·권한·기능 검증을 구분합니다.
+서버 등록, 초기화·도구 목록 조회, 실제 Jira/Confluence 읽기 작업을 차례로 확인합니다.
 
 ## Caveats
 
-MCP 프로토콜을 지원한다는 사실은 이 도구가 세 에이전트에서 모두 실제 검증됐다는 의미가 아닙니다. 연결 시 실행 권한·계정 권한·토큰 보관·서버가 제공하는 도구 범위를 점검하고, 사전 승인 없이 원격 스크립트나 전역 설정 변경을 실행하지 않습니다.
+MCP 연결 성공과 인증 성공은 별개입니다. 도구에 쓰기 권한이 있는 경우 승인 정책을 확인합니다.
 
 ## References
 
