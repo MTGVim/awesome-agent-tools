@@ -1,19 +1,19 @@
 # Chrome DevTools MCP
 
-<!-- catalog: {"name": "Chrome DevTools MCP", "upstream": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "types": ["mcp"], "agents": [], "category": "browser", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Chrome DevTools MCP", "upstream": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "types": ["mcp"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "browser", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > Chrome DevTools 기반 브라우저 검증 서버
 
 - **Upstream:** https://github.com/ChromeDevTools/chrome-devtools-mcp
 - **Types:** mcp
-- **Agents:** Agent-specific compatibility not verified
+- **Agents:** Claude Code, Codex, Hermes (MCP protocol compatibility; end-to-end authentication and tool calls not independently tested)
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-Chrome DevTools 기반 브라우저 검증 서버 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+Chrome DevTools 기반의 페이지 검사·성능 분석·브라우저 자동화 기능을 MCP 클라이언트에 연결합니다. 세 에이전트 모두 표준 MCP 서버와 통신할 수 있지만, 각 환경의 브라우저 연결 및 기능 검증은 별도로 필요합니다.
 
 ## Requirements
 
@@ -33,11 +33,11 @@ Chrome DevTools 기반 브라우저 검증 서버 초기 큐레이션은 개인�
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+MCP 서버 등록 여부, 도구 검색, 실제 Chrome 페이지 연결과 읽기 전용 검사 동작을 순서대로 확인합니다. 브라우저 실행 환경과 보안 제약을 점검합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+MCP 프로토콜을 지원한다는 사실은 이 도구가 세 에이전트에서 모두 실제 검증됐다는 의미가 아닙니다. 연결 시 실행 권한·계정 권한·토큰 보관·서버가 제공하는 도구 범위를 점검하고, 사전 승인 없이 원격 스크립트나 전역 설정 변경을 실행하지 않습니다.
 
 ## References
 

@@ -44,7 +44,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Do not describe all tools with the same placeholder install/update/uninstall instructions as if those steps were verified. Explicitly mark unverified steps, avoid unsafe commands, and link the specific upstream documentation used.
 - For every new entry or edited install guide, inspect whether the source is an individual skill, a plugin, a marketplace, an MCP server or a standalone executable before selecting the lifecycle path.
 - Do not increase the guide's `last_reviewed` date or verification level unless the upstream was actually inspected. Treat demo availability, Stars and commit recency as independent signals.
-- After changing any agent badge, check the corresponding guide's `agents` metadata and `Agents` field for consistency. After changing Skills CLI eligibility, update both READMEs and the guide.
+- After changing any agent badge, check the corresponding guide's `agents` metadata and `Agents` field for consistency. For MCP servers, state transport compatibility, credential prerequisites, and distinguish registration, handshake, authentication and a real tool invocation. Do not automatically assign all three to arbitrary MCP servers without checking transport constraints. After changing Skills CLI eligibility, update both READMEs and the guide.
 - Confirm relative and external links, Markdown table continuity, row uniqueness, paired language entries, correct My Works separation, and archive rationale. CI validates syntax and local references; it is **not** proof that remote installers or media still work.
 
 ## Demonstration media policy
@@ -72,7 +72,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 ### Fundamental distinctions
 
 - **Kind:** `skill`, `plugin`, `mod`, `mcp`, `tool` (may be multiple).
-- **Agent support:** Claude Code, Codex and Hermes only when supported by upstream evidence. For standalone tools or unknown support, use an empty agents array and a `—` cell, never `Cross-agent` or `범용`.
+- **Agent support:** For native plugins/mods, use agent badges only with upstream evidence. For standards-based MCP servers, advertise a host when (a) the server's documented transport and (b) that host's supported MCP transport are compatible, but record this as *protocol compatibility*, not verified execution. For independent CLI/apps without an agent integration, do not imply incompatibility: a dash means 'agent integration not established', not 'cannot be used'. Keep this distinction in the guide. Never use `Cross-agent` or `범용`.
 - **Curation status:** Active items appear in README tables. Archived items are retained under `archive/` with a specific reason. No S/A/B ranking or `tier` metadata is used. Inclusion does not certify compatibility, safety or quality.
 - **Verification:** `personal` (experience in source notes), `metadata` (upstream/docs checked), `trial` (actively trying), `unverified` (not tested). Never mark `personal` or successful installation just because you read README.
 - **Install mode:** `cli` (official direct lifecycle commands), `agent-guide` (environment-specific plan), `manual-review` (not yet safely specified). Optional `installers` such as `skills-cli` record distribution methods separately. Do not treat modes as success claims.
