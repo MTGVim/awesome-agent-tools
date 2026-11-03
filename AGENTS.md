@@ -25,6 +25,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - `My Daily Setup` precedes `My Works` in BOTH bilingual README files. It is a maintainer-specific active configuration, not a recommendation tier.
 - Link to each tool's upstream in Daily Setup, while keeping the single canonical per-tool Guide link in its functional category. The validation script expects exactly one main-index Guide link per active tool.
 - A tool may appear in Daily Setup and the general catalog; do not duplicate its guide or metadata.
+- Keep the `🧑‍💻` marker immediately after the linked tool name in each canonical category table when that tool is present in My Daily Setup. Do not mark the Daily Setup entries themselves. Both README languages must match. Update the marker when adding or removing a daily tool; the validator enforces this automatically.
 - Disabling a tool removes it from Daily Setup but does NOT automatically archive it. Only archive it when the curator explicitly says it is no longer recommended. Record reasons as user observations, not universal upstream defects.
 - When archiving, remove entries from BOTH public catalogs, relocate guide to `archive/<slug>.md`, add archive index entry, and preserve dated curator-specific reasoning.
 - Do not infer daily use from installed state or a trial. Update caveats without silently changing upstream compatibility claims.

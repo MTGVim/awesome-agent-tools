@@ -49,6 +49,26 @@ for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
             errors.append(f'{label}:{index+2}: catalog table row must immediately follow separator')
         if line.startswith('| [') and index>0 and lines[index-1].strip()=='' and index>1 and lines[index-2].startswith('|---|'):
             errors.append(f'{label}:{index+1}: blank line splits Markdown table')
+def daily_setup_names(content):
+    match=re.search(r'(?ms)^## My Daily Setup\n(.*?)(?=^## )', content)
+    if not match:
+        errors.append('missing My Daily Setup section')
+        return set()
+    names=re.findall(r'^\| \[([^]]+)\]\(https?://[^)]+\) \|', match.group(1), re.M)
+    if len(names)!=len(set(names)):
+        errors.append('duplicate Daily Setup entries')
+    return set(names)
+
+def marked_catalog_names(content):
+    catalog=re.sub(r'(?ms)^## My Daily Setup\n.*?(?=^## )', '', content)
+    return set(re.findall(r'^\| \[([^]]+)\]\([^)]+\) 🧑‍💻 \|', catalog, re.M))
+
+for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
+    daily=daily_setup_names(content)
+    marked=marked_catalog_names(content)
+    if daily!=marked:
+        errors.append(f'{label}: Daily Setup marker mismatch: missing={sorted(daily-marked)} extra={sorted(marked-daily)}')
+
 english_catalog=catalog_rows(readme)
 korean_catalog=catalog_rows(readme_ko)
 if english_catalog!=korean_catalog:
