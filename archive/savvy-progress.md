@@ -1,13 +1,13 @@
 # Savvy Progress
 
-<!-- catalog: {"name": "Savvy Progress", "upstream": "https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress", "types": ["plugin"], "agents": ["Claude Code"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Savvy Progress", "upstream": "https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress", "types": ["plugin"], "agents": ["Claude Code"], "category": "ui", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 작업 진행률 및 서브에이전트 상태 시각화
 
 - **Upstream:** https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress
 - **Types:** plugin
 - **Agents:** Claude Code
-- **Verification:** metadata
+- **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
@@ -47,3 +47,11 @@ Claude Code Function Hooks를 지원하는 모드 환경이 필요합니다. 저
 ## References
 
 - [Upstream](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress)
+
+## Archived decision
+
+- **Archived on:** 2026-11-03
+- **Previous state:** Active
+- **Reason:** `superseded`
+- **Curator observation:** Flightdeck과 서브에이전트 패널이 중복되고, 진행 막대는 별도 savvy-flow 스킬에 의존합니다.
+- **Scope:** This is a curator-specific judgment, not a universal claim that upstream is broken.

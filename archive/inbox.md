@@ -1,13 +1,13 @@
 # Inbox
 
-<!-- catalog: {"name": "Inbox", "upstream": "https://github.com/petekp/inbox", "types": ["plugin"], "agents": ["Claude Code","Codex"], "category": "workflows", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Inbox", "upstream": "https://github.com/petekp/inbox", "types": ["plugin"], "agents": ["Claude Code","Codex"], "category": "workflows", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 질문 및 확인 요청을 패널에 수집
 
 - **Upstream:** https://github.com/petekp/inbox
 - **Types:** plugin
 - **Agents:** Claude Code, Codex
-- **Verification:** metadata
+- **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
@@ -50,3 +50,11 @@ Codex용 구현은 Claude Code 플러그인 설치 명령과 다릅니다. 각 �
 ## References
 
 - [Upstream](https://github.com/petekp/inbox)
+
+## Archived decision
+
+- **Archived on:** 2026-11-03
+- **Previous state:** Active
+- **Reason:** `superseded`
+- **Curator observation:** Orca의 ask 마크와 기존 질문 처리 도구가 현재 워크플로에 더 자연스럽습니다.
+- **Scope:** This is a curator-specific judgment, not a universal claim that upstream is broken.

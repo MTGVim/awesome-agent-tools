@@ -31,3 +31,7 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 | Headroom | `low-value` | [Why](./headroom.md) |
 | AionUI | `low-value` | [Why](./aionui.md) |
 | Vowline | `low-value` | [Why](./vowline.md) |
+| [Glowup](https://github.com/NovusEdge/glowup) | `incompatible` | [Why](./glowup.md) |
+| [Claude Skins](https://github.com/hellosverre/claude-skins) | `low-value` | [Why](./claude-skins.md) |
+| [Inbox](https://github.com/petekp/inbox) | `superseded` | [Why](./inbox.md) |
+| [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | `superseded` | [Why](./savvy-progress.md) |

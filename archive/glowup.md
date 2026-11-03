@@ -1,13 +1,13 @@
 # Glowup
 
-<!-- catalog: {"name": "Glowup", "upstream": "https://github.com/NovusEdge/glowup", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Glowup", "upstream": "https://github.com/NovusEdge/glowup", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "ui", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 변경 파일·Git diff·컨텍스트 패널
 
 - **Upstream:** https://github.com/NovusEdge/glowup
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Verification:** metadata
+- **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
@@ -42,3 +42,11 @@ Spotify 컨트롤·픽셀 펫 등 부가 기능이 있습니다. 다른 사이�
 ## References
 
 - [Upstream](https://github.com/NovusEdge/glowup)
+
+## Archived decision
+
+- **Archived on:** 2026-11-03
+- **Previous state:** Active
+- **Reason:** `incompatible`
+- **Curator observation:** 활성화한 사용자 환경에서 마우스 포인터 위치가 어긋났고, 기존 Claude HUD statusLine을 확인 없이 래퍼로 교체했습니다. 갱신 간격도 5초에서 30초로 늘어났으며 Flightdeck과 기능이 중복됩니다.
+- **Scope:** This is a curator-specific judgment, not a universal claim that upstream is broken.

@@ -1,13 +1,13 @@
 # Claude Skins
 
-<!-- catalog: {"name": "Claude Skins", "upstream": "https://github.com/hellosverre/claude-skins", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Claude Skins", "upstream": "https://github.com/hellosverre/claude-skins", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "ui", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > Claude Code 테마·렌더링
 
 - **Upstream:** https://github.com/hellosverre/claude-skins
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Verification:** metadata
+- **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
@@ -47,3 +47,11 @@ Claude Code 2.1.287+가 필요합니다. 일부 모드나 테마와 렌더러 �
 ## References
 
 - [Upstream](https://github.com/hellosverre/claude-skins)
+
+## Archived decision
+
+- **Archived on:** 2026-11-03
+- **Previous state:** Active
+- **Reason:** `low-value`
+- **Curator observation:** 직접 사용 결과 만족스럽지 않았고, 전역 렌더러가 Prismantis 등과 충돌했습니다.
+- **Scope:** This is a curator-specific judgment, not a universal claim that upstream is broken.
