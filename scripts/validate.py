@@ -60,8 +60,10 @@ for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
 for p in (root/'tools').rglob('*.md'):
     rel=p.relative_to(root).as_posix()
     for label,content in [('README.en.md',readme),('README.md',readme_ko)]:
-        count=content.count(f'({rel})')
-        if count!=1:errors.append(f'{rel}: expected one {label} reference, got {count}')
+        # Daily Setup is an intentional secondary view, not a duplicate canonical entry.
+        canonical=re.sub(r'(?ms)^## My Daily Setup\n.*?(?=^## )', '', content)
+        count=canonical.count(f'({rel})')
+        if count!=1:errors.append(f'{rel}: expected one canonical {label} reference, got {count}')
     if p.name=='tigerkit.md' and '## My Works' in readme:
         my=readme.split('## My Works',1)[1].split('## Workflow & Agents',1)[0]
         if f'({rel})' not in my: errors.append('TigerKit must be under My Works')
