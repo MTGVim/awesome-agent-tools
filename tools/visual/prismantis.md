@@ -1,20 +1,19 @@
 # Prismantis
 
-<!-- catalog: {"name": "Prismantis", "upstream": "https://github.com/NahumLitvin/prismantis", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "visual", "tier": "B", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Prismantis", "upstream": "https://github.com/NahumLitvin/prismantis", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "visual", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 표·코드·Mermaid·차트 렌더링
 
 - **Upstream:** https://github.com/NahumLitvin/prismantis
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-표·코드·Mermaid·차트 렌더링 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+표·코드·Mermaid·차트 렌더링 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
 
 ## Requirements
 

@@ -1,20 +1,19 @@
 # abtop
 
-<!-- catalog: {"name": "abtop", "upstream": "https://github.com/graykode/abtop", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "tier": "B", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "abtop", "upstream": "https://github.com/graykode/abtop", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 터미널 모니터링 도구
 
 - **Upstream:** https://github.com/graykode/abtop
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** B (initial, provisional)
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-터미널 모니터링 도구 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+터미널 모니터링 도구 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
 
 ## Requirements
 

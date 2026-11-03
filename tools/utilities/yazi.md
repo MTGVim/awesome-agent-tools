@@ -1,20 +1,19 @@
 # Yazi
 
-<!-- catalog: {"name": "Yazi", "upstream": "https://github.com/sxyazi/yazi", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "tier": "B", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Yazi", "upstream": "https://github.com/sxyazi/yazi", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 터미널 파일 관리자
 
 - **Upstream:** https://github.com/sxyazi/yazi
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** B (initial, provisional)
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-터미널 파일 관리자 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+터미널 파일 관리자 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
 
 ## Requirements
 

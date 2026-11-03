@@ -1,20 +1,19 @@
 # Peon Ping
 
-<!-- catalog: {"name": "Peon Ping", "upstream": "https://github.com/PeonPing/peon-ping", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "tier": "A", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Peon Ping", "upstream": "https://github.com/PeonPing/peon-ping", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 작업 알림 사운드
 
 - **Upstream:** https://github.com/PeonPing/peon-ping
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** A (initial, provisional)
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-작업 알림 사운드 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+작업 알림 사운드 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
 
 ## Requirements
 

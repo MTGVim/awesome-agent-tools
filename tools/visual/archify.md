@@ -1,20 +1,19 @@
 # Archify
 
-<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": ["Cross-agent"], "category": "visual", "tier": "A", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": ["Cross-agent"], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 설명 산출물 구성 및 시각화 도구
 
 - **Upstream:** https://github.com/tt-a1i/archify
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** A (initial, provisional)
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-설명 산출물 구성 및 시각화 도구 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+설명 산출물 구성 및 시각화 도구 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
 
 ## Requirements
 
