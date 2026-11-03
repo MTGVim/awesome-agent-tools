@@ -6,6 +6,8 @@ A curated collection of **AI coding-agent skills, plugins, mods, MCP servers, an
 
 > English edition. [한국어 기본 카탈로그](README.md). This is a curated list, not a compatibility or security guarantee.
 
+**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 38 active entries. Unknowns remain explicitly marked.
+
 ## Quick start
 
 For tool additions, removal, or guide maintenance, an agent should first read [AGENTS.md](AGENTS.md). You can give the agent a GitHub URL and ask it to add, update, archive, or remove that entry.

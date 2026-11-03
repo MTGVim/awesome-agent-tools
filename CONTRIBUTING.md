@@ -33,3 +33,7 @@ Fix broken URLs, distinguish personal experience from repeatable testing, and ne
 3. Wait for a **successful** conclusion. If CI fails, read the failing job logs, repair the cause, push the fix, and confirm the latest workflow succeeds.
 4. Never mark an update complete with failing, pending, skipped, or unobserved CI. If CI is inaccessible or cannot finish, state the blocker and exact run URL; do not claim success.
 5. Apply this to documentation-only changes too, including one-row catalog changes, guide updates, translations and archive moves.
+
+## Privacy and update policy
+
+Before adding or modifying tools, review upstream telemetry, analytics, update checks, and opt-out procedures. Update [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for every active entry; record `미확인` when policy is undocumented. Do not conflate privacy telemetry with normal API use, version checks or automatic code upgrades. Confirm that CI succeeds after publishing.
