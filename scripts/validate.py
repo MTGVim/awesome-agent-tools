@@ -29,6 +29,8 @@ def catalog_rows(content):
         name,url=m.groups()
         if name in rows: errors.append('duplicate tool: '+name)
         if len(cells[1])<12: errors.append('description too short: '+name)
+        if '<br>' not in cells[1]: errors.append('missing description/links line break: '+name)
+        if cells[3]!='—' and '<br>' not in cells[3]: errors.append('missing activity badge line break: '+name)
         guide=re.search(r'\[(?:Guide|가이드)\]\(([^)]+)\)',cells[1])
         if not guide: errors.append('missing guide: '+name)
         demo=re.search(r'\[(?:Demo|시연)\]\(([^)]+)\)',cells[1])

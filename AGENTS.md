@@ -12,6 +12,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - **Korean is the default**: GitHub renders `README.md` as the complete Korean catalog. `README.en.md` contains the complete English translation.
 - Both files must contain exactly the same active tools, functional categories, upstream links, types, agent tags, activity badges, and guide destinations. Only the one-line description language differs.
 - The public tables use four columns: Tool, Description · Guide, Agents, GitHub Activity (with Korean counterparts).
+- **Within a Markdown table cell, use `<br>` for line breaks**, never literal newlines or a blank line between table header and data. Place the short functional description on the first line, and `가이드`/`시연` (or `Guide`/`Demo`) links on the second. Separate Stars and Last Commit badges with `<br>` in the activity cell.
 - Every row must have a **specific, useful one-line description** of what the tool actually does. Do not repeat its category or make unsupported capability claims.
 - Use distinct Shields.io SVG badges for documented Claude Code, Codex and Hermes support. Do not infer support from a generic CLI or MCP server. Display `—` when agent-specific support is not established; never use a generic `범용` label.
 - **Do not show Verified in public README tables**. Maintain verification state and review dates in per-tool guides.
@@ -65,7 +66,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 - Establish canonical upstream URL (strip analytics/utm params), supported agents, kinds, capability, human-readable one-line description, and relevant prerequisites.
 - Select a unique stable kebab-case slug. If the project already exists under another name or in `archive/`, **update/restore** instead of creating a duplicate.
 - Create `tools/<capability>/<slug>.md` with its `<!-- catalog: {...} -->` metadata comment and the standard sections listed below. Store factual source links and date of review.
-- Insert a row into BOTH README catalogs using the four-column contract. Write a specific, accurate description in Korean and English; append the guide link in the description cell.
+- Insert a row into BOTH README catalogs using the four-column contract. Write a specific, accurate description in Korean and English; put `<br>` before the guide link in the description cell, and keep optional demo link beside the guide.
 - For a GitHub repository `owner/repo`, display compact **live** Shields.io Stars and Last Commit badges together in the GitHub Activity cell:
   `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=%20)` and
   `![Last commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square&label=%20)`.
