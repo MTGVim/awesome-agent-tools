@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import re,sys,json
+import re,sys,json,json
 root=Path(__file__).resolve().parents[1]
 errors=[]
 for p in root.rglob('*.md'):
@@ -51,6 +51,36 @@ english_catalog=catalog_rows(readme)
 korean_catalog=catalog_rows(readme_ko)
 if english_catalog!=korean_catalog:
     errors.append('English and Korean catalog entries or metadata diverge')
+# Semantic checks: README agent badges and Skills CLI claims must agree with guide metadata.
+expected_agents={'Claude_Code':'Claude Code', 'Codex':'Codex', 'Hermes':'Hermes'}
+for p in (root/'tools').rglob('*.md'):
+    rel=p.relative_to(root).as_posix()
+    body=p.read_text(encoding='utf-8')
+    match=re.search(r'<!-- catalog:\\s*(\\{[^\\n]*\\})\\s*-->',body)
+    if not match:
+        errors.append(f'{rel}: missing catalog metadata')
+        continue
+    try:
+        meta=json.loads(match.group(1))
+    except json.JSONDecodeError:
+        errors.append(f'{rel}: invalid catalog JSON')
+        continue
+    if 'tier' in meta:
+        errors.append(f'{rel}: retired tier metadata must not return')
+    name=meta.get('name')
+    if not name or name not in english_catalog:
+        errors.append(f'{rel}: catalog metadata name missing from README')
+        continue
+    actual=set(meta.get('agents',[]))
+    badges=set(expected_agents[b] for b in english_catalog[name][1])
+    if actual!=badges:
+        errors.append(f'{rel}: agent metadata {sorted(actual)} differs from README badges {sorted(badges)}')
+    expected_skills_cli=english_catalog[name][2]
+    actual_skills_cli='skills-cli' in meta.get('installers',[])
+    if expected_skills_cli != actual_skills_cli:
+        errors.append(f'{rel}: Skills CLI badge and installers metadata mismatch')
+    if actual_skills_cli and 'skill' not in meta.get('types',[]):
+        errors.append(f'{rel}: Skills CLI distribution must refer to a skill')
 for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
     if '| Tier |' in content or '| 티어 |' in content or '| Verified |' in content or '| 검증 |' in content: errors.append(name+': remove ranking and verification columns')
     if '`범용`' in content: errors.append(name+': generic agent label is forbidden')
