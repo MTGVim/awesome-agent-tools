@@ -13,39 +13,35 @@
 
 ## Why use it?
 
-서브에이전트 모델 및 실행 강도 조정 소개된 기능과 실제 호환성은 원본 문서 및 설치 환경에서 별도로 확인해야 합니다.
+Claude Code 서브에이전트를 실행할 때 모델과 reasoning effort를 작업별 추천, 기본값 또는 수동 선택으로 지정합니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+원본 README 기준 Claude Code 2.1.295 이상에서 작동하는 함수 훅 모드입니다.
 
 ## Install
 
-```sh
-claude plugin marketplace add Kruhlikau/subagent-tuner
-claude plugin install subagent-tuner@subagent-tuner
+Claude Code 안에서 아래 명령을 실행합니다.
+
+```text
+/plugin install subagent-tuner --marketplace Kruhlikau/subagent-tuner
 ```
 
 ## Update
 
-```sh
-claude plugin marketplace update subagent-tuner
-claude plugin update subagent-tuner@subagent-tuner
-```
+마켓플레이스를 최신화한 뒤 `subagent-tuner@subagent-tuner` 플러그인 업데이트를 확인합니다. 활성 세션에서 다시 로드해야 할 수 있습니다.
 
 ## Uninstall
 
-```sh
-claude plugin uninstall subagent-tuner@subagent-tuner
-```
+`claude plugin uninstall subagent-tuner@subagent-tuner`로 등록을 제거하고 저장된 사용자 설정을 별도로 확인합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+서브에이전트를 하나 시작해 Manual/Auto 설정에 맞춰 모델과 추론 수준이 결정되는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+메인 세션 모델 변경 도구가 아닙니다. 자동 라우팅과 수동 승인 모드의 동작 차이를 확인해야 합니다.
 
 ## References
 

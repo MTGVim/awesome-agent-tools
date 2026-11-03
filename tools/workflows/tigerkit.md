@@ -1,6 +1,6 @@
 # TigerKit
 
-<!-- catalog: {"name": "TigerKit", "upstream": "https://github.com/MTGVim/tiger-kit", "types": ["skill"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "my-works", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "TigerKit", "upstream": "https://github.com/MTGVim/tiger-kit", "types": ["skill"], "agents": ["Claude Code","Codex","Hermes"], "category": "my-works", "verification": "personal", "install_mode": "agent-guide", "installers": ["skills-cli"], "last_reviewed": "2026-11-03"} -->
 
 > 사용자가 개발·유지보수하는 에이전트 워크플로우 스킬 컬렉션
 
@@ -13,34 +13,37 @@
 
 ## Why use it?
 
-**Maintainer disclosure:** This is the curator's own project. Its inclusion is the curator's own decision, not an independent review.
-
-
-사용자가 개발·유지보수하는 에이전트 워크플로우 스킬 컬렉션 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
+Claude Code·Codex·Hermes Agent에서 필요한 개발, 리뷰, 브라우저 검증, 설명 제작 스킬을 선택적으로 설치하는 모음입니다. 각 스킬의 의존성까지 함께 설치해야 하므로 단일 SKILL.md를 복사하는 것만으로 충분하지 않을 수 있습니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Node.js 기반 Skills CLI와 대상 에이전트가 필요합니다. 소스 및 설치본 검사와 일부 도우미에는 Python 3.9+와 PyYAML이 필요합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+원본 README에 공개된 전체 설치 명령입니다. 설치 대상·전역 범위·덮어쓰기 여부를 확인한 후 실행합니다.
+
+```bash
+npx --yes skills@1.7.4 add MTGVim/tiger-kit --global --agent claude-code codex hermes-agent --skill '*' --copy
+```
+
+선택 설치 및 종속 스킬 구성은 `tk-setup-skills`를 사용합니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+전체 설치를 갱신할 때는 기존 선택·설치 범위를 확인한 뒤 위 고정 버전 설치 절차를 다시 적용합니다. 선택 설치는 `tk-setup-skills`가 의존성을 포함하도록 안내합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+Skills CLI 또는 대상 에이전트의 스킬 설치 위치에서 TigerKit에 속한 스킬만 확인해 제거합니다. 다른 스킬이 공유하는 파일이나 설정은 삭제하지 않습니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+`tk-setup-skills`가 참조하는 의존성 스킬을 확인하고, 설치한 에이전트에서 대표 스킬을 호출해 정상 로드되는지 점검합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+Skills CLI가 스킬 간 의존성을 자동 해결하지 않습니다. 사용자 스킬과 참조 스킬의 종속 관계를 먼저 확인해야 합니다.
 
 ## References
 
