@@ -1,43 +1,49 @@
 # abtop
 
-<!-- catalog: {"name": "abtop", "upstream": "https://github.com/graykode/abtop", "types": ["tool"], "agents": [], "category": "utilities", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "abtop", "upstream": "https://github.com/graykode/abtop", "types": ["tool"],  "agents": ["Claude Code", "Codex"], "category": "utilities", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 터미널 모니터링 도구
 
 - **Upstream:** https://github.com/graykode/abtop
 - **Types:** tool
-- **Agents:** No agent-specific integration documented
+- **Agents:** Claude Code, Codex
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-터미널 모니터링 도구 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
+여러 Claude Code·Codex CLI·OpenCode 세션을 TUI에서 보여주며 토큰, 컨텍스트, 사용 한도, 하위 프로세스와 열린 포트를 모니터링합니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+macOS·Linux·Windows에서 사용하며, 프로세스·로컬 파일 상태를 조회할 권한이 필요합니다. Linux에서 OpenCode 모니터링에는 sqlite3가 필요합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+Rust Cargo 방식이 공식 안내에 포함되어 있습니다.
+
+```bash
+cargo install abtop
+```
+
+운영체제별 사전 빌드 릴리스 설치기도 원본 README에서 확인할 수 있습니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+설치한 채널의 최신 안정 릴리스로 갱신하고 기존 사용자 설정을 보존합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+Cargo로 설치했다면 해당 Cargo 패키지를 제거하며, 릴리스 설치기를 사용했다면 그 설치 경로를 확인합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+실행 중인 Claude Code 또는 Codex 세션을 시작하고 abtop에 세션과 자원 상태가 표시되는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+모니터링 대상은 원본에서 명시한 세션들입니다. Hermes의 세션을 감지한다고 가정해서는 안 됩니다.
 
 ## References
 
