@@ -9,7 +9,7 @@
 | 도구 | 텔레메트리 | 업데이트·버전 확인 | 근거·해제 방법 |
 |---|---|---|---|
 | [TigerKit](../tools/workflows/tigerkit.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/MTGVim/tiger-kit) |
-| [Orca](../tools/workflows/orca.md) | 사용 통계 전송 | 미확인 | PostHog Cloud로 익명 사용 이벤트 전송. 기본 활성 여부는 문서에서 확정하지 못함. `Settings → Privacy`, `DO_NOT_TRACK=1`, `ORCA_TELEMETRY_DISABLED=1`로 끌 수 있음 · [원본](https://www.onorca.dev/docs/telemetry) |
+| [Orca](../tools/workflows/orca.md) | 사용 통계 전송 | 기본 자동 업데이트(플랫폼별 차이) | PostHog Cloud로 익명 사용 이벤트 전송. 공식 개인정보 문서에 초기값 미명시. 1.4.148 Windows 환경에서 초기 활성화 사용자 보고가 있으나 버전 전체에 일반화할 수 없음. `Settings → Privacy`, `DO_NOT_TRACK=1`, `ORCA_TELEMETRY_DISABLED=1`로 끌 수 있음. 자동 업데이트는 공식 설치 문서 참고 · [원본](https://www.onorca.dev/docs/telemetry) |
 | [Autoharness](../tools/workflows/autoharness.md) | 미확인 | 마켓플레이스 자동 갱신 선택 | Claude Code 서드파티 마켓플레이스 자동 갱신은 기본 비활성이고 별도 활성화 가능. 자체 텔레메트리는 README에서 확인되지 않음 · [원본](https://github.com/tigerless-labs/autoharness) |
 | [Skill Creator](../tools/workflows/skill-creator.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/openai/skills) |
 | [Subagent Tuner](../tools/workflows/subagent-tuner.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/Kruhlikau/subagent-tuner) |

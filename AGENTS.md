@@ -46,7 +46,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Keep `docs/privacy-and-updates.md` complete for every active catalog entry, including My Works. Record telemetry, network usage, version checks, automatic installation/updates, defaults, opt-outs and source URLs separately.
 - For every new, updated, archived or restored tool, inspect upstream privacy/telemetry/update documentation and update the audit table, preserving exact tool scope. Do not label `not found` as `off` or `no telemetry`.
 - Never conflate intentional API/MCP calls, telemetry, passive version checks, and automatic code updates. Unknown claims must remain explicitly marked `미확인` until verified.
-- Include the audit in README/guide link checks and rerun validation and GitHub Actions; the latest CI run must succeed before reporting completion.
+- The validator must enforce one audit row per active guide in both language catalogs, including My Works; fail CI if a tool is missing or duplicated. Include the audit in README/guide link checks and rerun validation and GitHub Actions; the latest CI run must succeed before reporting completion.
 
 ## Evidence and accuracy requirements
 

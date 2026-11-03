@@ -53,6 +53,19 @@ english_catalog=catalog_rows(readme)
 korean_catalog=catalog_rows(readme_ko)
 if english_catalog!=korean_catalog:
     errors.append('English and Korean catalog entries or metadata diverge')
+# Every active catalog entry must have exactly one privacy/update audit row.
+privacy_path=root/'docs/privacy-and-updates.md'
+if not privacy_path.exists():
+    errors.append('missing privacy/update audit')
+else:
+    privacy_rows=[]
+    for line in privacy_path.read_text(encoding='utf-8').splitlines():
+        match=re.match(r'^\| \[([^]]+)\]\(\.\./tools/[^)]+\.md\) \|',line)
+        if match: privacy_rows.append(match.group(1))
+    if len(privacy_rows)!=len(set(privacy_rows)):
+        errors.append('duplicate privacy audit rows')
+    if set(privacy_rows)!=set(english_catalog):
+        errors.append('privacy audit must cover exactly every active catalog entry; missing='+str(sorted(set(english_catalog)-set(privacy_rows)))+' extra='+str(sorted(set(privacy_rows)-set(english_catalog))))
 for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
     if '| Tier |' in content or '| 티어 |' in content or '| Verified |' in content or '| 검증 |' in content: errors.append(name+': remove ranking and verification columns')
     if '`범용`' in content: errors.append(name+': generic agent label is forbidden')
