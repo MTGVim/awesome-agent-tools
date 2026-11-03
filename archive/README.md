@@ -4,6 +4,7 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 
 | Tool | Reason | Details |
 |---|---|---|
+| [Session Titles](https://github.com/zhangbububu/session-titles) | `low-value` | [Why](./session-titles.md) |
 | [Claude Auto Handoff](https://github.com/alexknowshtml/claude-auto-handoff) | `superseded` | [Why](./claude-auto-handoff.md) |
 | [Context7](https://github.com/upstash/context7) | `needs-review` | [Why](./context7.md) |
 | [Paseo](https://github.com/getpaseo/paseo) | `low-value` | [Why](./paseo.md) |

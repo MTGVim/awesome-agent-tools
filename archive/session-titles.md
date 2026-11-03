@@ -2,7 +2,7 @@
 
 <!-- catalog: {"name": "Session Titles", "upstream": "https://github.com/zhangbububu/session-titles", "types": ["mod"], "agents": ["Claude Code"], "category": "context", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
-> 세션 제목 관리
+> Archived: 기존 세션 제목 관리 수단과 기능이 중복되어 현재 추천 목록에서 제외했습니다.
 
 - **Upstream:** https://github.com/zhangbububu/session-titles
 - **Types:** mod
@@ -10,6 +10,15 @@
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
+
+## Archive decision
+
+- **Archived on:** 2026-11-03
+- **Reason:** `low-value`
+- **Curator assessment:** The session-title automation does not provide sufficient distinctive value compared with existing tools and workflows such as Orca CLI and other session-management options.
+- **Maintenance consideration:** The upstream's last recorded push was 2026-10-09 at review time. Activity alone is not proof of abandonment; this is not an `unmaintained` classification.
+- **Replacement:** Use existing host-native session naming/management functionality or the user's available CLI tools when suitable.
+- **Scope:** Curation only. No software is uninstalled, and the upstream project's technical health is not being judged.
 
 ## Why use it?
 
@@ -19,22 +28,22 @@
 
 함수 훅이 있는 Claude Code 빌드가 필요합니다. 원본은 2.1.289에서 개발되었다고 안내합니다.
 
-## Install
+## Historical Install
 
 ```text
 /plugin marketplace add zhangbububu/session-titles
 /plugin install last-prompt-title@session-titles
 ```
 
-## Update
+## Historical Update
 
 마켓플레이스와 `last-prompt-title@session-titles`의 최신 버전을 확인한 후 갱신합니다.
 
-## Uninstall
+## Historical Uninstall
 
 `claude plugin uninstall last-prompt-title@session-titles`를 사용합니다.
 
-## Verify
+## Historical Verify
 
 새 프롬프트를 입력하고 CLI 제목과 데스크톱 사이드바 제목이 기대한 방식으로 갱신되는지 확인합니다.
 
