@@ -1,12 +1,12 @@
 # Frontend Slides
 
-<!-- catalog: {"name": "Frontend Slides", "upstream": "https://github.com/zarazhangrui/frontend-slides", "types": ["skill", "tool"], "agents": [], "category": "visual", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Frontend Slides", "upstream": "https://github.com/zarazhangrui/frontend-slides", "types": ["skill", "tool"], "agents": ["Claude Code"], "category": "visual", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 프론트엔드 슬라이드 제작 도구
 
 - **Upstream:** https://github.com/zarazhangrui/frontend-slides
 - **Types:** skill/tool
-- **Agents:** No agent-specific integration documented
+- **Agents:** Claude Code (plugin); other agents can read SKILL.md manually, behavior not validated
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
