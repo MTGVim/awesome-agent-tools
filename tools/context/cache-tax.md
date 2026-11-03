@@ -13,31 +13,36 @@
 
 ## Why use it?
 
-프롬프트 캐시 유지와 만료 시 비용 경고. 캐시 유지에 토큰 사용 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+Claude Code 세션이 유휴 상태일 때 프롬프트 캐시를 유지하고, 캐시가 식은 뒤 입력할 경우 예상 재작성 비용을 알려줍니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Claude Code 2.1.287+, 1시간 캐시 유지 설정, 실행 중인 Claude Code 세션이 필요합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+```bash
+claude plugin marketplace add karanb192/claude-code-mods
+claude plugin install cache-tax@claude-code-mods
+```
+
+이후 Claude Code에서 `/keepwarm 90m` 등 원하는 시간만 활성화합니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+원본 `claude-code-mods` 마켓플레이스와 `cache-tax@claude-code-mods` 플러그인을 각각 최신화합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+`/keepwarm off`로 먼저 비활성화한 뒤 `claude plugin uninstall cache-tax@claude-code-mods`를 실행합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+`/keepwarm` 상태와 캐시 ping 결과를 확인하되, ping 자체에 토큰이 사용된다는 점을 기록합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+캐시 유지 ping은 실제 토큰을 소비합니다. API 키 기반 환경은 기본 캐시 수명이 짧을 수 있어 TTL 확인이 필수입니다.
 
 ## References
 

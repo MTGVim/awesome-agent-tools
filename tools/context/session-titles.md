@@ -13,31 +13,34 @@
 
 ## Why use it?
 
-세션 제목 관리 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+입력한 최신 프롬프트를 바탕으로 Claude Code의 세션 제목을 갱신합니다. 데스크톱에서는 짧은 제목을 Haiku가 생성합니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+함수 훅이 있는 Claude Code 빌드가 필요합니다. 원본은 2.1.289에서 개발되었다고 안내합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+```text
+/plugin marketplace add zhangbububu/session-titles
+/plugin install last-prompt-title@session-titles
+```
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+마켓플레이스와 `last-prompt-title@session-titles`의 최신 버전을 확인한 후 갱신합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+`claude plugin uninstall last-prompt-title@session-titles`를 사용합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+새 프롬프트를 입력하고 CLI 제목과 데스크톱 사이드바 제목이 기대한 방식으로 갱신되는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+데스크톱 사이드바 제목 생성을 위해 프롬프트마다 Haiku 호출이 추가됩니다. 직접 설정한 제목을 덮어쓸 수 있습니다.
 
 ## References
 
