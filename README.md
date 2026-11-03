@@ -1,5 +1,7 @@
 # awesome-agent-tools
 
+[English](README.md) | [한국어](README.ko.md)
+
 A curated collection of **AI coding-agent skills, plugins, mods, MCP servers, and developer tools** with agent-friendly lifecycle guides.
 
 > Korean-first initial catalog. Recommendations are personal and provisional, not blanket compatibility guarantees.
