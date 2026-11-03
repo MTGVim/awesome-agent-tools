@@ -21,22 +21,23 @@ def catalog_rows(content):
     for line in content.splitlines():
         if not line.startswith('| ['): continue
         cells=[x.strip() for x in line.strip('|').split('|')]
-        if len(cells)!=8:
-            errors.append('catalog row must have 8 cells: '+line[:80])
+        if len(cells)!=4:
+            errors.append('catalog row must have 4 cells: '+line[:80])
             continue
         m=re.match(r'\[([^]]+)\]\(([^)]+)\)',cells[0])
         if not m: errors.append('bad catalog tool link');continue
         name,url=m.groups()
         if name in rows: errors.append('duplicate tool: '+name)
         if len(cells[1])<12: errors.append('description too short: '+name)
-        guide=re.sub(r'^\[[^]]+\]', '[Guide]', cells[7])
-        rows[name]=(url,cells[2],cells[3],cells[4],cells[5],cells[6],guide)
+        guide=re.search(r'\[(?:Guide|가이드)\]\(([^)]+)\)',cells[1])
+        if not guide: errors.append('missing guide: '+name)
+        rows[name]=(url,cells[2],cells[3],guide.group(1) if guide else None)
     return rows
 # Markdown tables must be contiguous: a blank line after the separator ends the table.
 for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
     lines=content.splitlines()
     for index,line in enumerate(lines[:-2]):
-        if re.fullmatch(r'\|(?:\s*:?-{3,}:?\s*\|){8}',line) and not lines[index+1].startswith('| ['):
+        if re.fullmatch(r'\|(?:\s*:?-{3,}:?\s*\|){4}',line) and not lines[index+1].startswith('| ['):
             errors.append(f'{label}:{index+2}: catalog table row must immediately follow separator')
         if line.startswith('| [') and index>0 and lines[index-1].strip()=='' and index>1 and lines[index-2].startswith('|---|'):
             errors.append(f'{label}:{index+1}: blank line splits Markdown table')
@@ -45,7 +46,7 @@ korean_catalog=catalog_rows(readme_ko)
 if english_catalog!=korean_catalog:
     errors.append('English and Korean catalog entries or metadata diverge')
 for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
-    if '| Verified |' in content or '| 검증 |' in content: errors.append(name+': Verified column is guide-only')
+    if '| Tier |' in content or '| 티어 |' in content or '| Verified |' in content or '| 검증 |' in content: errors.append(name+': remove ranking and verification columns')
     if '[English](README.en.md)' not in content or '[한국어](README.md)' not in content:errors.append(name+': missing language link')
 for p in (root/'tools').rglob('*.md'):
     rel=p.relative_to(root).as_posix()
