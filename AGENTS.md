@@ -57,6 +57,14 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - After changing any agent badge, check the corresponding guide's `agents` metadata and `Agents` field for consistency. For MCP servers, state transport compatibility, credential prerequisites, and distinguish registration, handshake, authentication and a real tool invocation. Do not automatically assign all three to arbitrary MCP servers without checking transport constraints. After changing Skills CLI eligibility, update both READMEs and the guide.
 - Confirm relative and external links, Markdown table continuity, row uniqueness, paired language entries, correct My Works separation, and archive rationale. CI validates syntax and local references; it is **not** proof that remote installers or media still work.
 
+## GitHub demo preview links
+
+- For a demo committed to the upstream GitHub repository, use a GitHub file-view link: `https://github.com/OWNER/REPO/blob/BRANCH/path/demo.gif`, not a direct download endpoint. Verify the actual branch and path.
+- Avoid `raw.githubusercontent.com`, `?raw=1`, GitHub releases/download links and bare `github.com/user-attachments/assets/` URLs in the catalog's demo cells. Such URLs may trigger downloads instead of GitHub previews.
+- If a GIF/video is only an attachment or release asset and has no committed blob path, link to the upstream README (ideally its demo section) so GitHub renders the media there. Never invent a blob path.
+- External hosted watch pages, such as YouTube, may be linked when appropriate. Do not present a screenshot as an animated GIF.
+- Do not copy media into this repository unless separately authorized and redistribution rights are verified. Keep both language catalogs synchronized.
+
 ## Demonstration media policy
 
 - Keep the public catalog at four columns. Do not add a fifth gallery column by default.
