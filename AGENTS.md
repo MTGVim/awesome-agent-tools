@@ -2,12 +2,17 @@
 
 This is a curated index of coding-agent skills, plugins, mods, MCP servers, and related developer tools. This file is the **single source of instructions** for AI agents maintaining the catalog. Do not create `CLAUDE.md` or vendor-specific instruction duplicates. README is the public index, not the agent's full operating manual.
 
+## Language navigation contract
+
+- Keep `[English](README.md) | [한국어](README.ko.md)` directly below the top-level title in both README files.
+- Update both README files when navigation, tier policy or major usage guidance changes. Do not imply Korean translations exist for individual tool guides until they are created.
+
 ## Repository map and ownership
 
 | Location | Purpose | Edit rule |
 |---|---|---|
 | `README.md` | Canonical English public catalog: categories, tiers, links, GitHub activity badges, My Works | Edit the matching row whenever a guide or tier changes |
-| `README.ko.md` | Korean overview and maintenance instructions | Sync policy and navigation changes, do not duplicate entire catalog |
+| `README.ko.md` | Korean overview and maintenance instructions | Sync policy and navigation changes, and keep the English/Korean navigation links in both READMEs. Individual guides remain English unless explicitly localized. |
 | `tools/<capability>/<slug>.md` | Canonical per-tool guide with metadata, install/update/uninstall/verification | One canonical guide per active tool |
 | `archive/README.md` | Archived index and reason | Keep in sync with archived guides |
 | `archive/<slug>.md` | Removed/rejected tools and historical reasons | Retain removal rationale, no promises that old commands still work |
