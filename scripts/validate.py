@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import re,sys
+import re,sys,json
 root=Path(__file__).resolve().parents[1]
 errors=[]
 for p in root.rglob('*.md'):
@@ -61,6 +61,49 @@ for p in (root/'tools').rglob('*.md'):
     if p.name=='tigerkit.md' and '## My Works' in readme:
         my=readme.split('## My Works',1)[1].split('## Workflow & Agents',1)[0]
         if f'({rel})' not in my: errors.append('TigerKit must be under My Works')
+
+# Guide metadata is the source of truth for supported agents and verification.
+allowed_agents={'Claude Code','Codex','Hermes'}
+allowed_types={'skill','plugin','mod','mcp','tool'}
+allowed_verification={'personal','metadata','trial','unverified'}
+allowed_install={'cli','agent-guide','manual-review'}
+expected_badges={'Claude Code':'Claude_Code','Codex':'Codex','Hermes':'Hermes'}
+for p in (root/'tools').rglob('*.md'):
+    content=p.read_text(encoding='utf-8')
+    metadata=re.search(r'<!--\s*catalog:\s*(\{[^\n]+\})\s*-->',content)
+    if not metadata:
+        errors.append(f'{p.relative_to(root)}: missing catalog JSON')
+        continue
+    try: meta=json.loads(metadata.group(1))
+    except json.JSONDecodeError:
+        errors.append(f'{p.relative_to(root)}: invalid catalog JSON')
+        continue
+    required=('name','upstream','types','agents','category','verification','install_mode','last_reviewed')
+    for key in required:
+        if key not in meta:errors.append(f'{p.relative_to(root)}: missing {key}')
+    if 'tier' in meta:errors.append(f'{p.relative_to(root)}: retired tier metadata')
+    if not set(meta.get('agents',[]))<=allowed_agents:
+        errors.append(f'{p.relative_to(root)}: unsupported agent labels')
+    if not set(meta.get('types',[]))<=allowed_types:
+        errors.append(f'{p.relative_to(root)}: unsupported type')
+    if meta.get('verification') not in allowed_verification:
+        errors.append(f'{p.relative_to(root)}: invalid verification')
+    if meta.get('install_mode') not in allowed_install:
+        errors.append(f'{p.relative_to(root)}: invalid install_mode')
+    name=meta.get('name')
+    if name not in korean_catalog:
+        errors.append(f'{p.relative_to(root)}: catalog name not indexed: {name}')
+        continue
+    row=korean_catalog[name]
+    actual=set(row[1])
+    expected={expected_badges[a] for a in meta.get('agents',[]) if a in expected_badges}
+    if actual!=expected:
+        errors.append(f'{p.relative_to(root)}: agent badges differ from guide: {actual} vs {expected}')
+    if row[0]!=meta.get('upstream'):
+        errors.append(f'{p.relative_to(root)}: upstream URL disagrees with README')
+    if p.name!='tigerkit.md' and ('큐레이터가 직접 관리하는 프로젝트' in content or 'maintained by the curator' in content.lower()):
+        errors.append(f'{p.relative_to(root)}: incorrectly claims curator ownership')
+
 archive_index=(root/'archive/README.md').read_text(encoding='utf-8')
 for p in (root/'archive').glob('*.md'):
     if p.name=='README.md':continue
