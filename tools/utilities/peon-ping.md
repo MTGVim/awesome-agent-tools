@@ -1,12 +1,12 @@
 # Peon Ping
 
-<!-- catalog: {"name": "Peon Ping", "upstream": "https://github.com/PeonPing/peon-ping", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Peon Ping", "upstream": "https://github.com/PeonPing/peon-ping", "types": ["tool"], "agents": [], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 작업 알림 사운드
 
 - **Upstream:** https://github.com/PeonPing/peon-ping
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

@@ -1,12 +1,12 @@
 # abtop
 
-<!-- catalog: {"name": "abtop", "upstream": "https://github.com/graykode/abtop", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "abtop", "upstream": "https://github.com/graykode/abtop", "types": ["tool"], "agents": [], "category": "utilities", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 터미널 모니터링 도구
 
 - **Upstream:** https://github.com/graykode/abtop
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

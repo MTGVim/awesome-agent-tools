@@ -1,12 +1,12 @@
 # Cua
 
-<!-- catalog: {"name": "Cua", "upstream": "https://github.com/trycua/cua", "types": ["tool"], "agents": ["Cross-agent"], "category": "browser", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Cua", "upstream": "https://github.com/trycua/cua", "types": ["tool"], "agents": [], "category": "browser", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > Orca의 대안으로 검토 중인 컴퓨터 사용 도구
 
 - **Upstream:** https://github.com/trycua/cua
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

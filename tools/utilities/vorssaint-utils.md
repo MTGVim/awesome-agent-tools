@@ -1,12 +1,12 @@
 # Vorssaint Utils
 
-<!-- catalog: {"name": "Vorssaint Utils", "upstream": "https://github.com/vorssaintapp/vorssaint-utils", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Vorssaint Utils", "upstream": "https://github.com/vorssaintapp/vorssaint-utils", "types": ["tool"], "agents": [], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 단축키·창 관리 등 유틸리티 묶음
 
 - **Upstream:** https://github.com/vorssaintapp/vorssaint-utils
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

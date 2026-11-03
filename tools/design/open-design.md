@@ -1,12 +1,12 @@
 # Open Design
 
-<!-- catalog: {"name": "Open Design", "upstream": "https://github.com/nexu-io/open-design", "types": ["tool"], "agents": ["Cross-agent"], "category": "design", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Open Design", "upstream": "https://github.com/nexu-io/open-design", "types": ["tool"], "agents": [], "category": "design", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 디자인 작업 도구 후보
 
 - **Upstream:** https://github.com/nexu-io/open-design
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

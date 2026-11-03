@@ -1,12 +1,12 @@
 # Stats
 
-<!-- catalog: {"name": "Stats", "upstream": "https://github.com/exelban/stats", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Stats", "upstream": "https://github.com/exelban/stats", "types": ["tool"], "agents": [], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > macOS 자원 사용량 모니터링
 
 - **Upstream:** https://github.com/exelban/stats
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

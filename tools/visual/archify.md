@@ -1,12 +1,12 @@
 # Archify
 
-<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": ["Cross-agent"], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": [], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 설명 산출물 구성 및 시각화 도구
 
 - **Upstream:** https://github.com/tt-a1i/archify
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

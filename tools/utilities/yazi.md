@@ -1,12 +1,12 @@
 # Yazi
 
-<!-- catalog: {"name": "Yazi", "upstream": "https://github.com/sxyazi/yazi", "types": ["tool"], "agents": ["Cross-agent"], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Yazi", "upstream": "https://github.com/sxyazi/yazi", "types": ["tool"], "agents": [], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 터미널 파일 관리자
 
 - **Upstream:** https://github.com/sxyazi/yazi
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** No agent-specific integration documented
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
