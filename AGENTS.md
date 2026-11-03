@@ -32,7 +32,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 | `README.en.md` | Complete English catalog with one-line descriptions, agent tags and activity badges | Keep in parity with Korean catalog |
 | `README.md` | Default Korean full catalog | Keep in parity with English catalog; maintain language links in both READMEs |
 | `tools/<capability>/<slug>.md` | Canonical per-tool guide with metadata, install/update/uninstall/verification | One canonical guide per active tool |
-| `archive/README.en.md` | Archived index and reason | Keep in sync with archived guides |
+| `archive/README.md` | Archived index and reason | Keep in sync with archived guides |
 | `archive/<slug>.md` | Removed/rejected tools and historical reasons | Retain removal rationale, no promises that old commands still work |
 | `CONTRIBUTING.md` | Human contribution policy | Update if contribution or review expectations change |
 | `scripts/validate.py` | Local consistency checks | Run after every catalog change; extend for new invariants |
@@ -42,7 +42,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 ### Fundamental distinctions
 
 - **Kind:** `skill`, `plugin`, `mod`, `mcp`, `tool` (may be multiple).
-- **Agent support:** Claude Code, Codex, Hermes, cross-agent, etc. Report only supported or corroborated targets; never infer support from a similar tool name.
+- **Agent support:** Claude Code, Codex and Hermes only when supported by upstream evidence. For standalone tools or unknown support, use an empty agents array and a `—` cell, never `Cross-agent` or `범용`.
 - **Curation status:** Active items appear in README tables. Archived items are retained under `archive/` with a specific reason. No S/A/B ranking or `tier` metadata is used. Inclusion does not certify compatibility, safety or quality.
 - **Verification:** `personal` (experience in source notes), `metadata` (upstream/docs checked), `trial` (actively trying), `unverified` (not tested). Never mark `personal` or successful installation just because you read README.
 - **Install mode:** `cli` (official direct lifecycle commands), `agent-guide` (environment-specific plan), `manual-review` (not yet safely specified). Do not treat modes as success claims.
@@ -66,7 +66,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 - Select a unique stable kebab-case slug. If the project already exists under another name or in `archive/`, **update/restore** instead of creating a duplicate.
 - Create `tools/<capability>/<slug>.md` with its `<!-- catalog: {...} -->` metadata comment and the standard sections listed below. Store factual source links and date of review.
 - Insert a row into BOTH README catalogs using the four-column contract. Write a specific, accurate description in Korean and English; append the guide link in the description cell.
-- For a GitHub repository `owner/repo`, display compact **live** Shields.io badges in Stars and Last Commit cells:
+- For a GitHub repository `owner/repo`, display compact **live** Shields.io Stars and Last Commit badges together in the GitHub Activity cell:
   `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=%20)` and
   `![Last commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square&label=%20)`.
   For GitHub monorepo subpaths, badge the **parent repository**, not the individual plugin. For non-GitHub sources use `—`. Do not hardcode fabricated numbers or dates. Shields caching may delay updates; these metrics are **not** quality criteria or guide-verification dates.
@@ -89,7 +89,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 ## Archive (default meaning of remove / drop from recommendations)
 
 - Unless a user explicitly demands permanent deletion, interpret "remove", "drop", "폐기", "빼" as **archive the catalog entry**, preserving its assessment and original upstream link.
-- Remove the active row from BOTH READMEs, move its guide to `archive/<slug>.md`, and add a row to `archive/README.en.md` with reason and link.
+- Remove the active row from BOTH READMEs, move its guide to `archive/<slug>.md`, and add a row to `archive/README.md` with reason and link.
 - Add a clear archived date (ISO YYYY-MM-DD) and plain-language reason. Prefer a reason keyword: `superseded`, `incompatible`, `low-value`, `integrated`, `unmaintained`, `security`, `unverified`, `needs-review`. A locally unsuitable tool does not imply upstream is broken or unmaintained.
 - Mention a replacement if known. Historical installation commands should not be represented as current verified instructions.
 - Do **not** uninstall software from the user's computer. Catalog archival and local removal are separate actions.
