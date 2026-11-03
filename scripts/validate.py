@@ -31,7 +31,9 @@ def catalog_rows(content):
         if len(cells[1])<12: errors.append('description too short: '+name)
         guide=re.search(r'\[(?:Guide|가이드)\]\(([^)]+)\)',cells[1])
         if not guide: errors.append('missing guide: '+name)
-        rows[name]=(url,cells[2],cells[3],guide.group(1) if guide else None)
+        demo=re.search(r'\[(?:Demo|시연)\]\(([^)]+)\)',cells[1])
+        badge_agents=tuple(re.findall(r'img.shields.io/badge/(Claude_Code|Codex|Hermes)',cells[2]))
+        rows[name]=(url,badge_agents,cells[3],guide.group(1) if guide else None,demo.group(1) if demo else None)
     return rows
 # Markdown tables must be contiguous: a blank line after the separator ends the table.
 for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
@@ -47,6 +49,7 @@ if english_catalog!=korean_catalog:
     errors.append('English and Korean catalog entries or metadata diverge')
 for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
     if '| Tier |' in content or '| 티어 |' in content or '| Verified |' in content or '| 검증 |' in content: errors.append(name+': remove ranking and verification columns')
+    if '`범용`' in content: errors.append(name+': generic agent label is forbidden')
     if '[English](README.en.md)' not in content or '[한국어](README.md)' not in content:errors.append(name+': missing language link')
 for p in (root/'tools').rglob('*.md'):
     rel=p.relative_to(root).as_posix()

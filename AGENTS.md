@@ -13,10 +13,17 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Both files must contain exactly the same active tools, functional categories, upstream links, types, agent tags, activity badges, and guide destinations. Only the one-line description language differs.
 - The public tables use four columns: Tool, Description · Guide, Agents, GitHub Activity (with Korean counterparts).
 - Every row must have a **specific, useful one-line description** of what the tool actually does. Do not repeat its category or make unsupported capability claims.
-- Display `Claude Code`, `Codex`, `Hermes` as inline code tags when supported, and `범용` for generic/cross-agent tools. The generic tag does not prove compatibility with all three.
+- Use distinct Shields.io SVG badges for documented Claude Code, Codex and Hermes support. Do not infer support from a generic CLI or MCP server. Display `—` when agent-specific support is not established; never use a generic `범용` label.
 - **Do not show Verified in public README tables**. Maintain verification state and review dates in per-tool guides.
 - Update BOTH README catalogs on every add, archive, restore, rename, category move, support or functional description change. Keep language switch links.
 - `My Works` remains separate from third-party recommendations and discloses the curator's ownership.
+
+## Demonstration media policy
+
+- Keep the public catalog at four columns. Do not add a fifth gallery column by default.
+- When upstream contains a useful screenshot, GIF or video, add one `[시연](url)` link after the guide link in the Korean description and the corresponding `[Demo](url)` in the English description.
+- Prefer demonstrative media over banners, badges and star charts. Confirm the URL exists. Do not mirror or redistribute media without permission.
+- Missing media is normal: do not display placeholders. Keep Korean and English preview links in sync.
 
 ## Repository map and ownership
 
@@ -69,7 +76,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 ## Refresh / update a listing
 
 - Check source repo, manifests and release notes, especially before modifying exact plugin IDs, marketplace names or install commands.
-- Refresh a guide's requirements, install/update/uninstall, caveats, references and `last_reviewed` only to the extent **actually checked**. Keep user's own qualitative evaluation unless the user requests re-ranking or has supplied new experience.
+- Refresh a guide's requirements, install/update/uninstall, caveats, references and `last_reviewed` only to the extent **actually checked**. Keep qualitative usage evidence in the guide, but never restore retired tiers.
 - If URL, kind, platform, category or functionality changes, update the matching rows in BOTH READMEs. Moving a category means moving the row and correcting guide links; preserve one canonical guide.
 - Do **not** manually edit the live Stars/Last Commit values; they are already fetched by badges. Confirm badge `owner/repo` path still matches the canonical upstream repository.
 - Always keep the Korean and English catalogs synchronized for every entry change.
