@@ -4,6 +4,7 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 
 | Tool | Reason | Details |
 |---|---|---|
+| [Claude Auto Handoff](https://github.com/alexknowshtml/claude-auto-handoff) | `superseded` | [Why](./claude-auto-handoff.md) |
 | [Context7](https://github.com/upstash/context7) | `needs-review` | [Why](./context7.md) |
 | [Paseo](https://github.com/getpaseo/paseo) | `low-value` | [Why](./paseo.md) |
 | [Context Mode](https://github.com/mksglu/context-mode) | `low-value` | [Why](./context-mode.md) |
