@@ -1,6 +1,6 @@
 # Superpowers
 
-- **Tier:** Archived
+- **Status:** Archived
 - **Type:** skill
 - **Reason:** `low-value`
 - **Archived on:** 2026-11-03 (imported from personal notes)
