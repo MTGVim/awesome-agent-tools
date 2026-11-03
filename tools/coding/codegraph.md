@@ -1,20 +1,19 @@
 # Codegraph
 
-<!-- catalog: {"name": "Codegraph", "upstream": "https://github.com/colbymchenry/codegraph", "types": ["tool"], "agents": ["Cross-agent"], "category": "coding", "tier": "B", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Codegraph", "upstream": "https://github.com/colbymchenry/codegraph", "types": ["tool"], "agents": ["Cross-agent"], "category": "coding", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 코드 관계 탐색 도구
 
 - **Upstream:** https://github.com/colbymchenry/codegraph
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** B (initial, provisional)
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-코드 관계 탐색 도구 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+코드 관계 탐색 도구 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 

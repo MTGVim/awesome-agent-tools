@@ -1,20 +1,19 @@
 # Code Modernization
 
-<!-- catalog: {"name": "Code Modernization", "upstream": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization", "types": ["plugin"], "agents": ["Claude Code"], "category": "coding", "tier": "B", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Code Modernization", "upstream": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization", "types": ["plugin"], "agents": ["Claude Code"], "category": "coding", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 기존 코드를 최신 스택으로 마이그레이션
 
 - **Upstream:** https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization
 - **Types:** plugin
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-기존 코드를 최신 스택으로 마이그레이션 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+기존 코드를 최신 스택으로 마이그레이션 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 

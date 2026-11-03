@@ -1,20 +1,19 @@
 # Cache Tax
 
-<!-- catalog: {"name": "Cache Tax", "upstream": "https://github.com/karanb192/cache-tax", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "context", "tier": "B", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Cache Tax", "upstream": "https://github.com/karanb192/cache-tax", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "context", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 프롬프트 캐시 유지와 만료 시 비용 경고. 캐시 유지에 토큰 사용
 
 - **Upstream:** https://github.com/karanb192/cache-tax
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-프롬프트 캐시 유지와 만료 시 비용 경고. 캐시 유지에 토큰 사용 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+프롬프트 캐시 유지와 만료 시 비용 경고. 캐시 유지에 토큰 사용 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 

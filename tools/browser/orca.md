@@ -1,20 +1,19 @@
 # Orca
 
-<!-- catalog: {"name": "Orca", "upstream": "https://github.com/stablyai/orca", "types": ["tool"], "agents": ["Cross-agent"], "category": "browser", "tier": "A", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Orca", "upstream": "https://github.com/stablyai/orca", "types": ["tool"], "agents": ["Cross-agent"], "category": "browser", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 컴퓨터 사용 및 GUI 자동화 도구
 
 - **Upstream:** https://github.com/stablyai/orca
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** A (initial, provisional)
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-컴퓨터 사용 및 GUI 자동화 도구 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+컴퓨터 사용 및 GUI 자동화 도구 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 

@@ -1,20 +1,19 @@
 # Claude Auto Handoff
 
-<!-- catalog: {"name": "Claude Auto Handoff", "upstream": "https://github.com/alexknowshtml/claude-auto-handoff", "types": ["mod"], "agents": ["Claude Code"], "category": "context", "tier": "B", "verification": "unverified", "install_mode": "manual-review", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Claude Auto Handoff", "upstream": "https://github.com/alexknowshtml/claude-auto-handoff", "types": ["mod"], "agents": ["Claude Code"], "category": "context", "verification": "unverified", "install_mode": "manual-review", "last_reviewed": "2026-11-03"} -->
 
 > 컨텍스트 임계치에서 새 세션 인수인계. 특수 설치 절차 필요
 
 - **Upstream:** https://github.com/alexknowshtml/claude-auto-handoff
 - **Types:** mod
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** unverified
 - **Install mode:** manual-review
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-컨텍스트 임계치에서 새 세션 인수인계. 특수 설치 절차 필요 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+컨텍스트 임계치에서 새 세션 인수인계. 특수 설치 절차 필요 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 
