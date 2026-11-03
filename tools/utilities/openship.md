@@ -1,6 +1,6 @@
 # OpenShip
 
-<!-- catalog: {"name": "OpenShip", "upstream": "https://github.com/oblien/openship", "types": ["tool"], "agents": [], "category": "workflows", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "OpenShip", "upstream": "https://github.com/oblien/openship", "types": ["tool"], "agents": [], "category": "utilities", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 도입 가치를 추가 평가할 후보
 
