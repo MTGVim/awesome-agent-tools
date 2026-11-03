@@ -12,6 +12,12 @@ Contributions and corrections are welcome. New tools are either **Active** (incl
 - Add the same entry to both README catalogs with localized, functional one-line descriptions. Keep agent tags, upstream links, guide destinations and activity badges in sync; retain verification only in the guide.
 - Clearly mark any feature requiring tokens, extra API keys, remote shell execution, broad filesystem permissions, or third-party services.
 
+## Multi-agent skill distribution
+
+- Label a tool as **Skills CLI** only after checking the upstream SKILL.md and an explicit, usable `npx skills` installation path. It indicates installer reach, not guaranteed functionality on all agents.
+- Keep confirmed agent support badges separate from distribution badges. Update the Korean and English indexes and the canonical guide together.
+- Ensure the `Why use it?` section is genuinely tool-specific rather than generic copy.
+
 ## Archiving
 
 Move the entry to `archive/` and document a reason (`superseded`, `incompatible`, `low-value`, `integrated`, `unmaintained`, `security`, `unverified`, `needs-review`), timestamp, and optional replacement. Archiving is a **curation decision**, not a statement that a project is abandoned.

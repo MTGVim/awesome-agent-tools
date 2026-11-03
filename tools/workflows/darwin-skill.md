@@ -1,6 +1,6 @@
 # Darwin Skill
 
-<!-- catalog: {"name": "Darwin Skill", "upstream": "https://github.com/alchaincyf/darwin-skill", "types": ["skill"], "agents": [], "category": "workflows", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Darwin Skill", "upstream": "https://github.com/alchaincyf/darwin-skill", "types": ["skill"], "agents": [], "category": "workflows", "verification": "unverified", "install_mode": "cli", "installers": ["skills-cli"], "last_reviewed": "2026-11-03"} -->
 
 > 스킬 개선을 위한 실험 후보
 
@@ -8,7 +8,8 @@
 - **Types:** skill
 - **Agents:** Agent-specific compatibility not verified
 - **Verification:** unverified
-- **Install mode:** agent-guide
+- **Install mode:** cli
+- **Distribution:** Skills CLI (`npx skills`), as documented upstream
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
@@ -21,7 +22,14 @@
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+원본 README에 다음 설치 방법이 명시되어 있습니다. 실제 설치 전에 대상 환경과 CLI 옵션을 확인합니다.
+
+```bash
+npx skills add alchaincyf/darwin-skill --list
+npx skills add alchaincyf/darwin-skill
+```
+
+첫 번째 명령은 설치 가능한 스킬을 조회합니다. 두 번째 명령은 대화형으로 설치 위치와 에이전트를 선택할 수 있습니다. Claude Code·Codex·Hermes에 설치할 수 있는 CLI 경로가 제공되지만, 세 에이전트에서 스킬의 기능을 실제로 검증한 것은 아닙니다.
 
 ## Update
 
@@ -42,3 +50,5 @@
 ## References
 
 - [Upstream](https://github.com/alchaincyf/darwin-skill)
+- [Skills CLI supported agents](https://github.com/vercel-labs/skills/blob/main/docs/agents.md)
+- [Skills CLI commands](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)

@@ -35,7 +35,9 @@ def catalog_rows(content):
         if not guide: errors.append('missing guide: '+name)
         demo=re.search(r'\[(?:Demo|시연)\]\(([^)]+)\)',cells[1])
         badge_agents=tuple(re.findall(r'img.shields.io/badge/(Claude_Code|Codex|Hermes)',cells[2]))
-        rows[name]=(url,badge_agents,cells[3],guide.group(1) if guide else None,demo.group(1) if demo else None)
+        skills_cli='img.shields.io/badge/Skills_CLI-' in cells[2]
+        if skills_cli and not re.search(r'\]\(https://github.com/vercel-labs/skills\)', cells[2]): errors.append('Skills CLI badge must link to installer docs: '+name)
+        rows[name]=(url,badge_agents,skills_cli,cells[3],guide.group(1) if guide else None,demo.group(1) if demo else None)
     return rows
 # Markdown tables must be contiguous: a blank line after the separator ends the table.
 for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
