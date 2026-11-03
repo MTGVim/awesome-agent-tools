@@ -1,12 +1,12 @@
 # Chrome DevTools MCP
 
-<!-- catalog: {"name": "Chrome DevTools MCP", "upstream": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "types": ["mcp"], "agents": ["Cross-agent"], "category": "browser", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Chrome DevTools MCP", "upstream": "https://github.com/ChromeDevTools/chrome-devtools-mcp", "types": ["mcp"], "agents": [], "category": "browser", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > Chrome DevTools 기반 브라우저 검증 서버
 
 - **Upstream:** https://github.com/ChromeDevTools/chrome-devtools-mcp
 - **Types:** mcp
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

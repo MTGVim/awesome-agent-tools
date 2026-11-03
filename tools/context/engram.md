@@ -1,12 +1,12 @@
 # Engram
 
-<!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool"], "agents": ["Cross-agent"], "category": "context", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool"], "agents": [], "category": "context", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 세션 간 지식 유지 도구
 
 - **Upstream:** https://github.com/Gentleman-Programming/engram
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

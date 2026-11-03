@@ -1,12 +1,12 @@
 # Darwin Skill
 
-<!-- catalog: {"name": "Darwin Skill", "upstream": "https://github.com/alchaincyf/darwin-skill", "types": ["skill"], "agents": ["Cross-agent"], "category": "workflows", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Darwin Skill", "upstream": "https://github.com/alchaincyf/darwin-skill", "types": ["skill"], "agents": [], "category": "workflows", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 스킬 개선을 위한 실험 후보
 
 - **Upstream:** https://github.com/alchaincyf/darwin-skill
 - **Types:** skill
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

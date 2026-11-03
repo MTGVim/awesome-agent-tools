@@ -1,12 +1,12 @@
 # OpenShip
 
-<!-- catalog: {"name": "OpenShip", "upstream": "https://github.com/oblien/openship", "types": ["tool"], "agents": ["Cross-agent"], "category": "workflows", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "OpenShip", "upstream": "https://github.com/oblien/openship", "types": ["tool"], "agents": [], "category": "workflows", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 도입 가치를 추가 평가할 후보
 
 - **Upstream:** https://github.com/oblien/openship
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

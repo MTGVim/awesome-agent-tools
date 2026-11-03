@@ -1,12 +1,12 @@
 # Skill Seekers
 
-<!-- catalog: {"name": "Skill Seekers", "upstream": "https://github.com/yusufkaraaslan/Skill_Seekers", "types": ["skill", "tool"], "agents": ["Cross-agent"], "category": "workflows", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Skill Seekers", "upstream": "https://github.com/yusufkaraaslan/Skill_Seekers", "types": ["skill", "tool"], "agents": [], "category": "workflows", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 외부 자료를 에이전트 스킬로 변환
 
 - **Upstream:** https://github.com/yusufkaraaslan/Skill_Seekers
 - **Types:** skill/tool
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

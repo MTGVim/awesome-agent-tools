@@ -1,12 +1,12 @@
 # MCP Atlassian
 
-<!-- catalog: {"name": "MCP Atlassian", "upstream": "https://github.com/sooperset/mcp-atlassian", "types": ["mcp"], "agents": ["Cross-agent"], "category": "workflows", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "MCP Atlassian", "upstream": "https://github.com/sooperset/mcp-atlassian", "types": ["mcp"], "agents": [], "category": "workflows", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > Atlassian 서비스 연동 MCP
 
 - **Upstream:** https://github.com/sooperset/mcp-atlassian
 - **Types:** mcp
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

@@ -1,12 +1,12 @@
 # Codegraph
 
-<!-- catalog: {"name": "Codegraph", "upstream": "https://github.com/colbymchenry/codegraph", "types": ["tool"], "agents": ["Cross-agent"], "category": "coding", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Codegraph", "upstream": "https://github.com/colbymchenry/codegraph", "types": ["tool"], "agents": [], "category": "coding", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 코드 관계 탐색 도구
 
 - **Upstream:** https://github.com/colbymchenry/codegraph
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

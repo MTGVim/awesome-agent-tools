@@ -1,12 +1,12 @@
 # Orca
 
-<!-- catalog: {"name": "Orca", "upstream": "https://github.com/stablyai/orca", "types": ["tool"], "agents": ["Cross-agent"], "category": "browser", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Orca", "upstream": "https://github.com/stablyai/orca", "types": ["tool"], "agents": [], "category": "browser", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 컴퓨터 사용 및 GUI 자동화 도구
 
 - **Upstream:** https://github.com/stablyai/orca
 - **Types:** tool
-- **Agents:** Cross-agent
+- **Agents:** Agent-specific compatibility not verified
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03

@@ -1,12 +1,12 @@
 # Skill Creator
 
-<!-- catalog: {"name": "Skill Creator", "upstream": "https://github.com/openai/skills", "types": ["skill"], "agents": ["Codex", "Cross-agent"], "category": "workflows", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Skill Creator", "upstream": "https://github.com/openai/skills", "types": ["skill"], "agents": ["Codex"], "category": "workflows", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 에이전트 스킬 작성 및 개선 가이드. 벤더별 구현 차이 있음
 
 - **Upstream:** https://github.com/openai/skills
 - **Types:** skill
-- **Agents:** Codex, Cross-agent
+- **Agents:** Codex
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
