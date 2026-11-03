@@ -21,7 +21,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 ## Demonstration media policy
 
 - Keep the public catalog at four columns. Do not add a fifth gallery column by default.
-- When upstream contains a useful screenshot, GIF or video, add one `[시연](url)` link after the guide link in the Korean description and the corresponding `[Demo](url)` in the English description.
+- When upstream contains a useful screenshot, GIF or video, append a short linked label named 시연 after the Korean guide link, and the equivalent linked label named Demo after the English guide link.
 - Prefer demonstrative media over banners, badges and star charts. Confirm the URL exists. Do not mirror or redistribute media without permission.
 - Missing media is normal: do not display placeholders. Keep Korean and English preview links in sync.
 
