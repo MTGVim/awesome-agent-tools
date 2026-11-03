@@ -150,6 +150,8 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## 기여와 관리
 
+**CI 확인은 필수입니다.** 변경 전 `python3 scripts/validate.py`를 실행하고, 푸시 후 해당 커밋의 [Validate catalog](https://github.com/MTGVim/awesome-agent-tools/actions/workflows/validate.yml) 실행이 **성공**했는지 확인합니다. 실패했거나 아직 실행 중이라면 완료로 보고하지 않습니다. 실패 로그를 조사하고 수정·재검증합니다.
+
 도구를 추가·갱신·제외하려면 [CONTRIBUTING.md](CONTRIBUTING.md)와 [AGENTS.md](AGENTS.md)의 절차를 참고하세요.
 
 ## 라이선스

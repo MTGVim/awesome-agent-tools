@@ -154,6 +154,8 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 ## Contribute
 
+**CI verification is mandatory.** Run `python3 scripts/validate.py` before pushing, then verify that [Validate catalog](https://github.com/MTGVim/awesome-agent-tools/actions/workflows/validate.yml) **succeeds for the pushed commit**. Do not report completion while CI is failing or pending; inspect logs, fix and recheck.
+
 See [CONTRIBUTING.md](CONTRIBUTING.md). All tool documentation is a point-in-time snapshot; check upstream before running commands.
 
 ## License

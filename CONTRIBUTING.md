@@ -25,3 +25,11 @@ Move the entry to `archive/` and document a reason (`superseded`, `incompatible`
 ## Review hygiene
 
 Fix broken URLs, distinguish personal experience from repeatable testing, and never publish credentials, private paths, or unsafe permission-bypass instructions.
+
+## Required CI verification
+
+1. Run `python3 scripts/validate.py` locally before committing changes. Resolve all reported errors.
+2. Push the commit or open a PR, then inspect the matching commit's `Validate catalog` workflow run in GitHub Actions (not an earlier green run).
+3. Wait for a **successful** conclusion. If CI fails, read the failing job logs, repair the cause, push the fix, and confirm the latest workflow succeeds.
+4. Never mark an update complete with failing, pending, skipped, or unobserved CI. If CI is inaccessible or cannot finish, state the blocker and exact run URL; do not claim success.
+5. Apply this to documentation-only changes too, including one-row catalog changes, guide updates, translations and archive moves.

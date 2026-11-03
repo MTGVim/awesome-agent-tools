@@ -205,6 +205,8 @@ This repository is documentation, not a remote installation authority. An assist
 
 ## Validation and publishing checklist
 
+**Hard completion gate:** On EVERY repository change, run the local validator; after push, inspect the `Validate catalog` workflow run for the exact resulting HEAD SHA. A previous successful run does not count. Do not claim completion until the latest run has `conclusion=success`. If pending, report pending and the run link without claiming success. If failed, inspect the job logs, correct the issue, push, and verify again. Never leave CI failures unaddressed or silently waive them.
+
 - Validate **both** language catalogs for identical tool identities, canonical upstream URLs, order, guide destinations, agent support, GitHub activity URLs and demo links; translated descriptions need not be identical.
 - Check each active guide's machine-readable catalog comment: parse valid JSON, require expected keys and values, verify agent tags match the README badges and that retired `tier` metadata is absent.
 - Preserve table continuity: no blank line between a table divider and its rows; use `<br>` only inside cells to separate description, guide/demo links and activity badges.
