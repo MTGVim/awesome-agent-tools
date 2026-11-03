@@ -1,20 +1,19 @@
 # Claude Code Filetree
 
-<!-- catalog: {"name": "Claude Code Filetree", "upstream": "https://github.com/data-goblin/claude-code-filetree", "types": ["mod"], "agents": ["Claude Code"], "category": "ui", "tier": "B", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Claude Code Filetree", "upstream": "https://github.com/data-goblin/claude-code-filetree", "types": ["mod"], "agents": ["Claude Code"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > Git 상태와 변경 파일의 트리 표현
 
 - **Upstream:** https://github.com/data-goblin/claude-code-filetree
 - **Types:** mod
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-Git 상태와 변경 파일의 트리 표현 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+Git 상태와 변경 파일의 트리 표현 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 

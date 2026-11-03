@@ -1,20 +1,19 @@
 # Figma Desktop MCP
 
-<!-- catalog: {"name": "Figma Desktop MCP", "upstream": "https://developers.figma.com/docs/figma-mcp-server/local-server-installation/", "types": ["mcp"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "design", "tier": "B", "verification": "personal", "install_mode": "cli", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Figma Desktop MCP", "upstream": "https://developers.figma.com/docs/figma-mcp-server/local-server-installation/", "types": ["mcp"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "design", "verification": "personal", "install_mode": "cli", "last_reviewed": "2026-11-03"} -->
 
 > Figma Desktop의 로컬 MCP 연동. 앱 및 서버 실행 필요
 
 - **Upstream:** https://developers.figma.com/docs/figma-mcp-server/local-server-installation/
 - **Types:** mcp
 - **Agents:** Claude Code, Codex, Hermes
-- **Tier:** B (initial, provisional)
 - **Verification:** personal
 - **Install mode:** cli
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-Figma Desktop의 로컬 MCP 연동. 앱 및 서버 실행 필요 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+Figma Desktop의 로컬 MCP 연동. 앱 및 서버 실행 필요 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 

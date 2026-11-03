@@ -1,20 +1,19 @@
 # Claude Code Paste Preview
 
-<!-- catalog: {"name": "Claude Code Paste Preview", "upstream": "https://github.com/alan890104/claude-code-paste-preview", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "ui", "tier": "B", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Claude Code Paste Preview", "upstream": "https://github.com/alan890104/claude-code-paste-preview", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 이미지 붙여넣기 미리보기 및 마크업
 
 - **Upstream:** https://github.com/alan890104/claude-code-paste-preview
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-이미지 붙여넣기 미리보기 및 마크업 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+이미지 붙여넣기 미리보기 및 마크업 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
 
 ## Requirements
 
