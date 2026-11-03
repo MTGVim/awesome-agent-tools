@@ -20,6 +20,17 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Update BOTH README catalogs on every add, archive, restore, rename, category move, support or functional description change. Keep language switch links.
 - `My Works` remains separate from third-party recommendations and discloses the curator's ownership.
 
+## Daily setup curation and archiving
+
+- `My Daily Setup` precedes `My Works` in BOTH bilingual README files. It is a maintainer-specific active configuration, not a recommendation tier.
+- Link to each tool's upstream in Daily Setup, while keeping the single canonical per-tool Guide link in its functional category. The validation script expects exactly one main-index Guide link per active tool.
+- A tool may appear in Daily Setup and the general catalog; do not duplicate its guide or metadata.
+- Disabling a tool removes it from Daily Setup but does NOT automatically archive it. Only archive it when the curator explicitly says it is no longer recommended. Record reasons as user observations, not universal upstream defects.
+- When archiving, remove entries from BOTH public catalogs, relocate guide to `archive/<slug>.md`, add archive index entry, and preserve dated curator-specific reasoning.
+- Do not infer daily use from installed state or a trial. Update caveats without silently changing upstream compatibility claims.
+- Claude HUD setting the Claude Code `statusLine` is intended. Warn only when another tool overwrites existing HUD configuration without consent.
+- Always synchronize Daily Setup descriptions, inclusion and compatibility notes in the Korean and English READMEs.
+
 ## Evidence and accuracy requirements
 
 - A catalog entry is a **recommendation to investigate**, not proof that the tool is currently compatible, secure, or installable. Never turn `metadata` or `unverified` into `personal` without first-hand evidence supplied by the curator.

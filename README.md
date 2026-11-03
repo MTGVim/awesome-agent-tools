@@ -24,6 +24,34 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 **GitHub 활동:** Stars와 최근 커밋은 Shields.io 동적 배지이므로 표시가 지연될 수 있습니다. 최근 커밋과 설치 가이드 검증일은 다르며, 활동 수치는 품질이나 추천 여부를 의미하지 않습니다.
 
+## My Daily Setup
+
+실제로 사용 중인 조합(2026-11-03 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
+
+| 도구 | 용도 |
+|---|---|
+| [Orca](https://github.com/stablyai/orca) | 에이전트 병렬 개발 환경 |
+| [Autoharness](https://github.com/tigerless-labs/autoharness) | 스킬 자동 관리 |
+| [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
+| [MCP Atlassian](https://github.com/sooperset/mcp-atlassian) | Atlassian 연동 |
+| [Codegraph](https://github.com/colbymchenry/codegraph) | 코드 그래프 탐색 |
+| [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
+| [Cache Tax](https://github.com/karanb192/cache-tax) | 프롬프트 캐시 유지 |
+| [Engram](https://github.com/Gentleman-Programming/engram) | 세션 메모리 |
+| [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | 미디어·QA 시각화 |
+| [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | 이미지 편집·미리보기 |
+| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | 서브에이전트 대시보드 |
+| [Claude HUD](https://github.com/jarrodwatts/claude-hud) | 컨텍스트·사용량 statusLine |
+| [Prompt Rail](https://github.com/oikon48/prompt-rail) | 이전 프롬프트 탐색 |
+| [ni](https://github.com/antfu-collective/ni) | 패키지 매니저 통합 |
+| [Peon Ping](https://github.com/PeonPing/peon-ping) | 작업 알림 |
+| [abtop](https://github.com/graykode/abtop) | 터미널 모니터링 |
+| [Yazi](https://github.com/sxyazi/yazi) | 터미널 파일 관리 |
+
+**조합 참고:** Show Your Work와 Prismantis/Skins는 전역 렌더러가 충돌할 수 있습니다. Paste Preview와 Image View는 이미지 미리보기 영역이 겹칩니다. Flightdeck과 Glowup은 사이드 패널이 중복됩니다. Claude HUD가 `statusLine`을 설정하는 것은 정상 기능이며, 다른 도구가 기존 설정을 확인 없이 교체하는 경우에 주의합니다.
+
+**이번 셋업에 넣지 않은 항목:** Darwin Skill·Archify·Stats·Vorssaint Utils는 설치 확인만으로 실사용 빈도를 확정하지 않았습니다. Code Modernization과 Agent Usage Guard는 시험 중이며, Figma Desktop MCP는 연결 확인이 필요합니다. Prismantis·Image View는 비활성화했지만 일반 카탈로그에는 유지합니다.
+
 ## 내 프로젝트 · My Works
 
 큐레이터가 직접 유지보수하는 프로젝트입니다. 개인 프로젝트라는 사실을 구분해 표시하며, 독립적인 평가를 의미하지 않습니다.
@@ -42,7 +70,6 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | Claude Code 서브에이전트마다 모델·추론 수준 자동 선택<br>[가이드](tools/workflows/subagent-tuner.md) · [시연](https://github.com/Kruhlikau/subagent-tuner/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Kruhlikau/subagent-tuner?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Kruhlikau/subagent-tuner?style=flat-square&label=%20) |
 | [Autoharness Codex](https://github.com/arm092/autoharness-codex) | Codex 세션 기록으로 스킬을 학습·검증·정리<br>[가이드](tools/workflows/autoharness-codex.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/arm092/autoharness-codex?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/arm092/autoharness-codex?style=flat-square&label=%20) |
 | [Darwin Skill](https://github.com/alchaincyf/darwin-skill) | 실험·평가를 반복해 Agent Skills를 최적화<br>[가이드](tools/workflows/darwin-skill.md) | [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/alchaincyf/darwin-skill?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/alchaincyf/darwin-skill?style=flat-square&label=%20) |
-| [Inbox](https://github.com/petekp/inbox) | 에이전트의 질문·결정·발견 사항을 선택 가능한 Inbox로 수집<br>[가이드](tools/workflows/inbox.md) · [시연](https://github.com/petekp/inbox#how-it-works) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/petekp/inbox?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/petekp/inbox?style=flat-square&label=%20) |
 | [MCP Atlassian](https://github.com/sooperset/mcp-atlassian) | Jira·Confluence의 이슈와 문서를 MCP로 연결<br>[가이드](tools/workflows/mcp-atlassian.md) · [시연](https://github.com/sooperset/mcp-atlassian#quick-start) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/sooperset/mcp-atlassian?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sooperset/mcp-atlassian?style=flat-square&label=%20) |
 | [Next Steps](https://github.com/anthropics/claude-plugins-community) | Claude Code 응답 끝에 실행 가능한 후속 작업 선택지 제안<br>[가이드](tools/workflows/next-steps.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/anthropics/claude-plugins-community?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/anthropics/claude-plugins-community?style=flat-square&label=%20) |
 | [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | 문서·Git·PDF·영상 등을 스킬·RAG 지식으로 변환<br>[가이드](tools/workflows/skill-seekers.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/yusufkaraaslan/Skill_Seekers?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/yusufkaraaslan/Skill_Seekers?style=flat-square&label=%20) |
@@ -81,10 +108,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | Claude Code 컨텍스트·비용·권한·서브에이전트 실시간 대시보드<br>[가이드](tools/ui/claude-flightdeck.md) · [시연](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
 | [Claude HUD](https://github.com/jarrodwatts/claude-hud) | Claude Code 입력창 아래 사용량·컨텍스트·도구 상태 표시<br>[가이드](tools/ui/claude-hud.md) · [시연](https://github.com/jarrodwatts/claude-hud/blob/main/claude-hud-preview-5-2.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square&label=%20) |
 | [Claude Image View](https://github.com/jarrodwatts/claude-image-view) | 붙여넣은 이미지 썸네일을 원본 비율로 표시<br>[가이드](tools/ui/claude-image-view.md) · [시연](https://github.com/jarrodwatts/claude-image-view/blob/main/claude-image-view.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-image-view?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-image-view?style=flat-square&label=%20) |
-| [Claude Skins](https://github.com/hellosverre/claude-skins) | Claude Code 테마·도구 로그 카드·표·Mermaid 렌더링<br>[가이드](tools/ui/claude-skins.md) · [시연](https://github.com/hellosverre/claude-skins/blob/main/docs/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/hellosverre/claude-skins?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/hellosverre/claude-skins?style=flat-square&label=%20) |
-| [Glowup](https://github.com/NovusEdge/glowup) | Claude Code에 Git diff·에이전트·컨텍스트 패널과 테마 추가<br>[가이드](tools/ui/glowup.md) · [시연](https://github.com/NovusEdge/glowup/blob/main/docs/assets/hero.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/NovusEdge/glowup?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/NovusEdge/glowup?style=flat-square&label=%20) |
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) | 이전 프롬프트를 미리 보고 해당 대화로 이동<br>[가이드](tools/ui/prompt-rail.md) · [시연](https://github.com/oikon48/prompt-rail/blob/main/docs/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/oikon48/prompt-rail?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/oikon48/prompt-rail?style=flat-square&label=%20) |
-| [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Claude Code 진행률 바와 서브에이전트 상태 패널<br>[가이드](tools/ui/savvy-progress.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/JohnnyVizz/claude-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/JohnnyVizz/claude-kit?style=flat-square&label=%20) |
 
 ## 시각화·콘텐츠
 
