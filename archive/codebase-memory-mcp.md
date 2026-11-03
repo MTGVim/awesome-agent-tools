@@ -1,6 +1,6 @@
 # Codebase Memory MCP
 
-- **Tier:** Archived
+- **Status:** Archived
 - **Type:** mcp
 - **Reason:** `low-value`
 - **Archived on:** 2026-11-03 (imported from personal notes)

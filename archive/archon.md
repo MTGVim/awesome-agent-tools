@@ -1,6 +1,6 @@
 # Archon
 
-- **Tier:** Archived
+- **Status:** Archived
 - **Type:** tool
 - **Reason:** `incompatible`
 - **Archived on:** 2026-11-03 (imported from personal notes)
