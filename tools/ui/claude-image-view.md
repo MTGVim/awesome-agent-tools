@@ -13,43 +13,35 @@
 
 ## Why use it?
 
-붙여넣은 이미지 썸네일 미리보기 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+Claude Code에 붙여넣은 이미지의 원본 비율 썸네일을 프롬프트 위에 표시합니다. 원본 이미지의 내용을 수정하지는 않습니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Claude Code의 모드 지원 빌드와 kitty 그래픽 프로토콜을 지원하는 터미널이 필요합니다. macOS/Linux가 주 지원 환경이며 Windows는 일부 제한이 있습니다.
 
 ## Install
 
-```sh
-claude plugin marketplace add jarrodwatts/claude-image-view
-claude plugin install image-view@claude-image-view
+```text
+/plugin marketplace add jarrodwatts/claude-image-view
+/plugin install image-view
+/reload-plugins
 ```
-
-실행 전 Claude Code와 터미널 요구 사항을 확인합니다.
 
 ## Update
 
-```sh
-claude plugin marketplace update claude-image-view
-claude plugin update image-view@claude-image-view
-```
+`claude plugin marketplace update claude-image-view`, `claude plugin update image-view@claude-image-view`를 확인합니다.
 
 ## Uninstall
 
-```sh
-claude plugin uninstall image-view@claude-image-view
-```
-
-마켓플레이스 제거는 다른 플러그인이 사용하지 않을 때만 별도 검토합니다.
+`claude plugin uninstall image-view@claude-image-view` 후 재시작하거나 플러그인을 다시 로드합니다.
 
 ## Verify
 
-`claude plugin list`에서 설치 여부를 확인하고, 이미지 입력 시 썸네일을 확인합니다.
+이미지 여러 개를 붙여넣어 프롬프트 위에 원본 비율 썸네일이 표시되는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+터미널 그래픽 지원이 없으면 썸네일이 표시되지 않을 수 있습니다. 이미지 내용을 수정하는 Paste Preview와는 기능이 다릅니다.
 
 ## References
 

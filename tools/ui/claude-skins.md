@@ -13,31 +13,36 @@
 
 ## Why use it?
 
-Claude Code 테마·렌더링 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+Claude Code에 16종 테마, 도구 호출 카드, 편집 diff, 표·코드·Mermaid 차트 및 사용량 표시를 적용합니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Claude Code 2.1.287+가 필요합니다. 일부 모드나 테마와 렌더러 훅 충돌이 발생할 수 있습니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+```text
+/plugin marketplace add hellosverre/claude-skins
+/plugin install skins@hellosverre-mods
+```
+
+설치 후 Claude Code를 다시 실행하고 `/skin`으로 테마를 선택합니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+`claude plugin marketplace update hellosverre-mods` 및 `claude plugin update skins@hellosverre-mods`를 실행합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+`claude plugin uninstall skins@hellosverre-mods` 후 테마 설정 보존 여부를 확인합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+`/skin`에서 테마를 바꾸고, 표·코드·Mermaid·도구 실행 결과가 의도한 스타일로 나타나는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+시각화 렌더러를 교체하는 도구이므로 다른 터미널 꾸미기 모드와 충돌할 수 있습니다.
 
 ## References
 
