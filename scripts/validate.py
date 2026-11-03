@@ -14,8 +14,8 @@ for p in (root/'tools').rglob('*.md'):
     for section in ('## Why use it?', '## Requirements','## Install','## Update','## Uninstall','## Verify','## Caveats','## References'):
         if section not in content:errors.append(f'{p.relative_to(root)}: missing {section}')
 # Catalog index invariants: every active guide linked exactly once; no active/archive overlap.
-readme=(root/'README.md').read_text(encoding='utf-8')
-readme_ko=(root/'README.ko.md').read_text(encoding='utf-8')
+readme_ko=(root/'README.md').read_text(encoding='utf-8')
+readme=(root/'README.en.md').read_text(encoding='utf-8')
 def catalog_rows(content):
     rows={}
     for line in content.splitlines():
@@ -36,12 +36,12 @@ english_catalog=catalog_rows(readme)
 korean_catalog=catalog_rows(readme_ko)
 if english_catalog!=korean_catalog:
     errors.append('English and Korean catalog entries or metadata diverge')
-for name,content in [('README.md',readme),('README.ko.md',readme_ko)]:
+for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
     if '| Verified |' in content or '| 검증 |' in content: errors.append(name+': Verified column is guide-only')
-    if '[English](README.md)' not in content or '[한국어](README.ko.md)' not in content:errors.append(name+': missing language link')
+    if '[English](README.en.md)' not in content or '[한국어](README.md)' not in content:errors.append(name+': missing language link')
 for p in (root/'tools').rglob('*.md'):
     rel=p.relative_to(root).as_posix()
-    for label,content in [('README.md',readme),('README.ko.md',readme_ko)]:
+    for label,content in [('README.en.md',readme),('README.md',readme_ko)]:
         count=content.count(f'({rel})')
         if count!=1:errors.append(f'{rel}: expected one {label} reference, got {count}')
     if p.name=='tigerkit.md' and '## My Works' in readme:
