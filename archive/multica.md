@@ -1,6 +1,6 @@
 # Multica
 
-- **Tier:** Archived
+- **Status:** Archived
 - **Type:** tool
 - **Reason:** `unverified`
 - **Archived on:** 2026-11-03 (imported from personal notes)

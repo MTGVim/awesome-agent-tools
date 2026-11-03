@@ -1,6 +1,6 @@
 # Context7
 
-- **Tier:** Archived
+- **Status:** Archived
 - **Type:** mcp
 - **Reason:** `needs-review`
 - **Archived on:** 2026-11-03 (imported from personal notes)

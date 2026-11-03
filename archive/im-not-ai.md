@@ -1,6 +1,6 @@
 # im-not-ai
 
-- **Tier:** Archived
+- **Status:** Archived
 - **Type:** skill
 - **Reason:** `integrated`
 - **Archived on:** 2026-11-03 (imported from personal notes)
