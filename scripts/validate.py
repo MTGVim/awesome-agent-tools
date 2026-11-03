@@ -19,6 +19,7 @@ readme=(root/'README.en.md').read_text(encoding='utf-8')
 def catalog_rows(content):
     # My Daily Setup is a separate two-column snapshot, not the canonical four-column catalog.
     content=re.sub(r'(?ms)^## My Daily Setup\n.*?(?=^## )', '', content)
+    content=re.sub(r'(?ms)^## Cool Finds\n.*?(?=^## )', '', content)
     rows={}
     for line in content.splitlines():
         if not line.startswith('| ['): continue
@@ -68,6 +69,26 @@ for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
     marked=marked_catalog_names(content)
     if daily!=marked:
         errors.append(f'{label}: Daily Setup marker mismatch: missing={sorted(daily-marked)} extra={sorted(marked-daily)}')
+
+# Cool Finds is a two-column lightweight discovery area, not the four-column active catalog.
+def cool_find_links(content, label):
+    match = re.search(r'(?ms)^## Cool Finds\n(.*?)(?=^## )', content)
+    if not match:
+        errors.append(label + ': missing Cool Finds section')
+        return []
+    section = match.group(1)
+    links = re.findall(r'^\| \[([^]]+)\]\((https://[^)]+)\) \|', section, re.M)
+    if not links:
+        errors.append(label + ': Cool Finds has no linked entries')
+    if len(links) != len(set(name for name, _ in links)):
+        errors.append(label + ': duplicate Cool Finds entry')
+    for line in section.splitlines():
+        if line.startswith('| [') and len(line.strip('|').split('|')) != 2:
+            errors.append(label + ': Cool Finds row must have 2 columns')
+    return links
+
+if cool_find_links(readme_ko, 'README.md') != cool_find_links(readme, 'README.en.md'):
+    errors.append('Cool Finds names, URLs or order differ between languages')
 
 english_catalog=catalog_rows(readme)
 korean_catalog=catalog_rows(readme_ko)

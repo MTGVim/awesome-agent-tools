@@ -33,6 +33,15 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Claude HUD setting the Claude Code `statusLine` is intended. Warn only when another tool overwrites existing HUD configuration without consent.
 - Always synchronize Daily Setup descriptions, inclusion and compatibility notes in the Korean and English READMEs.
 
+## Cool Finds lightweight curation
+
+- Maintain **Cool Finds** after the standard functional catalog and before Archived in both language READMEs. It is for interesting discoveries, not tested recommendations or the maintainer's Daily Setup.
+- A Cool Find needs only an upstream or official URL, a concrete one-line description, and optionally a grouped ecosystem introduction. Do not create a per-tool guide, agent compatibility badges, tier, telemetry row, or Daily Setup marker for a Cool Find unless it is explicitly promoted.
+- Keep the same project names and canonical URLs in both language lists; descriptions are localized. Verify the URL and main product purpose against upstream before addition.
+- For an ecosystem containing multiple tools, a single grouped item with individually linked subprojects is acceptable. Distinguish a parent product, launcher, and individual apps; do not imply they are plugins for Claude Code/Codex/Hermes.
+- When promoting a find to the active curated catalog, create and verify its canonical guide, add bilingual rows and privacy/update coverage, then remove it from Cool Finds if it would otherwise duplicate the main catalog.
+- Removing a Cool Find does not require archived history unless the user asks to preserve its rationale. Changing Cool Finds still requires successful CI for the exact commit.
+
 ## Network, telemetry and update disclosure
 
 - Treat data egress as a first-class consideration for every recommended tool, especially agents, plugins, mods, MCP servers and resident services. Do not equate an absent privacy section with `no telemetry`.

@@ -152,6 +152,33 @@ Projects maintained by the curator are listed separately from third-party recomm
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | macOS menu bar toolkit for windows, sound, clipboard and monitoring<br>[Guide](tools/utilities/vorssaint-utils.md) · [Demo](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `Standalone app` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
 | [Yazi](https://github.com/sxyazi/yazi) 🧑‍💻 | Asynchronous Rust terminal file manager with previews and plugins<br>[Guide](tools/utilities/yazi.md) · [Demo](https://github.com/sxyazi/yazi) | `Standalone CLI` | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat-square&label=%20) |
 
+## Cool Finds
+
+Interesting projects noted for later exploration, **not yet promoted to the main recommendations or Daily Setup**. These finds do not come with verified installation, update or removal guides.
+
+**[ArtCraft](https://getartcraft.com/)**: An open-source creative software ecosystem, including [ArtCraft Studio](https://github.com/storytold/artcraft) for AI image and video production and [ArtCraft Launcher](https://github.com/storytold/craft-launcher) for installing and updating apps. See the [full lineup](https://getartcraft.com/apps).
+
+| Crafting app | What it does |
+|---|---|
+| [PhotoCraft](https://github.com/storytold/photocraft) | Photo editing, layers and PSD files |
+| [VectorCraft](https://github.com/storytold/vectorcraft) | Vector illustration |
+| [FilmCraft](https://github.com/storytold/filmcraft) | Video editing, color and sound |
+| [LightCraft](https://github.com/storytold/lightcraft) | Photo library and RAW processing |
+| [PdfCraft](https://github.com/storytold/pdfcraft) | PDF reading, organizing and protection |
+| [EffectCraft](https://github.com/storytold/effectcraft) | Motion graphics and VFX |
+| [DesignCraft](https://github.com/storytold/designcraft) | Page layout and publishing |
+| [FigCraft](https://github.com/storytold/figcraft) | Interface design and prototyping |
+| [TextureCraft](https://github.com/storytold/texturecraft) | 3D texture painting |
+| [MaterialCraft](https://github.com/storytold/materialcraft) | Node-based procedural materials |
+| [WordCraft](https://github.com/storytold/wordcraft) | Word processing and documents |
+| [SoundCraft](https://github.com/storytold/soundcraft) | Audio recording, editing and mixing |
+| [DeckCraft](https://github.com/storytold/deckcraft) | Presentations and slide decks |
+| [CADCraft](https://github.com/storytold/cadcraft) | CAD modeling and drafting |
+| [GridCraft](https://github.com/storytold/gridcraft) | Spreadsheets and data analysis |
+| [Craft Anything](https://github.com/storytold/craft-anything) | Software exploration and recreation |
+
+*Development maturity and supported platforms vary by app. Inclusion here does not certify quality, security, or agent compatibility.*
+
 ## Archived
 
 [Archived tools and reasons](archive/README.md). Archived does not necessarily mean the upstream project is abandoned; it may simply be unsuitable for this curator's workflow.

@@ -148,6 +148,33 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | 창 관리·볼륨·클립보드·모니터링을 통합한 macOS 메뉴 막대 앱<br>[가이드](tools/utilities/vorssaint-utils.md) · [시연](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
 | [Yazi](https://github.com/sxyazi/yazi) 🧑‍💻 | 비동기 파일 탐색·미리보기·플러그인을 지원하는 Rust 터미널 파일 관리자<br>[가이드](tools/utilities/yazi.md) · [시연](https://github.com/sxyazi/yazi) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat-square&label=%20) |
 
+## Cool Finds
+
+당장 데일리 셋업에 넣거나 추천 목록으로 승격하지는 않았지만, 흥미로워서 기록한 프로젝트입니다. **설치·업데이트·삭제 가이드와 사용 검증은 제공하지 않습니다.**
+
+**[ArtCraft](https://getartcraft.com/)**: 오픈소스 창작 도구 생태계입니다. AI 이미지·영상 제작을 위한 [ArtCraft Studio](https://github.com/storytold/artcraft)와 앱 설치·업데이트를 돕는 [ArtCraft Launcher](https://github.com/storytold/craft-launcher)를 비롯해 아래 Crafting Apps를 제공합니다. [전체 제품 소개](https://getartcraft.com/apps)를 참고하세요.
+
+| 제작 도구 | 무엇을 하나요? |
+|---|---|
+| [PhotoCraft](https://github.com/storytold/photocraft) | 이미지·레이어·PSD 편집 |
+| [VectorCraft](https://github.com/storytold/vectorcraft) | 벡터 일러스트 제작 |
+| [FilmCraft](https://github.com/storytold/filmcraft) | 영상 편집·색 보정·사운드 |
+| [LightCraft](https://github.com/storytold/lightcraft) | 사진 라이브러리·RAW 현상 |
+| [PdfCraft](https://github.com/storytold/pdfcraft) | PDF 읽기·정리·병합·보호 |
+| [EffectCraft](https://github.com/storytold/effectcraft) | 모션 그래픽·시각 효과 |
+| [DesignCraft](https://github.com/storytold/designcraft) | 페이지 레이아웃·출판물 제작 |
+| [FigCraft](https://github.com/storytold/figcraft) | UI 디자인·프로토타이핑 |
+| [TextureCraft](https://github.com/storytold/texturecraft) | 3D 텍스처 페인팅 |
+| [MaterialCraft](https://github.com/storytold/materialcraft) | 노드 기반 절차적 재질 제작 |
+| [WordCraft](https://github.com/storytold/wordcraft) | 문서 작성·워드 프로세싱 |
+| [SoundCraft](https://github.com/storytold/soundcraft) | 오디오 녹음·편집·믹싱 |
+| [DeckCraft](https://github.com/storytold/deckcraft) | 프레젠테이션·슬라이드 제작 |
+| [CADCraft](https://github.com/storytold/cadcraft) | CAD 설계·도면 작성 |
+| [GridCraft](https://github.com/storytold/gridcraft) | 스프레드시트·데이터 분석 |
+| [Craft Anything](https://github.com/storytold/craft-anything) | 소프트웨어 분석·유사 구현 |
+
+*앱별 개발 단계와 지원 플랫폼은 서로 다릅니다. 이 목록은 존재와 용도만 소개하며, 완성도·안전성·에이전트 호환성을 보증하지 않습니다.*
+
 ## Archived · 추천 제외
 
 [추천 제외 도구와 사유 보기](archive/README.md). 제외는 개인적인 큐레이션 판단이며 원본 프로젝트가 중단되었다는 뜻은 아닙니다.
