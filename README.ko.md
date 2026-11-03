@@ -1,5 +1,7 @@
 # awesome-agent-tools (한국어)
 
+[English](README.md) | [한국어](README.ko.md)
+
 Claude Code, Codex, Hermes 등의 스킬·플러그인·모드·MCP·개발 도구를 엄선하고, **설치·업데이트·삭제·검증 문서**까지 제공하는 큐레이션 저장소입니다.
 
 ## 사용법
