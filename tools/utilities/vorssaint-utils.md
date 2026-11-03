@@ -1,10 +1,10 @@
 # Vorssaint Utils
 
-<!-- catalog: {"name": "Vorssaint Utils", "upstream": "https://github.com/vorssaintapp/vorssaint-utils", "types": ["tool"], "agents": [], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Vorssaint Utils", "upstream": "https://github.com/vorssaint/vorssaint-utils", "types": ["tool"], "agents": [], "category": "utilities", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 단축키·창 관리 등 유틸리티 묶음
 
-- **Upstream:** https://github.com/vorssaintapp/vorssaint-utils
+- **Upstream:** https://github.com/vorssaint/vorssaint-utils
 - **Types:** tool
 - **Agents:** No agent-specific integration documented
 - **Verification:** personal
@@ -13,15 +13,21 @@
 
 ## Why use it?
 
-단축키·창 관리 등 유틸리티 묶음 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
+창 스냅, 앱 전환, 볼륨 믹서, 클립보드, 화면 캡처, 시스템 모니터링 등을 한 메뉴 막대 앱에서 선택적으로 제공합니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+macOS Apple Silicon 및 OS 버전 조건, 접근성·화면 캡처·오디오 권한이 기능마다 다릅니다. 필요 기능의 권한만 활성화합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+공식 릴리스 또는 macOS Homebrew cask로 설치합니다.
+
+```bash
+brew install --cask vorssaint
+```
+
+프로젝트에서 제공한 기능별 권한 안내를 따라 필요한 항목만 활성화합니다.
 
 ## Update
 
@@ -37,8 +43,10 @@
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+macOS Apple Silicon 및 OS 버전 조건, 접근성·화면 캡처·오디오 권한이 기능마다 다릅니다. 필요 기능의 권한만 활성화합니다.
+
+설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.
 
 ## References
 
-- [Upstream](https://github.com/vorssaintapp/vorssaint-utils)
+- [Upstream](https://github.com/vorssaint/vorssaint-utils)

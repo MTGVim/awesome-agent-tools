@@ -1,27 +1,27 @@
 # Engram
 
-<!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool"], "agents": [], "category": "context", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool"], "agents": ["Claude Code","Codex","Hermes"], "category": "context", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 세션 간 지식 유지 도구
 
 - **Upstream:** https://github.com/Gentleman-Programming/engram
 - **Types:** tool
-- **Agents:** Agent-specific compatibility not verified
+- **Agents:** Claude Code, Codex, Hermes
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-세션 간 지식 유지 도구 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+프로젝트별 지속 메모리를 로컬 바이너리로 저장하고, Claude Code·Codex·Hermes 등에서 공유·검색하도록 지원합니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+지속 메모리 도구입니다. 공유·백업 시 저장된 컨텍스트의 민감성을 검토하고, 에이전트별 초기 설정을 확인해야 합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+원본 README의 `Get started → Install`에 운영체제별 바이너리 설치와 `Set up your agent` 단계가 있습니다. Homebrew 설치는 `brew install gentleman-programming/tap/engram`입니다. 자동 연결을 가정하지 않습니다.
 
 ## Update
 
@@ -37,7 +37,9 @@
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+지속 메모리 도구입니다. 공유·백업 시 저장된 컨텍스트의 민감성을 검토하고, 에이전트별 초기 설정을 확인해야 합니다.
+
+설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.
 
 ## References
 

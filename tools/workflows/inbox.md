@@ -1,27 +1,33 @@
 # Inbox
 
-<!-- catalog: {"name": "Inbox", "upstream": "https://github.com/petekp/inbox", "types": ["plugin"], "agents": ["Claude Code"], "category": "workflows", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Inbox", "upstream": "https://github.com/petekp/inbox", "types": ["plugin"], "agents": ["Claude Code","Codex"], "category": "workflows", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 질문 및 확인 요청을 패널에 수집
 
 - **Upstream:** https://github.com/petekp/inbox
 - **Types:** plugin
-- **Agents:** Claude Code
+- **Agents:** Claude Code, Codex
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-질문 및 확인 요청을 패널에 수집 소개된 기능과 실제 호환성은 원본 문서 및 설치 환경에서 별도로 확인해야 합니다.
+에이전트가 답변을 기다리는 질문과 결정·발견 사항을 정리해 사용자에게 선택지를 보여줍니다. Claude Code와 Codex에 별도 구현이 있습니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Codex용 구현은 Claude Code 플러그인 설치 명령과 다릅니다. 각 플랫폼별 설치 섹션을 읽어야 합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+Claude Code는 원본 문서에서 다음 설치 명령을 안내합니다.
+
+```text
+/plugin install inbox --marketplace petekp/inbox
+```
+
+Codex에서는 같은 명령을 사용하지 않으며, 원본 README의 `Install → Codex` 절차를 따릅니다.
 
 ## Update
 
@@ -37,7 +43,9 @@
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+Codex용 구현은 Claude Code 플러그인 설치 명령과 다릅니다. 각 플랫폼별 설치 섹션을 읽어야 합니다.
+
+설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.
 
 ## References
 

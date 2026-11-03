@@ -1,27 +1,33 @@
 # Orca
 
-<!-- catalog: {"name": "Orca", "upstream": "https://github.com/stablyai/orca", "types": ["tool"], "agents": [], "category": "browser", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Orca", "upstream": "https://github.com/stablyai/orca", "types": ["tool"], "agents": ["Claude Code","Codex","Hermes"], "category": "browser", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 컴퓨터 사용 및 GUI 자동화 도구
 
 - **Upstream:** https://github.com/stablyai/orca
 - **Types:** tool
-- **Agents:** Agent-specific compatibility not verified
+- **Agents:** Claude Code, Codex, Hermes
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-컴퓨터 사용 및 GUI 자동화 도구 초기 큐레이션은 개인적인 사용 경험과 관심을 바탕으로 하며, 독립적인 성능 검증을 뜻하지는 않습니다.
+워크트리별 에이전트 병렬 실행·원격 SSH·디자인 검사·리뷰 기능이 있는 통합 개발 환경입니다. GUI 컴퓨터 조작은 여러 부가 기능 중 하나입니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+macOS·Windows·Linux용 앱이며, 원격 SSH 및 워크트리·모바일 기능은 환경 설정이 필요합니다. macOS Homebrew에서는 bare `orca`가 다른 패키지이므로 정식 cask 경로를 사용해야 합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+공식 [다운로드](https://onorca.dev/download)에서 설치합니다. macOS Homebrew 경로는 아래와 같습니다.
+
+```bash
+brew install --cask stablyai/orca/orca
+```
+
+업그레이드는 `brew upgrade --cask stablyai/orca/orca`입니다.
 
 ## Update
 
@@ -37,7 +43,9 @@
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+macOS·Windows·Linux용 앱이며, 원격 SSH 및 워크트리·모바일 기능은 환경 설정이 필요합니다. macOS Homebrew에서는 bare `orca`가 다른 패키지이므로 정식 cask 경로를 사용해야 합니다.
+
+설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.
 
 ## References
 
