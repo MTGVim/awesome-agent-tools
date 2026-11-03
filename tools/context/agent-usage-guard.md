@@ -43,6 +43,12 @@ Claude Code 2.1.287+와 Mods 함수 훅이 필요합니다.
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+상류 README는 자체 네트워크 요청과 별도 프로세스가 없다고 명시합니다. Claude Code 자체 통신·업데이트 정책과는 구분해야 합니다. [Upstream README](https://github.com/rbartoli/agent-usage-guard)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 **Daily Setup (2026-11-03):** 사용 중입니다. 컨텍스트가 커질 때 압축 여부를 먼저 제안하는 점을 긍정적으로 평가했습니다. 실제 압축 실행은 사용자가 선택하며, 보호 조건은 여러 Claude Code 세션에 걸쳐 적용될 수 있습니다.
 
 계정 사용량을 조회하며 제한 조건에 따라 도구 호출을 막을 수 있습니다. 훅 권한을 검토합니다.

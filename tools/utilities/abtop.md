@@ -43,6 +43,12 @@ Cargo로 설치했다면 해당 Cargo 패키지를 제거하며, 릴리스 설�
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+로컬 세션·프로세스 정보를 읽으며, 세션 요약 기능은 `claude --print`를 통해 간접 API 호출을 발생시킬 수 있습니다. 자체 텔레메트리 여부는 README만으로 확인되지 않았습니다. [Upstream README](https://github.com/graykode/abtop#privacy)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 모니터링 대상은 원본에서 명시한 세션들입니다. Hermes의 세션을 감지한다고 가정해서는 안 됩니다.
 
 ## References

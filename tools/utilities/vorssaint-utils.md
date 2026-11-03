@@ -43,6 +43,12 @@ Homebrew cask나 앱 내 공식 업데이트 기능을 통해 갱신합니다. �
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+상류는 사용자 분석·추적이 없다고 명시합니다. 업데이트 확인·속도 테스트·Homebrew 작업·선택적 온라인 기능은 외부 요청을 발생시킬 수 있습니다. [Privacy](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/PRIVACY.md)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 AI 에이전트 전용 확장이 아닌 macOS 독립 유틸리티입니다. 포함된 AI 에이전트 사용량 표시 기능은 부가 요소이며 기본 성격을 오인해서는 안 됩니다.
 
 ## References

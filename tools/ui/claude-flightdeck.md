@@ -42,6 +42,12 @@ Claude Code에서 `/flightdeck`을 실행합니다.
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+상류 README는 세션 정보를 로컬에서 처리하며 자체 네트워크 요청을 하지 않는다고 설명합니다. 호스트의 API·플러그인 업데이트 통신은 별개입니다. [Upstream README](https://github.com/scasella/claude-flightdeck)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 ### 개인 셋업 메모 (2026-11-03)
 
 Glowup과 사이드 패널 영역이 겹칩니다. 사용자 설정에서는 펄스를 `motion: while-active`로 활성화했습니다. 위쪽 선은 메인 턴, `┬`·`┴`는 서브에이전트 활동을 나타냅니다.

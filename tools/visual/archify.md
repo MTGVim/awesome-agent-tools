@@ -43,6 +43,12 @@ Archify는 업데이트를 자동 설치하지 않고 새 안정 버전이 있�
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+일부 배포 방식은 신규 버전 확인을 수행합니다. Hermes 전용 스킬 통합은 상류에서 텔레메트리가 없다고 명시하지만, 다른 설치 방식까지 동일하다고 가정하면 안 됩니다. [Upstream README](https://github.com/tt-a1i/archify)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 도구의 전체 기능은 에이전트별로 다를 수 있습니다. 원본에서 명시한 Mermaid 자동 파싱·범용 자동 레이아웃·WYSIWYG 편집은 현재 범위 밖입니다.
 
 ## References

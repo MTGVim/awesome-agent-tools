@@ -37,6 +37,12 @@ AI 에이전트와 협업해 프로토타입, 웹사이트, 앱, 대시보드와
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+로컬 경로와 별개로 BYOK·클라우드 서비스 호출은 설정에 따라 외부 모델 또는 OpenDesign Cloud로 데이터를 전송합니다. 자체 사용 통계 텔레메트리와 자동 업데이트 정책은 README에서 확인되지 않았습니다. [Upstream README](https://github.com/nexu-io/open-design)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 외부 모델 서비스와 조직 데이터 공유를 수반할 수 있습니다. 설치기와 원격 저장소를 신뢰할 수 있는지 확인합니다.
 
 ## References

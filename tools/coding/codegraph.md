@@ -37,6 +37,12 @@ Rust 기반 로컬 코드 그래프가 언어·프레임워크 관계와 호출�
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+사용 통계 전송은 기본 활성입니다. `codegraph telemetry off`, `CODEGRAPH_TELEMETRY=0`, `DO_NOT_TRACK=1`로 끌 수 있습니다. 별도 GitHub 버전 확인은 `CODEGRAPH_NO_UPDATE_CHECK=1`로 끌 수 있습니다. [Telemetry details](https://github.com/colbymchenry/codegraph/blob/main/TELEMETRY.md)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 코드 그래프 초기화와 에이전트 통합 설정이 필요합니다. 원격 설치 스크립트를 실행하기 전에 내용을 점검합니다.
 
 설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.

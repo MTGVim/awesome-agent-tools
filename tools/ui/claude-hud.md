@@ -44,6 +44,12 @@ Claude Code와 Node.js 22.18+가 필요합니다. HUD는 Claude Code status line
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+Claude Code 서드파티 마켓플레이스 자동 갱신은 기본적으로 비활성이고 `/plugin`에서 활성화할 수 있습니다. HUD가 `statusLine`을 설정하는 것은 정상 기능이며 외부 전송 여부와 별개입니다. 자체 텔레메트리 정책은 README에서 확인하지 못했습니다. [Upstream README](https://github.com/jarrodwatts/claude-hud)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 ### 개인 셋업 메모 (2026-11-03)
 
 Claude HUD가 Claude Code의 `statusLine`을 설정하는 것은 정상 기능입니다. 다른 모드(예: Glowup)가 기존 HUD 설정을 동의 없이 바꾸는 상황에만 주의합니다.

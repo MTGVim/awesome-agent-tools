@@ -43,6 +43,12 @@ Homebrew 설치는 해당 cask 업데이트를 사용하고, 수동 설치는 �
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+상류 README는 텔레메트리·분석 수집이 없다고 명시합니다. 다만 업데이트 확인 및 공인 IP 조회를 위한 외부 요청은 발생할 수 있습니다. [Upstream README](https://github.com/exelban/stats#external-api)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 별도 원격 모니터링 설정은 계정·네트워크 연결을 수반할 수 있으며, 단순 로컬 메뉴 막대 앱과 구분해야 합니다.
 
 ## References

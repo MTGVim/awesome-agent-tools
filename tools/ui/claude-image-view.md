@@ -41,6 +41,12 @@ Claude Code의 모드 지원 빌드와 kitty 그래픽 프로토콜을 지원하
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+상류 README는 자체 네트워크 요청이 없으며 이미지가 로컬에서 처리된다고 명시합니다. Claude Code 자체 통신과 마켓플레이스 업데이트는 별개입니다. [Upstream README](https://github.com/jarrodwatts/claude-image-view)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 ### 개인 셋업 메모 (2026-11-03)
 
 현재 개인 Daily Setup에서는 꺼두었습니다. Paste Preview와 프롬프트 위 이미지 썸네일 영역이 겹쳐 하나만 켜는 편이 좋습니다.

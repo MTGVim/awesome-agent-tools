@@ -44,6 +44,12 @@ MCP 도구 검색 후 읽기 전용 콘솔·네트워크 검사, 선택적 트�
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+사용 통계 전송은 기본 활성입니다. `--no-usage-statistics` 또는 `CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS=1`로 끄며, 별도 버전 확인은 `CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS=1`로 중단합니다. 실제 패키지 자동 갱신은 호스트·설치 방식에 따라 달라집니다. [Upstream README](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 브라우저 데이터가 MCP 클라이언트에 전달됩니다. 성능 기능이 CrUX API를 조회할 수 있으므로 필요 시 `--no-performance-crux`를 검토합니다.
 
 ## References

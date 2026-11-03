@@ -37,6 +37,12 @@ Claude Code와 Python 3.11+가 필요합니다. 원본 README는 Linux·macOS를
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+상류 README에 따르면 서드파티 마켓플레이스 자동 갱신은 기본적으로 비활성이고 `/plugin → Marketplaces → autoharness → Enable auto-update`로 켤 수 있습니다. 자체 텔레메트리 정책은 README에서 확인하지 못했습니다. [Upstream README](https://github.com/tigerless-labs/autoharness)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 자동 학습·스킬 수명주기 작업이 훅에서 수행됩니다. 자체 생성 스킬 외 파일을 수정하지 않는다는 원본의 소유권 원칙을 확인합니다.
 
 ## References

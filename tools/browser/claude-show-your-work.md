@@ -47,6 +47,12 @@ Claude Code 2.1.286+, macOS 또는 Linux, kitty 그래픽 프로토콜을 사용
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+사용 통계 공유는 설정으로 선택하며 PostHog에 전송됩니다. `SHOW_YOUR_WORK_TELEMETRY=0` 또는 `DO_NOT_TRACK=1`로 중단할 수 있습니다. 별도의 하루 1회 자체 버전 확인은 `SHOW_YOUR_WORK_AUTO_UPDATE=0`으로 끕니다. [Privacy](https://github.com/iamumeransari/claude-show-your-work/blob/main/PRIVACY.md)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 ### 개인 셋업 메모 (2026-11-03)
 
 사용자 환경에서는 Prismantis·Skins 등 전역 렌더러와 함께 사용할 수 없었습니다. Kitty 그래픽 프로토콜을 지원하는 터미널이 필요하고 영상 재생에는 ffmpeg가 필요합니다. Claude Code 2.1.317에서 Take a tour 버튼 대신 `/show-your-work tour`를 사용했습니다. 자체 업데이트와 통계 전송은 선택적으로 `SHOW_YOUR_WORK_AUTO_UPDATE=0`, `SHOW_YOUR_WORK_TELEMETRY=0`으로 끌 수 있습니다.

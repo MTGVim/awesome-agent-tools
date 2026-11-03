@@ -43,6 +43,12 @@ brew install --cask stablyai/orca/orca
 
 ## Caveats
 
+### 텔레메트리와 네트워크 (2026-11-04 문서 확인)
+
+공식 배포판은 PostHog Cloud로 익명 사용 이벤트를 보냅니다. `Settings → Privacy → Share anonymous usage data`에서 끄거나 `DO_NOT_TRACK=1` / `ORCA_TELEMETRY_DISABLED=1`을 설정합니다. 1.4.148 Windows 빌드에서 초기 활성화가 관찰됐지만 모든 버전에 일반화하지 않습니다. 공식 안내에 따르면 Orca는 기본 자동 업데이트를 사용하며, Linux `.deb`/`.rpm`은 업데이트 존재만 안내합니다. [Privacy](https://www.onorca.dev/docs/telemetry) · [Updates](https://www.onorca.dev/docs/install)
+
+상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+
 macOS·Windows·Linux용 앱이며, 원격 SSH 및 워크트리·모바일 기능은 환경 설정이 필요합니다. macOS Homebrew에서는 bare `orca`가 다른 패키지이므로 정식 cask 경로를 사용해야 합니다.
 
 설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.
