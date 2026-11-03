@@ -15,10 +15,35 @@ for p in (root/'tools').rglob('*.md'):
         if section not in content:errors.append(f'{p.relative_to(root)}: missing {section}')
 # Catalog index invariants: every active guide linked exactly once; no active/archive overlap.
 readme=(root/'README.md').read_text(encoding='utf-8')
+readme_ko=(root/'README.ko.md').read_text(encoding='utf-8')
+def catalog_rows(content):
+    rows={}
+    for line in content.splitlines():
+        if not line.startswith('| ['): continue
+        cells=[x.strip() for x in line.strip('|').split('|')]
+        if len(cells)!=8:
+            errors.append('catalog row must have 8 cells: '+line[:80])
+            continue
+        m=re.match(r'\[([^]]+)\]\(([^)]+)\)',cells[0])
+        if not m: errors.append('bad catalog tool link');continue
+        name,url=m.groups()
+        if name in rows: errors.append('duplicate tool: '+name)
+        if len(cells[1])<12: errors.append('description too short: '+name)
+        guide=re.sub(r'^\[[^]]+\]', '[Guide]', cells[7])
+        rows[name]=(url,cells[2],cells[3],cells[4],cells[5],cells[6],guide)
+    return rows
+english_catalog=catalog_rows(readme)
+korean_catalog=catalog_rows(readme_ko)
+if english_catalog!=korean_catalog:
+    errors.append('English and Korean catalog entries or metadata diverge')
+for name,content in [('README.md',readme),('README.ko.md',readme_ko)]:
+    if '| Verified |' in content or '| 검증 |' in content: errors.append(name+': Verified column is guide-only')
+    if '[English](README.md)' not in content or '[한국어](README.ko.md)' not in content:errors.append(name+': missing language link')
 for p in (root/'tools').rglob('*.md'):
     rel=p.relative_to(root).as_posix()
-    count=readme.count(f'({rel})')
-    if count!=1:errors.append(f'{rel}: expected one README reference, got {count}')
+    for label,content in [('README.md',readme),('README.ko.md',readme_ko)]:
+        count=content.count(f'({rel})')
+        if count!=1:errors.append(f'{rel}: expected one {label} reference, got {count}')
     if p.name=='tigerkit.md' and '## My Works' in readme:
         my=readme.split('## My Works',1)[1].split('## Workflow & Agents',1)[0]
         if f'({rel})' not in my: errors.append('TigerKit must be under My Works')

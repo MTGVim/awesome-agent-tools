@@ -9,7 +9,7 @@ Contributions and corrections are welcome. Add candidates at tier B unless hands
 - Add one Markdown file under `tools/<capability>/` with a unique name, an upstream link, supported agents and types.
 - Keep sections: Why use it?, Requirements, Install, Update, Uninstall, Verify, Caveats, References.
 - Prefer official lifecycle commands and exact identifiers. Where not verified, provide a safe agent-guided procedure instead of guessed commands.
-- Add a row to the relevant README table.
+- Add the same entry to both README catalogs with localized, functional one-line descriptions. Keep agent tags, tiers, upstream links and guides in sync; retain verification only in the guide.
 - Clearly mark any feature requiring tokens, extra API keys, remote shell execution, broad filesystem permissions, or third-party services.
 
 ## Archiving

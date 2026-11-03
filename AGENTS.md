@@ -7,11 +7,22 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Keep `[English](README.md) | [한국어](README.ko.md)` directly below the top-level title in both README files.
 - Update both README files when navigation, tier policy or major usage guidance changes. Do not imply Korean translations exist for individual tool guides until they are created.
 
+## Public catalog and language contract
+
+- **Korean is first-class**: `README.ko.md` must show the entire active catalog, not just a summary. `README.md` must have the corresponding English catalog.
+- Both files must contain exactly the same active tools, functional categories, upstream links, types, agent tags, tiers, activity badges, and guide destinations. Only the one-line description language differs.
+- The public tables use eight columns: Tool, What it does, Type, Agents, Tier, Stars, Last Commit, Guide (with Korean counterparts).
+- Every row must have a **specific, useful one-line description** of what the tool actually does. Do not repeat its category or make unsupported capability claims.
+- Display `Claude Code`, `Codex`, `Hermes` as inline code tags when supported, and `범용` for generic/cross-agent tools. The generic tag does not prove compatibility with all three.
+- **Do not show Verified in public README tables**. Maintain verification state and review dates in per-tool guides.
+- Update BOTH README catalogs on every add, archive, restore, rename, category move, tier, support or functional description change. Keep language switch links.
+- `My Works` remains separate from third-party recommendations and discloses the curator's ownership.
+
 ## Repository map and ownership
 
 | Location | Purpose | Edit rule |
 |---|---|---|
-| `README.md` | Canonical English public catalog: categories, tiers, links, GitHub activity badges, My Works | Edit the matching row whenever a guide or tier changes |
+| `README.md` | Full English catalog with one-line descriptions, agent tags and tiers | Keep in parity with Korean catalog |
 | `README.ko.md` | Korean overview and maintenance instructions | Sync policy and navigation changes, and keep the English/Korean navigation links in both READMEs. Individual guides remain English unless explicitly localized. |
 | `tools/<capability>/<slug>.md` | Canonical per-tool guide with metadata, install/update/uninstall/verification | One canonical guide per active tool |
 | `archive/README.md` | Archived index and reason | Keep in sync with archived guides |
@@ -47,7 +58,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 - Establish canonical upstream URL (strip analytics/utm params), supported agents, kinds, capability, human-readable one-line description, and relevant prerequisites.
 - Select a unique stable kebab-case slug. If the project already exists under another name or in `archive/`, **update/restore** instead of creating a duplicate.
 - Create `tools/<capability>/<slug>.md` with its `<!-- catalog: {...} -->` metadata comment and the standard sections listed below. Store factual source links and date of review.
-- Insert one row into the relevant README table, preserving its column order: Tool / Types / Agents / Tier / Verified / Stars / Last Commit / Guide.
+- Insert a row into BOTH README catalogs using the eight-column contract. Write a specific, accurate description in Korean and English.
 - For a GitHub repository `owner/repo`, display compact **live** Shields.io badges in Stars and Last Commit cells:
   `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=%20)` and
   `![Last commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square&label=%20)`.
@@ -59,9 +70,9 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 
 - Check source repo, manifests and release notes, especially before modifying exact plugin IDs, marketplace names or install commands.
 - Refresh a guide's requirements, install/update/uninstall, caveats, references and `last_reviewed` only to the extent **actually checked**. Keep user's own qualitative evaluation unless the user requests re-ranking or has supplied new experience.
-- If URL, kind, platform, category or tier changes, update README row as well. Moving a category means moving the row and correcting guide links; preserve one canonical guide.
+- If URL, kind, platform, category, tier or functionality changes, update the matching rows in BOTH READMEs. Moving a category means moving the row and correcting guide links; preserve one canonical guide.
 - Do **not** manually edit the live Stars/Last Commit values; they are already fetched by badges. Confirm badge `owner/repo` path still matches the canonical upstream repository.
-- Update README.ko.md only if policy, navigation or prominent explanatory copy changes.
+- Always keep the Korean and English catalogs synchronized for every entry change.
 
 ## Re-tier
 
@@ -71,7 +82,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 ## Archive (default meaning of remove / drop from recommendations)
 
 - Unless a user explicitly demands permanent deletion, interpret "remove", "drop", "폐기", "빼" as **archive the catalog entry**, preserving its assessment and original upstream link.
-- Remove the active row from README, move its guide to `archive/<slug>.md`, and add a row to `archive/README.md` with reason and link.
+- Remove the active row from BOTH READMEs, move its guide to `archive/<slug>.md`, and add a row to `archive/README.md` with reason and link.
 - Add a clear archived date (ISO YYYY-MM-DD), previous tier, and plain-language reason. Prefer a reason keyword: `superseded`, `incompatible`, `low-value`, `integrated`, `unmaintained`, `security`, `unverified`, `needs-review`. A locally unsuitable tool does not imply upstream is broken or unmaintained.
 - Mention a replacement if known. Historical installation commands should not be represented as current verified instructions.
 - Do **not** uninstall software from the user's computer. Catalog archival and local removal are separate actions.
@@ -79,7 +90,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 
 ## Restore archived entry
 
-- Reinspect upstream and the reason for archive. Move guide back into the correct active category, update metadata/review date as justified, add one active row and remove its archived index row. Default restored tier to B unless the user explicitly chooses another with rationale.
+- Reinspect upstream and the reason for archive. Move guide back into the correct active category, update metadata/review date as justified, add one active row to EACH README and remove its archived index row. Default restored tier to B unless the user explicitly chooses another with rationale.
 
 ## Standard active-guide contract
 
