@@ -1,23 +1,22 @@
 # TigerKit
 
-<!-- catalog: {"name": "TigerKit", "upstream": "https://github.com/MTGVim/tiger-kit", "types": ["skill"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "my-works", "tier": "S", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "TigerKit", "upstream": "https://github.com/MTGVim/tiger-kit", "types": ["skill"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "my-works", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 사용자가 개발·유지보수하는 에이전트 워크플로우 스킬 컬렉션
 
 - **Upstream:** https://github.com/MTGVim/tiger-kit
 - **Types:** skill
 - **Agents:** Claude Code, Codex, Hermes
-- **Tier:** S (maintainer's subjective assessment)
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-**Maintainer disclosure:** This is the curator's own project. The S tier is not an independent review.
+**Maintainer disclosure:** This is the curator's own project. Its inclusion is the curator's own decision, not an independent review.
 
 
-사용자가 개발·유지보수하는 에이전트 워크플로우 스킬 컬렉션 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+사용자가 개발·유지보수하는 에이전트 워크플로우 스킬 컬렉션 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
 
 ## Requirements
 

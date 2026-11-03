@@ -1,20 +1,19 @@
 # OpenShip
 
-<!-- catalog: {"name": "OpenShip", "upstream": "https://github.com/oblien/openship", "types": ["tool"], "agents": ["Cross-agent"], "category": "workflows", "tier": "B", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "OpenShip", "upstream": "https://github.com/oblien/openship", "types": ["tool"], "agents": ["Cross-agent"], "category": "workflows", "verification": "trial", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 도입 가치를 추가 평가할 후보
 
 - **Upstream:** https://github.com/oblien/openship
 - **Types:** tool
 - **Agents:** Cross-agent
-- **Tier:** B (initial, provisional)
 - **Verification:** trial
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-도입 가치를 추가 평가할 후보 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+도입 가치를 추가 평가할 후보 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
 
 ## Requirements
 

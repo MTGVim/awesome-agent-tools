@@ -1,20 +1,19 @@
 # Darwin Skill
 
-<!-- catalog: {"name": "Darwin Skill", "upstream": "https://github.com/alchaincyf/darwin-skill", "types": ["skill"], "agents": ["Cross-agent"], "category": "workflows", "tier": "B", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Darwin Skill", "upstream": "https://github.com/alchaincyf/darwin-skill", "types": ["skill"], "agents": ["Cross-agent"], "category": "workflows", "verification": "unverified", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 스킬 개선을 위한 실험 후보
 
 - **Upstream:** https://github.com/alchaincyf/darwin-skill
 - **Types:** skill
 - **Agents:** Cross-agent
-- **Tier:** B (initial, provisional)
 - **Verification:** unverified
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-스킬 개선을 위한 실험 후보 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+스킬 개선을 위한 실험 후보 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
 
 ## Requirements
 

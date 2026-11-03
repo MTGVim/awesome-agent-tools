@@ -1,20 +1,19 @@
 # Skill Creator
 
-<!-- catalog: {"name": "Skill Creator", "upstream": "https://github.com/openai/skills", "types": ["skill"], "agents": ["Codex", "Cross-agent"], "category": "workflows", "tier": "A", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Skill Creator", "upstream": "https://github.com/openai/skills", "types": ["skill"], "agents": ["Codex", "Cross-agent"], "category": "workflows", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 에이전트 스킬 작성 및 개선 가이드. 벤더별 구현 차이 있음
 
 - **Upstream:** https://github.com/openai/skills
 - **Types:** skill
 - **Agents:** Codex, Cross-agent
-- **Tier:** A (initial, provisional)
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-에이전트 스킬 작성 및 개선 가이드. 벤더별 구현 차이 있음 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+에이전트 스킬 작성 및 개선 가이드. 벤더별 구현 차이 있음 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
 
 ## Requirements
 

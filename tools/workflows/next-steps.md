@@ -1,20 +1,19 @@
 # Next Steps
 
-<!-- catalog: {"name": "Next Steps", "upstream": "https://github.com/anthropics/claude-plugins-community", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "workflows", "tier": "B", "verification": "unverified", "install_mode": "manual-review", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Next Steps", "upstream": "https://github.com/anthropics/claude-plugins-community", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "workflows", "verification": "unverified", "install_mode": "manual-review", "last_reviewed": "2026-11-03"} -->
 
 > 응답 후속 행동 제안. 설치 식별자 별도 확인 필요
 
 - **Upstream:** https://github.com/anthropics/claude-plugins-community
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Tier:** B (initial, provisional)
 - **Verification:** unverified
 - **Install mode:** manual-review
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-응답 후속 행동 제안. 설치 식별자 별도 확인 필요 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+응답 후속 행동 제안. 설치 식별자 별도 확인 필요 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
 
 ## Requirements
 

@@ -1,20 +1,19 @@
 # Subagent Tuner
 
-<!-- catalog: {"name": "Subagent Tuner", "upstream": "https://github.com/Kruhlikau/subagent-tuner", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "workflows", "tier": "A", "verification": "personal", "install_mode": "cli", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Subagent Tuner", "upstream": "https://github.com/Kruhlikau/subagent-tuner", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "workflows", "verification": "personal", "install_mode": "cli", "last_reviewed": "2026-11-03"} -->
 
 > 서브에이전트 모델 및 실행 강도 조정
 
 - **Upstream:** https://github.com/Kruhlikau/subagent-tuner
 - **Types:** plugin/mod
 - **Agents:** Claude Code
-- **Tier:** A (initial, provisional)
 - **Verification:** personal
 - **Install mode:** cli
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-서브에이전트 모델 및 실행 강도 조정 추천 등급은 개인 노트의 관심도와 사용 경험을 바탕으로 정한 초기 분류이며, 객관적인 성능 검증 결과는 아닙니다.
+서브에이전트 모델 및 실행 강도 조정 큐레이터가 직접 관리하는 프로젝트이며 독립적인 성능 검증을 의미하지는 않습니다.
 
 ## Requirements
 
