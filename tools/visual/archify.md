@@ -1,11 +1,11 @@
 # Archify
 
-<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "installers": ["skills-cli"], "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["skill", "tool"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "installers": ["skills-cli"], "last_reviewed": "2026-11-03"} -->
 
 > 설명 산출물 구성 및 시각화 도구
 
 - **Upstream:** https://github.com/tt-a1i/archify
-- **Types:** tool
+- **Types:** skill, tool
 - **Agents:** Claude Code, Codex, Hermes
 - **Verification:** personal
 - **Install mode:** agent-guide
