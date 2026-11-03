@@ -1,43 +1,49 @@
 # Archify
 
-<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": [], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Archify", "upstream": "https://github.com/tt-a1i/archify", "types": ["tool"], "agents": ["Claude Code", "Codex", "Hermes"], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 설명 산출물 구성 및 시각화 도구
 
 - **Upstream:** https://github.com/tt-a1i/archify
 - **Types:** tool
-- **Agents:** No agent-specific integration documented
+- **Agents:** Claude Code, Codex, Hermes
 - **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-설명 산출물 구성 및 시각화 도구 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
+질문·계획·시스템 구조를 인터랙티브 HTML로 구성하고, 세부 설명 카드와 탐색 가능한 다이어그램으로 공유하도록 돕는 Agent Skill입니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Claude Code·Codex에서는 완전한 렌더링·검증 경로를, Hermes에서는 별도의 커뮤니티 Skill 통합을 제공합니다. 기능 범위는 동일하지 않을 수 있고 Node.js가 필요합니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+원본 README는 에이전트가 공식 `llms.txt`를 읽어 설치하게 하는 방법을 기본으로 제안합니다. Codex에서 미리 체험하는 공식 예시는 다음과 같습니다.
+
+```bash
+npx skills use tt-a1i/archify@archify --agent codex
+```
+
+Hermes 커뮤니티 통합은 `hermes skills install skills-sh/tt-a1i/archify/archify -y` 경로를 안내합니다. 원본을 확인한 뒤 선택합니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+Archify는 업데이트를 자동 설치하지 않고 새 안정 버전이 있음을 알릴 수 있습니다. 현재 설치된 스킬과 원본 릴리스의 변경 사항을 비교한 뒤 사용자 승인을 받아 갱신합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+설치한 에이전트의 스킬 디렉터리에서 Archify만 제거합니다. 사용자가 만든 HTML 산출물은 보존합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+간단한 아키텍처 다이어그램을 생성해 HTML을 열어 보고, 링크·노드·검증 기능이 실제로 작동하는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+도구의 전체 기능은 에이전트별로 다를 수 있습니다. 원본에서 명시한 Mermaid 자동 파싱·범용 자동 레이아웃·WYSIWYG 편집은 현재 범위 밖입니다.
 
 ## References
 

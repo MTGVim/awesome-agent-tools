@@ -1,43 +1,50 @@
 # Prismantis
 
-<!-- catalog: {"name": "Prismantis", "upstream": "https://github.com/NahumLitvin/prismantis", "types": ["plugin", "mod"], "agents": ["Claude Code"], "category": "visual", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Prismantis", "upstream": "https://github.com/NahumLitvin/prismantis", "types": ["plugin", "mod"], "agents": ["Claude Code", "Codex"], "category": "visual", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 표·코드·Mermaid·차트 렌더링
 
 - **Upstream:** https://github.com/NahumLitvin/prismantis
 - **Types:** plugin/mod
-- **Agents:** Claude Code
+- **Agents:** Claude Code, Codex
 - **Verification:** metadata
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
 ## Why use it?
 
-표·코드·Mermaid·차트 렌더링 초기 큐레이션은 개인 경험을 바탕으로 작성했으며 독립적인 성능 검증을 의미하지 않습니다.
+Claude Code의 표·코드·Mermaid·차트·LaTeX 등을 터미널에서 읽기 쉬운 테마 기반 출력으로 렌더링합니다. Codex용 버전도 제공됩니다.
 
 ## Requirements
 
-원본 README의 OS·에이전트 버전·권한·터미널 호환성 조건을 확인해야 합니다.
+Claude Code 2.1.287+가 필요합니다. Codex는 원본 `codex/README.md`의 별도 설치와 기능 제한을 따릅니다. 수식 그래픽 렌더링은 kitty/Ghostty 등에서 최적화됩니다.
 
 ## Install
 
-공식 저장소의 최신 설치 안내를 확인하고, 기존 설치와 충돌 여부를 점검한 뒤 승인받아 설치합니다.
+Claude Code에서는 다음 명령을 사용합니다.
+
+```text
+/plugin marketplace add NahumLitvin/prismantis
+/plugin install prismantis@prismantis
+```
+
+설치 후 `/prismantis setup`을 실행합니다. Codex는 원본 `codex/README.md`의 별도 절차를 확인합니다.
 
 ## Update
 
-기존 설치 방식과 변경 이력을 확인한 다음 원본 저장소에서 권장하는 업데이트 절차를 적용합니다.
+Claude Code에서는 마켓플레이스와 `prismantis@prismantis`를 갱신합니다. Codex 구현은 별도 설치 절차를 따라야 합니다.
 
 ## Uninstall
 
-설치 이력을 확인해 해당 도구가 추가한 파일·등록만 제거합니다. 공유 설정과 다른 도구는 보존합니다.
+`claude plugin uninstall prismantis@prismantis`를 사용합니다. Codex에서는 해당 환경에 설치한 파일만 제거합니다.
 
 ## Verify
 
-설치 목록 또는 명령 도움말을 확인하고, 핵심 기능을 최소 한 번 실행해 봅니다.
+표·코드·다이어그램·수식 출력과 테마 설정이 표시되는지 확인합니다.
 
 ## Caveats
 
-검증 상태가 `personal`이 아닌 경우, 메타데이터 확인과 실제 설치·기능 테스트를 구분해야 합니다. 사전 승인 없이 원격 스크립트를 실행하거나 전역 설정을 수정하지 않습니다.
+Codex와 Claude Code의 기능은 완전히 동일하지 않습니다. 다른 터미널 렌더러 모드와 동시 사용 시 충돌할 수 있습니다.
 
 ## References
 
