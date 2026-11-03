@@ -51,36 +51,6 @@ english_catalog=catalog_rows(readme)
 korean_catalog=catalog_rows(readme_ko)
 if english_catalog!=korean_catalog:
     errors.append('English and Korean catalog entries or metadata diverge')
-# Semantic checks: README agent badges and Skills CLI claims must agree with guide metadata.
-expected_agents={'Claude_Code':'Claude Code', 'Codex':'Codex', 'Hermes':'Hermes'}
-for p in (root/'tools').rglob('*.md'):
-    rel=p.relative_to(root).as_posix()
-    body=p.read_text(encoding='utf-8')
-    match=re.search(r'<!-- catalog:\\s*(\\{[^\\n]*\\})\\s*-->',body)
-    if not match:
-        errors.append(f'{rel}: missing catalog metadata')
-        continue
-    try:
-        meta=json.loads(match.group(1))
-    except json.JSONDecodeError:
-        errors.append(f'{rel}: invalid catalog JSON')
-        continue
-    if 'tier' in meta:
-        errors.append(f'{rel}: retired tier metadata must not return')
-    name=meta.get('name')
-    if not name or name not in english_catalog:
-        errors.append(f'{rel}: catalog metadata name missing from README')
-        continue
-    actual=set(meta.get('agents',[]))
-    badges=set(expected_agents[b] for b in english_catalog[name][1])
-    if actual!=badges:
-        errors.append(f'{rel}: agent metadata {sorted(actual)} differs from README badges {sorted(badges)}')
-    expected_skills_cli=english_catalog[name][2]
-    actual_skills_cli='skills-cli' in meta.get('installers',[])
-    if expected_skills_cli != actual_skills_cli:
-        errors.append(f'{rel}: Skills CLI badge and installers metadata mismatch')
-    if actual_skills_cli and 'skill' not in meta.get('types',[]):
-        errors.append(f'{rel}: Skills CLI distribution must refer to a skill')
 for name,content in [('README.en.md',readme),('README.md',readme_ko)]:
     if '| Tier |' in content or '| 티어 |' in content or '| Verified |' in content or '| 검증 |' in content: errors.append(name+': remove ranking and verification columns')
     if '`범용`' in content: errors.append(name+': generic agent label is forbidden')
@@ -131,6 +101,13 @@ for p in (root/'tools').rglob('*.md'):
     expected={expected_badges[a] for a in meta.get('agents',[]) if a in expected_badges}
     if actual!=expected:
         errors.append(f'{p.relative_to(root)}: agent badges differ from guide: {actual} vs {expected}')
+    installers=meta.get('installers',[])
+    if not isinstance(installers,list) or any(i not in {'skills-cli'} for i in installers):
+        errors.append(f'{p.relative_to(root)}: unsupported installer metadata')
+    if bool(row[2]) != ('skills-cli' in installers):
+        errors.append(f'{p.relative_to(root)}: Skills CLI badge differs from guide installers metadata')
+    if 'skills-cli' in installers and 'skill' not in meta.get('types',[]):
+        errors.append(f'{p.relative_to(root)}: Skills CLI installer requires a skill type')
     if row[0]!=meta.get('upstream'):
         errors.append(f'{p.relative_to(root)}: upstream URL disagrees with README')
     if p.name!='tigerkit.md' and ('큐레이터가 직접 관리하는 프로젝트' in content or 'maintained by the curator' in content.lower()):
