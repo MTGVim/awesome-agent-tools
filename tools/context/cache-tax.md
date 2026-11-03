@@ -42,6 +42,10 @@ claude plugin install cache-tax@claude-code-mods
 
 ## Caveats
 
+### 개인 셋업 메모 (2026-11-03)
+
+사용자 환경에서는 `/keepwarm`을 쓰면서 idle compaction이 약 54분 후 작동해 캐시 ping의 효과가 줄었습니다. 필요하면 `"idleCompaction": false`를 검토합니다. 캐시 ping에도 토큰 비용이 들고 1시간 캐시 지원 여부를 확인해야 합니다.
+
 캐시 유지 ping은 실제 토큰을 소비합니다. API 키 기반 환경은 기본 캐시 수명이 짧을 수 있어 TTL 확인이 필수입니다.
 
 ## References

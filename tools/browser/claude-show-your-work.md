@@ -40,6 +40,10 @@ Claude Code 2.1.286+, macOS 또는 Linux, kitty 그래픽 프로토콜을 사용
 
 ## Caveats
 
+### 개인 셋업 메모 (2026-11-03)
+
+사용자 환경에서는 Prismantis·Skins 등 전역 렌더러와 함께 사용할 수 없었습니다. Kitty 그래픽 프로토콜을 지원하는 터미널이 필요하고 영상 재생에는 ffmpeg가 필요합니다. Claude Code 2.1.317에서 Take a tour 버튼 대신 `/show-your-work tour`를 사용했습니다. 자체 업데이트와 통계 전송은 선택적으로 `SHOW_YOUR_WORK_AUTO_UPDATE=0`, `SHOW_YOUR_WORK_TELEMETRY=0`으로 끌 수 있습니다.
+
 터미널 그래픽 지원 및 ffmpeg 설치 여부에 따라 기능이 달라집니다. 시연 자료가 실제 테스트를 대체하지는 않습니다.
 
 ## References

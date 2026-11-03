@@ -44,6 +44,10 @@ Claude Code와 Node.js 22.18+가 필요합니다. HUD는 Claude Code status line
 
 ## Caveats
 
+### 개인 셋업 메모 (2026-11-03)
+
+Claude HUD가 Claude Code의 `statusLine`을 설정하는 것은 정상 기능입니다. 다른 모드(예: Glowup)가 기존 HUD 설정을 동의 없이 바꾸는 상황에만 주의합니다.
+
 status line을 사용하는 다른 확장과 설정 충돌이 있을 수 있습니다. 기존 사용자 설정을 백업해야 합니다.
 
 ## References

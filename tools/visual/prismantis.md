@@ -44,6 +44,10 @@ Claude Code에서는 마켓플레이스와 `prismantis@prismantis`를 갱신합�
 
 ## Caveats
 
+### 개인 셋업 메모 (2026-11-03)
+
+현재 개인 Daily Setup에서는 꺼두었습니다. 사용자 환경에서 Show Your Work와 전역 출력 렌더러가 충돌했고, `next()` 없이 명령 출력 줄을 처리해 후속 렌더러를 막는 현상이 관찰되었습니다. 모든 버전에서 동일하다는 뜻은 아닙니다.
+
 Codex와 Claude Code의 기능은 완전히 동일하지 않습니다. 다른 터미널 렌더러 모드와 동시 사용 시 충돌할 수 있습니다.
 
 ## References
