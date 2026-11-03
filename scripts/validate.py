@@ -36,7 +36,7 @@ def catalog_rows(content):
 for label,content in [('README.md',readme_ko),('README.en.md',readme)]:
     lines=content.splitlines()
     for index,line in enumerate(lines[:-2]):
-        if re.fullmatch(r'\\|(?:\\s*:?-{3,}:?\\s*\\|){8}',line) and not lines[index+1].startswith('| ['):
+        if re.fullmatch(r'\|(?:\s*:?-{3,}:?\s*\|){8}',line) and not lines[index+1].startswith('| ['):
             errors.append(f'{label}:{index+2}: catalog table row must immediately follow separator')
         if line.startswith('| [') and index>0 and lines[index-1].strip()=='' and index>1 and lines[index-2].startswith('|---|'):
             errors.append(f'{label}:{index+1}: blank line splits Markdown table')
