@@ -32,6 +32,15 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Claude HUD setting the Claude Code `statusLine` is intended. Warn only when another tool overwrites existing HUD configuration without consent.
 - Always synchronize Daily Setup descriptions, inclusion and compatibility notes in the Korean and English READMEs.
 
+## Network, telemetry and update disclosure
+
+- Treat data egress as a first-class consideration for every recommended tool, especially agents, plugins, mods, MCP servers and resident services. Do not equate an absent privacy section with `no telemetry`.
+- For every newly added or substantially reviewed guide, inspect upstream privacy/telemetry documentation and relevant configuration for outbound usage statistics, crash reports, analytics, update checks, remote APIs and data destinations. Distinguish mandatory traffic to perform the main function from optional analytics and background update requests.
+- Record evidence-based answers in a `## Privacy & Updates` section when verified: **what goes out**, **default/trigger**, **recipient** if documented, **opt-out command or setting**, and **automatic update/version-check behavior**. Include a primary-source link and review date. If not verified, explicitly say `Not confirmed` rather than asserting that no data leaves the machine.
+- If remote requests cannot be disabled, state that plainly. Keep privacy opt-out separate from update opt-out; `DO_NOT_TRACK` or telemetry toggles must not be assumed to disable version checks.
+- Summarize only actionable, source-backed settings in My Daily Setup under per-tool notes. Do not add a long apologetic list of tools that are not installed or enabled.
+- Never run a network monitor or sensitive diagnostic command in a user's environment merely to fill the catalog without authorization. Static upstream review does not constitute a runtime security audit.
+
 ## Evidence and accuracy requirements
 
 - A catalog entry is a **recommendation to investigate**, not proof that the tool is currently compatible, secure, or installable. Never turn `metadata` or `unverified` into `personal` without first-hand evidence supplied by the curator.

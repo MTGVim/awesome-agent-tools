@@ -53,9 +53,15 @@ Tools reported as actively used (as of 2026-11-03). This is separate from recomm
 | [abtop](https://github.com/graykode/abtop) | Terminal resource monitor |
 | [Yazi](https://github.com/sxyazi/yazi) | Terminal file manager |
 
-**Compatibility:** Show Your Work may conflict with global renderers such as Prismantis/Skins. Paste Preview and Image View occupy the same preview region. Flightdeck and Glowup overlap as side panels. Claude HUD intentionally configures `statusLine`; the issue is another tool replacing it without consent.
+### Setup notes
 
-This is the toolset I currently use. The catalog below and individual guides cover alternatives, installation, and compatibility notes.
+These are adjustments and caveats from this particular environment. For installation, updates and removal, see the tool guides in the catalog below.
+
+- **[Show Your Work](tools/browser/claude-show-your-work.md):** If Prismantis is also enabled, place Show Your Work before it in Claude Code's `enabledPlugins` ordering. This is an observed ordering workaround, not a guarantee of renderer interoperability. Disable usage statistics through `/show-your-work` → **Don't share**, or `SHOW_YOUR_WORK_TELEMETRY=0`. Set `SHOW_YOUR_WORK_AUTO_UPDATE=0` to disable its own version checks and updates.
+- **[Paste Preview](tools/ui/claude-code-paste-preview.md):** It shares the image-preview region with Image View; enable one at a time.
+- **[Flightdeck](tools/ui/claude-flightdeck.md):** Its side panel overlaps with Glowup. Use `motion: while-active` for pulses.
+- **[Claude HUD](tools/ui/claude-hud.md):** Configuring `statusLine` is its intended behavior. Check only whether another plugin replaces an existing setting.
+- **[Cache Tax](tools/context/cache-tax.md):** Cache warming uses tokens. Review `idleCompaction` when using `/keepwarm`.
 
 ## My Works
 

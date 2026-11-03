@@ -44,6 +44,9 @@ Claude Code에서는 마켓플레이스와 `prismantis@prismantis`를 갱신합�
 
 ## Caveats
 
+**출력 처리 순서 (사용자 관찰):** Show Your Work와 함께 켜는 경우 Claude Code의 `enabledPlugins`에서 Show Your Work를 Prismantis 앞에 배치해 보세요. 후킹 순서에 따른 우회 방법이며, 두 렌더러가 항상 호환된다는 의미는 아닙니다.
+
+
 ### 개인 셋업 메모 (2026-11-03)
 
 현재 개인 Daily Setup에서는 꺼두었습니다. 사용자 환경에서 Show Your Work와 전역 출력 렌더러가 충돌했고, `next()` 없이 명령 출력 줄을 처리해 후속 렌더러를 막는 현상이 관찰되었습니다. 모든 버전에서 동일하다는 뜻은 아닙니다.

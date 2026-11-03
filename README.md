@@ -49,9 +49,15 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [abtop](https://github.com/graykode/abtop) | 터미널 모니터링 |
 | [Yazi](https://github.com/sxyazi/yazi) | 터미널 파일 관리 |
 
-**조합 참고:** Show Your Work와 Prismantis/Skins는 전역 렌더러가 충돌할 수 있습니다. Paste Preview와 Image View는 이미지 미리보기 영역이 겹칩니다. Flightdeck과 Glowup은 사이드 패널이 중복됩니다. Claude HUD가 `statusLine`을 설정하는 것은 정상 기능이며, 다른 도구가 기존 설정을 확인 없이 교체하는 경우에 주의합니다.
+### 설정 메모
 
-이 목록은 제가 현재 쓰는 도구 조합입니다. 다른 도구와의 비교, 설치 방법, 호환성 메모는 아래 카탈로그와 개별 가이드에 정리했습니다.
+현재 구성에서 조정하거나 확인해 둔 사항입니다. 도구별 설치·업데이트·삭제 방법은 아래 카탈로그의 가이드에서 확인할 수 있습니다.
+
+- **[Show Your Work](tools/browser/claude-show-your-work.md):** Prismantis도 함께 활성화한다면 Claude Code 설정의 `enabledPlugins`에서 Show Your Work를 앞에 둡니다. 이는 출력 처리 순서에 관한 사용자 환경의 우회 방법으로, 모든 렌더러 조합에서 정상 동작을 보장하지는 않습니다. `/show-your-work`의 **Don't share** 또는 `SHOW_YOUR_WORK_TELEMETRY=0`으로 사용 통계 전송을 끌 수 있습니다. 자체 버전 확인·업데이트를 끄려면 `SHOW_YOUR_WORK_AUTO_UPDATE=0`을 설정합니다.
+- **[Paste Preview](tools/ui/claude-code-paste-preview.md):** Image View와 같은 이미지 미리보기 영역을 사용하므로 하나만 활성화합니다.
+- **[Flightdeck](tools/ui/claude-flightdeck.md):** 사이드 패널은 Glowup과 겹칩니다. 펄스 표시에는 `motion: while-active`를 사용합니다.
+- **[Claude HUD](tools/ui/claude-hud.md):** `statusLine` 설정은 HUD의 정상 기능입니다. 다른 플러그인이 기존 설정을 덮어쓰는지만 확인합니다.
+- **[Cache Tax](tools/context/cache-tax.md):** `/keepwarm` 사용 시 캐시 유지에 토큰이 소모됩니다. 필요하면 `idleCompaction` 설정을 별도로 검토합니다.
 
 ## 내 프로젝트 · My Works
 

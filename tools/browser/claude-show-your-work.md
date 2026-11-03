@@ -38,6 +38,13 @@ Claude Code 2.1.286+, macOS 또는 Linux, kitty 그래픽 프로토콜을 사용
 
 이미지 삽입과 Playwright QA 녹화 미리보기를 점검합니다.
 
+## Privacy & Updates
+
+- **Network and telemetry:** The upstream [privacy document](https://github.com/iamumeransari/claude-show-your-work/blob/main/PRIVACY.md) says the plugin checks its version on `raw.githubusercontent.com` at most once per day and can send anonymous usage counts to PostHog (`us.i.posthog.com`) when usage sharing is enabled. This does not establish that other plugins collect no data.
+- **Opt out of usage statistics:** Run `/show-your-work` and choose **Don't share**, or set `SHOW_YOUR_WORK_TELEMETRY=0` before starting Claude Code. The in-app opt-out may send one final opt-out event, according to upstream. `DO_NOT_TRACK=1` is another supported option.
+- **Disable self-update/version checks:** Set `SHOW_YOUR_WORK_AUTO_UPDATE=0` in the Claude Code process environment. Keep plugin updates under your chosen marketplace process instead. Upstream notes that the self-updater is expected to be retired when hosting moves to the regular plugin directory.
+- **Renderer ordering:** If Show Your Work and Prismantis are enabled together, the curator observed that listing Show Your Work **before** Prismantis in `enabledPlugins` helps control output interception order. This is a workaround from one setup, not a verified universal fix; test both outputs after changing order.
+
 ## Caveats
 
 ### 개인 셋업 메모 (2026-11-03)
