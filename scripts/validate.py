@@ -17,6 +17,8 @@ for p in (root/'tools').rglob('*.md'):
 readme_ko=(root/'README.md').read_text(encoding='utf-8')
 readme=(root/'README.en.md').read_text(encoding='utf-8')
 def catalog_rows(content):
+    # My Daily Setup is a separate two-column snapshot, not the canonical four-column catalog.
+    content=re.sub(r'(?ms)^## My Daily Setup\n.*?(?=^## )', '', content)
     rows={}
     for line in content.splitlines():
         if not line.startswith('| ['): continue

@@ -11,7 +11,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 
 - **Korean is the default**: GitHub renders `README.md` as the complete Korean catalog. `README.en.md` contains the complete English translation.
 - Both files must contain exactly the same active tools, functional categories, upstream links, types, agent tags, activity badges, and guide destinations. Only the one-line description language differs.
-- The public tables use four columns: Tool, Description · Guide, Agents, GitHub Activity (with Korean counterparts).
+- The canonical public catalog tables use four columns: Tool, Description · Guide, Agents, GitHub Activity (with Korean counterparts). The separate My Daily Setup snapshot intentionally uses two columns and is excluded from four-column catalog row checks.
 - **Within a Markdown table cell, use `<br>` for line breaks**, never literal newlines or a blank line between table header and data. Place the short functional description on the first line, and `가이드`/`시연` (or `Guide`/`Demo`) links on the second. Separate Stars and Last Commit badges with `<br>` in the activity cell.
 - Every row must have a **specific, useful one-line description** of what the tool actually does. Do not repeat its category or make unsupported capability claims.
 - Use distinct Shields.io SVG badges for documented Claude Code, Codex and Hermes support. Do not infer support from a generic CLI or MCP server. Display `—` when agent-specific support is not established; never use a generic `범용` label.
