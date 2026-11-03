@@ -34,6 +34,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 용도 |
 |---|---|
+| [TigerKit](https://github.com/MTGVim/tiger-kit) | 개발·리뷰·검증을 위한 Claude Code·Codex·Hermes 통합 스킬 |
 | [Orca](https://github.com/stablyai/orca) | 에이전트 병렬 개발 환경 |
 | [Autoharness](https://github.com/tigerless-labs/autoharness) | 스킬 자동 관리 |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
@@ -69,7 +70,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
-| [TigerKit](https://github.com/MTGVim/tiger-kit) | Claude Code·Codex·Hermes용 개발·리뷰·검증 워크플로 스킬 모음<br>[가이드](tools/workflows/tigerkit.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/MTGVim/tiger-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/MTGVim/tiger-kit?style=flat-square&label=%20) |
+| [TigerKit](https://github.com/MTGVim/tiger-kit) 🧑‍💻 | Claude Code·Codex·Hermes용 개발·리뷰·검증 워크플로 스킬 모음<br>[가이드](tools/workflows/tigerkit.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/MTGVim/tiger-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/MTGVim/tiger-kit?style=flat-square&label=%20) |
 
 ## 워크플로·에이전트
 

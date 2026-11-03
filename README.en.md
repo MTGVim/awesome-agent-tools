@@ -38,6 +38,7 @@ Tools reported as actively used (as of 2026-11-03). This is separate from recomm
 
 | Tool | Purpose |
 |---|---|
+| [TigerKit](https://github.com/MTGVim/tiger-kit) | Development, review and verification skills across Claude Code, Codex and Hermes |
 | [Orca](https://github.com/stablyai/orca) | Parallel agent workspace |
 | [Autoharness](https://github.com/tigerless-labs/autoharness) | Skill lifecycle manager |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | Subagent model and effort tuning |
@@ -73,7 +74,7 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 | Tool | Description · Guide | Agents | GitHub Activity |
 |---|---|---|---|
-| [TigerKit](https://github.com/MTGVim/tiger-kit) | Development, review and verification skills for Claude Code, Codex and Hermes<br>[Guide](tools/workflows/tigerkit.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/MTGVim/tiger-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/MTGVim/tiger-kit?style=flat-square&label=%20) |
+| [TigerKit](https://github.com/MTGVim/tiger-kit) 🧑‍💻 | Development, review and verification skills for Claude Code, Codex and Hermes<br>[Guide](tools/workflows/tigerkit.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/MTGVim/tiger-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/MTGVim/tiger-kit?style=flat-square&label=%20) |
 
 ## Workflow & Agents
 
