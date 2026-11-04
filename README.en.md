@@ -59,6 +59,9 @@ Tools reported as actively used (as of 2026-11-03). This is separate from recomm
 
 ### Setup notes
 
+- **[abtop](tools/utilities/abtop.md):** Generating session titles and summaries can invoke `claude --print` and consume extra model tokens. Consider `ANTHROPIC_MODEL=haiku abtop` to select a lower-cost model, and verify that the model override actually takes effect in your environment.
+
+
 These are adjustments and caveats from this particular environment. For installation, updates and removal, see the tool guides in the catalog below.
 
 - **[Show Your Work](tools/browser/claude-show-your-work.md):** If Prismantis is also enabled, place Show Your Work before it in Claude Code's `enabledPlugins` ordering. This is an observed ordering workaround, not a guarantee of renderer interoperability. Disable usage statistics through `/show-your-work` → **Don't share**, or `SHOW_YOUR_WORK_TELEMETRY=0`. Set `SHOW_YOUR_WORK_AUTO_UPDATE=0` to disable its own version checks and updates.
