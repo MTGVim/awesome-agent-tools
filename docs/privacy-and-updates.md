@@ -27,6 +27,7 @@
 | [Chrome DevTools MCP](../tools/browser/chrome-devtools-mcp.md) | 기본 활성 | 버전 확인 | `--no-usage-statistics` 또는 `CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS=1`; 업데이트 확인은 `CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS=1` · [원본](https://github.com/ChromeDevTools/chrome-devtools-mcp#usage-statistics) |
 | [Claude Show Your Work](../tools/browser/claude-show-your-work.md) | 선택적 공유 | 자체 버전 확인·업데이트 | PostHog로 익명 사용량 공유(설정 선택). `SHOW_YOUR_WORK_TELEMETRY=0`/`DO_NOT_TRACK=1`; `SHOW_YOUR_WORK_AUTO_UPDATE=0`으로 자체 버전 확인 끔 · [원본](https://github.com/iamumeransari/claude-show-your-work/blob/main/PRIVACY.md) |
 | [Cua](../tools/browser/cua.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/trycua/cua) |
+| [AgentsView](../tools/ui/agentsview.md) | 기본 세션 아카이브는 로컬, 외부 기능은 선택 | 미확인 | 로컬 SQLite에 세션 보관. 클라우드 채팅 동기화, 원격 내보내기, 선택적 임베딩/시맨틱 검색은 설정에 따라 외부 전송 가능. 자동 업데이트 동작은 설치 방식별 추가 확인 필요 · [원본](https://github.com/kenn-io/agentsview) |
 | [Claude Code Filetree](../tools/ui/claude-code-filetree.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/data-goblin/claude-code-filetree) |
 | [Claude Code Mods](../tools/ui/claude-code-mods.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/hamzafer/claude-code-mods) |
 | [Claude Code Paste Preview](../tools/ui/claude-code-paste-preview.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/alan890104/claude-code-paste-preview) |
