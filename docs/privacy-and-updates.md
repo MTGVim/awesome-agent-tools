@@ -43,7 +43,7 @@
 | [OpenShip](../tools/utilities/openship.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/oblien/openship) |
 | [ni](../tools/utilities/ni.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/antfu-collective/ni) |
 | [Peon Ping](../tools/utilities/peon-ping.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/PeonPing/peon-ping) |
-| [abtop](../tools/utilities/abtop.md) | 자체 통계 미확인 | 미확인 | 로컬 세션/프로세스 정보를 읽음. 세션 요약은 `claude --print`를 통해 간접 API 호출 가능. 자체 텔레메트리 여부는 별도 확인 필요 · [원본](https://github.com/graykode/abtop#privacy) |
+| [abtop](../tools/utilities/abtop.md) | 자체 통계 미확인 | 미확인 | 로컬 세션/프로세스 정보를 읽음. 제목·요약 생성 시 `claude --print`를 통한 모델 호출과 토큰 비용 발생 가능. 저비용 모델 지정(`ANTHROPIC_MODEL=haiku` 등)은 설치 환경에서 적용 여부 확인 필요. 자체 텔레메트리 여부는 별도 확인 필요 · [원본](https://github.com/graykode/abtop#privacy) |
 | [Stats](../tools/utilities/stats.md) | 없음 명시 | 버전 확인 | 텔레메트리·분석 없음. 업데이트 확인과 공인 IP 조회를 위한 외부 API 사용 · [원본](https://github.com/exelban/stats#external-api) |
 | [Vorssaint Utils](../tools/utilities/vorssaint-utils.md) | 없음 명시 | 버전 확인 | 분석·추적 없음. 업데이트 확인, 속도 테스트, Homebrew, 선택적 온라인 기능은 네트워크 사용 · [원본](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/PRIVACY.md) |
 | [Yazi](../tools/utilities/yazi.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/sxyazi/yazi) |
