@@ -179,6 +179,8 @@ Interesting projects noted for later exploration, **not yet promoted to the main
 
 *Development maturity and supported platforms vary by app. Inclusion here does not certify quality, security, or agent compatibility.*
 
+**[wterm](https://github.com/vercel-labs/wterm)**: A web terminal emulator from Vercel Labs with a Zig/WASM core, DOM rendering, React/Vue/Svelte integrations, and an optional Ghostty-powered terminal core.
+
 ## Archived
 
 [Archived tools and reasons](archive/README.md). Archived does not necessarily mean the upstream project is abandoned; it may simply be unsuitable for this curator's workflow.
