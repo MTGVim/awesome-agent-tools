@@ -1,6 +1,6 @@
 # AgentsView
 
-<!-- catalog: {"name": "AgentsView", "upstream": "https://github.com/kenn-io/agentsview", "types": ["app", "cli"], "agents": ["Standalone app", "Standalone CLI"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-04"} -->
+<!-- catalog: {"name": "AgentsView", "upstream": "https://github.com/kenn-io/agentsview", "types": ["tool"], "agents": [], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-04"} -->
 
 > 로컬 에이전트 세션 탐색, 토큰·비용 분석 및 도구 사용 인사이트
 
