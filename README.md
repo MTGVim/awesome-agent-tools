@@ -175,6 +175,8 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 *앱별 개발 단계와 지원 플랫폼은 서로 다릅니다. 이 목록은 존재와 용도만 소개하며, 완성도·안전성·에이전트 호환성을 보증하지 않습니다.*
 
+**[wterm](https://github.com/vercel-labs/wterm)**: Vercel Labs의 웹 터미널 에뮬레이터입니다. Zig·WASM 코어와 DOM 렌더링을 사용하며, React·Vue·Svelte 연동 및 선택형 Ghostty 기반 터미널 코어를 제공합니다.
+
 ## Archived · 추천 제외
 
 [추천 제외 도구와 사유 보기](archive/README.md). 제외는 개인적인 큐레이션 판단이며 원본 프로젝트가 중단되었다는 뜻은 아닙니다.
