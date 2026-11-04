@@ -55,6 +55,9 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ### 설정 메모
 
+- **[abtop](tools/utilities/abtop.md):** 세션 제목·요약 생성에 `claude --print`를 사용하므로 추가 AI 토큰이 소모될 수 있습니다. 비용 절감을 위해 `ANTHROPIC_MODEL=haiku abtop`처럼 저비용 모델을 지정해 실행하는 방법을 검토합니다. 실제 모델 적용 여부는 실행 환경에서 확인합니다.
+
+
 현재 구성에서 조정하거나 확인해 둔 사항입니다. 도구별 설치·업데이트·삭제 방법은 아래 카탈로그의 가이드에서 확인할 수 있습니다.
 
 - **[Show Your Work](tools/browser/claude-show-your-work.md):** Prismantis도 함께 활성화한다면 Claude Code 설정의 `enabledPlugins`에서 Show Your Work를 앞에 둡니다. 이는 출력 처리 순서에 관한 사용자 환경의 우회 방법으로, 모든 렌더러 조합에서 정상 동작을 보장하지는 않습니다. `/show-your-work`의 **Don't share** 또는 `SHOW_YOUR_WORK_TELEMETRY=0`으로 사용 통계 전송을 끌 수 있습니다. 자체 버전 확인·업데이트를 끄려면 `SHOW_YOUR_WORK_AUTO_UPDATE=0`을 설정합니다.
