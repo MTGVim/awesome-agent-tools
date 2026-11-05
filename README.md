@@ -156,6 +156,8 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 당장 데일리 셋업에 넣거나 추천 목록으로 승격하지는 않았지만, 흥미로워서 기록한 프로젝트입니다. **설치·업데이트·삭제 가이드와 사용 검증은 제공하지 않습니다.**
 
+**[Kilobat CLI](https://github.com/seifip/kilobat-cli)**: JSON 출력을 지원하는 macOS 네트워크 진단 CLI와 로컬 stdio MCP 서버입니다. CLI는 GPL-3.0-only이며 별도의 데스크톱 앱은 독점 소프트웨어입니다.
+
 **[ArtCraft](https://getartcraft.com/)**: 오픈소스 창작 도구 생태계입니다. AI 이미지·영상 제작을 위한 [ArtCraft Studio](https://github.com/storytold/artcraft)와 앱 설치·업데이트를 돕는 [ArtCraft Launcher](https://github.com/storytold/craft-launcher)를 비롯해 아래 Crafting Apps를 제공합니다. [전체 제품 소개](https://getartcraft.com/apps)를 참고하세요.
 
 | 제작 도구 | 무엇을 하나요? |
