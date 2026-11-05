@@ -190,7 +190,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## 기여와 관리
 
-**CI 확인은 필수입니다.** 변경 전 `python3 scripts/validate.py`를 실행하고, 푸시 후 해당 커밋의 [Validate catalog](https://github.com/MTGVim/awesome-agent-tools/actions/workflows/validate.yml) 실행이 **성공**했는지 확인합니다. 실패했거나 아직 실행 중이라면 완료로 보고하지 않습니다. 실패 로그를 조사하고 수정·재검증합니다.
+문서 변경 시 [AGENTS.md의 검토 체크리스트](AGENTS.md#documentation-review-checklist)를 확인합니다. `python3 scripts/validate.py`는 필요할 때 실행하는 선택적 검증 도구이며, GitHub Actions는 수동 실행만 지원합니다. Push·PR에 자동 CI가 실행되거나 성공 판정이 요구되지는 않습니다. 실제 확인한 항목과 미검증 사항을 변경 결과에 명시합니다.
 
 도구를 추가·갱신·제외하려면 [CONTRIBUTING.md](CONTRIBUTING.md)와 [AGENTS.md](AGENTS.md)의 절차를 참고하세요.
 
