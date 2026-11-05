@@ -194,7 +194,7 @@ Interesting projects noted for later exploration, **not yet promoted to the main
 
 ## Contribute
 
-**CI verification is mandatory.** Run `python3 scripts/validate.py` before pushing, then verify that [Validate catalog](https://github.com/MTGVim/awesome-agent-tools/actions/workflows/validate.yml) **succeeds for the pushed commit**. Do not report completion while CI is failing or pending; inspect logs, fix and recheck.
+Review documentation changes against the [maintenance checklist](AGENTS.md#documentation-review-checklist). `python3 scripts/validate.py` is an optional structural check, and GitHub Actions can be triggered manually when useful. There is no automatic push/PR CI or required passing workflow. Report checks performed and outstanding uncertainties.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). All tool documentation is a point-in-time snapshot; check upstream before running commands.
 
