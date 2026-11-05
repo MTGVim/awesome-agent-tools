@@ -40,7 +40,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Keep the same project names and canonical URLs in both language lists; descriptions are localized. Verify the URL and main product purpose against upstream before addition.
 - For an ecosystem containing multiple tools, a single grouped item with individually linked subprojects is acceptable. Distinguish a parent product, launcher, and individual apps; do not imply they are plugins for Claude Code/Codex/Hermes.
 - When promoting a find to the active curated catalog, create and verify its canonical guide, add bilingual rows and privacy/update coverage, then remove it from Cool Finds if it would otherwise duplicate the main catalog.
-- Removing a Cool Find does not require archived history unless the user asks to preserve its rationale. Changing Cool Finds still requires successful CI for the exact commit.
+- Removing a Cool Find does not require archived history unless the user asks to preserve its rationale. For Cool Finds edits, review upstream URLs, descriptions and Korean/English parity using the manual checklist. No automatic CI pass is required.
 
 ## Network, telemetry and update disclosure
 
@@ -56,7 +56,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Keep `docs/privacy-and-updates.md` complete for every active catalog entry, including My Works. Record telemetry, network usage, version checks, automatic installation/updates, defaults, opt-outs and source URLs separately.
 - For every new, updated, archived or restored tool, inspect upstream privacy/telemetry/update documentation and update the audit table, preserving exact tool scope. Do not label `not found` as `off` or `no telemetry`.
 - Never conflate intentional API/MCP calls, telemetry, passive version checks, and automatic code updates. Unknown claims must remain explicitly marked `미확인` until verified.
-- The validator must enforce one audit row per active guide in both language catalogs, including My Works; fail CI if a tool is missing or duplicated. Include the audit in README/guide link checks and rerun validation and GitHub Actions; the latest CI run must succeed before reporting completion.
+- Keep exactly one privacy audit row per active guide in both language catalogs, including My Works. The optional local validator reports missing or duplicate entries when run; a GitHub Actions success is not a publication requirement.
 
 ## Evidence and accuracy requirements
 
@@ -84,7 +84,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - Keep README description and `Why use it?` specific and factual, based on the current source. Update known version prerequisites, distinct platform install mechanisms, authentication requirements, data side effects and removal behavior. If exact commands cannot be confirmed, say so rather than generating plausible commands.
 - Review source claims of multi-agent support by distinguishing: direct plugin integration, skill-directory installation, MCP transport compatibility, and standalone CLI/app usage. Only the supported cases get agent badges. Never imply that a tool working in a terminal is automatically an agent plugin.
 - A source inspection establishes **documentation accuracy**, not that the tool was successfully installed or functionally tested. Do not silently promote verification status to `personal` or `tested`.
-- After bulk refreshes, inspect all modified public rows and guide metadata, run validation, verify CI status, and report any sources not actually checked or any remaining uncertainties. Do not call a failed CI run complete.
+- After bulk refreshes, inspect changed public rows, guide metadata and evidence using the manual checklist. Run the optional local validator when available, and report sources not checked and uncertainties. Never describe an unrun check as passing.
 
 ## Guide quality and review gates
 
@@ -93,7 +93,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 - For every new entry or edited install guide, inspect whether the source is an individual skill, a plugin, a marketplace, an MCP server or a standalone executable before selecting the lifecycle path.
 - Do not increase the guide's `last_reviewed` date or verification level unless the upstream was actually inspected. Treat demo availability, Stars and commit recency as independent signals.
 - After changing any agent badge, check the corresponding guide's `agents` metadata and `Agents` field for consistency. For MCP servers, state transport compatibility, credential prerequisites, and distinguish registration, handshake, authentication and a real tool invocation. Do not automatically assign all three to arbitrary MCP servers without checking transport constraints. After changing Skills CLI eligibility, update both READMEs and the guide.
-- Confirm relative and external links, Markdown table continuity, row uniqueness, paired language entries, correct My Works separation, and archive rationale. CI validates syntax and local references; it is **not** proof that remote installers or media still work.
+- Confirm relative and external links, Markdown table continuity, row uniqueness, paired language entries, correct My Works separation and archive rationale. The optional validator checks structural consistency and local references, not remote installer or media behavior.
 
 ## GitHub demo preview links
 
@@ -122,7 +122,7 @@ This is a curated index of coding-agent skills, plugins, mods, MCP servers, and 
 | `archive/<slug>.md` | Removed/rejected tools and historical reasons | Retain removal rationale, no promises that old commands still work |
 | `CONTRIBUTING.md` | Human contribution policy | Update if contribution or review expectations change |
 | `scripts/validate.py` | Local consistency checks | Run after every catalog change; extend for new invariants |
-| `.github/workflows/validate.yml` | CI validation | Keep aligned with local validation |
+| `.github/workflows/validate.yml` | Optional GitHub Actions validation | Manually triggered only, never on push or pull request |
 | `AGENTS.md` | This operational contract for all coding agents | Update when management procedure changes |
 
 ### Fundamental distinctions
@@ -152,7 +152,7 @@ When a user says "add this", "put this in awesome", "register this skill", "incl
 4. Check user-provided experience and the upstream before inclusion. Keep verification state in the guide, never infer tested status from metadata or popularity. If insufficient, use `unverified`/`metadata` and describe uncertainty.
 5. Choose a functional category based on what users want to do, not just packaging. Place maintained-by-curator projects under `My Works`. Prefer existing sections and directories; avoid creating a new category for one item without good reason.
 6. Execute the relevant procedure below, update public index + guide + any archived index as one coherent change. Do not alter unrelated entries.
-7. Run `python3 scripts/validate.py`. Inspect `git diff --check`, then review changed rows/links, guide metadata, agent badges, ownership language, demo parity and README ↔ guide ↔ archive consistency. Report exact changed files, verification, unresolved uncertainties and any validation failures. Commit/push only if explicitly requested and GitHub access permits; never claim publishing succeeded without confirmation.
+7. Apply the manual documentation checklist below. When a local checkout is available, `python3 scripts/validate.py` and `git diff --check` are recommended aids, not mandatory completion gates. Report checks performed or skipped, changed files, evidence and limitations. Commit/push only if requested and permitted; never claim publishing succeeded without confirmation.
 
 ## Add a tool
 
@@ -220,17 +220,22 @@ This repository is documentation, not a remote installation authority. An assist
 6. Verify installed state and one representative behavior. A successful command is not proof the feature works.
 7. Report what was changed, validated, left uncertain and how to reverse it.
 
-## Validation and publishing checklist
+## Documentation review checklist
 
-**Hard completion gate:** On EVERY repository change, run the local validator; after push, inspect the `Validate catalog` workflow run for the exact resulting HEAD SHA. A previous successful run does not count. Do not claim completion until the latest run has `conclusion=success`. If pending, report pending and the run link without claiming success. If failed, inspect the job logs, correct the issue, push, and verify again. Never leave CI failures unaddressed or silently waive them.
+Use this checklist for each catalog addition, update, archive, restoration or Cool Finds edit. It replaces the former mandatory CI-success gate. Check applicable items, mark others N/A, and disclose anything not verified.
 
-- Validate **both** language catalogs for identical tool identities, canonical upstream URLs, order, guide destinations, agent support, GitHub activity URLs and demo links; translated descriptions need not be identical.
-- Check each active guide's machine-readable catalog comment: parse valid JSON, require expected keys and values, verify agent tags match the README badges and that retired `tier` metadata is absent.
-- Preserve table continuity: no blank line between a table divider and its rows; use `<br>` only inside cells to separate description, guide/demo links and activity badges.
-- Enforce one active guide per entry, one active README row in each language, and no active/archive duplication. Check archived guides for date, reason and non-current install caveats.
-- Run `python3 scripts/validate.py` before a commit. CI uses the same script. Do not claim demo media was viewed or install commands tested if only upstream references were inspected.
-- In the result report, specify exact entry changes, affected files, checks passed, unresolved uncertainties and Git commit or PR link. If CI fails, inspect the failing job and fix it before reporting completion.
-- Treat broken upstream URLs, removed demo files, and activity badges as maintenance signals, not automatic reasons to archive or rerank a tool.
+- [ ] **Upstream and evidence:** Confirm the canonical URL, exact subproject or plugin ID, primary function, installation instructions and version constraints against upstream. Distinguish documentation from personal testing.
+- [ ] **Scope and duplicates:** Check Active, Cool Finds, Archived and aliases before adding. Use the correct category and exactly one canonical guide per Active item.
+- [ ] **Bilingual indexes:** Keep `README.md` and `README.en.md` synchronized for names, URLs, order, guide links, agent badges, activity badges and demos, with accurate localized descriptions.
+- [ ] **Guide and metadata:** Confirm required sections, valid `catalog` metadata, supported agent evidence, verification level and honest review dates. Do not treat a trial as Daily Setup.
+- [ ] **Privacy and updates:** For Active edits, check telemetry, network usage, opt-outs, version checks and updates. Maintain the matching entry in `docs/privacy-and-updates.md`; explicitly mark unknowns.
+- [ ] **Links and formatting:** Check Markdown table continuity, relative links, one canonical guide reference per Active tool, demo URLs, My Works separation and archive rationale when applicable.
+- [ ] **Safety:** Do not install tools, execute remote scripts, change user settings or disclose secrets as a side effect of a documentation edit.
+- [ ] **Diff inspection:** Review the final changes for unintended edits, missing links and unsupported claims. Use `git diff --check` when working in a local checkout.
+- [ ] **Optional validation:** Prefer `python3 scripts/validate.py` if a local checkout is available. Fix errors if run, or report that it was not run. This is an aid, not a mandatory gate.
+- [ ] **Result report:** State changed files, reviewed sources, verification level, checks completed or skipped, remaining uncertainty and commit/PR link if published.
+
+**Automation policy:** `.github/workflows/validate.yml` runs only via manual `workflow_dispatch`. Push and pull-request validation are disabled. No CI-success requirement blocks documentation publishing. The optional script and manual workflow remain available for larger changes and troubleshooting; never claim they passed if unrun.
 
 ## Safety and review hygiene
 
