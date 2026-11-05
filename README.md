@@ -48,6 +48,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | 서브에이전트 대시보드 |
 | [Claude HUD](https://github.com/jarrodwatts/claude-hud) | 컨텍스트·사용량 statusLine |
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) | 이전 프롬프트 탐색 |
+| [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Claude Code 작업 진행률·서브에이전트별 모델·컨텍스트·추정 비용 패널<br>[가이드](tools/ui/savvy-progress.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/JohnnyVizz/claude-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/JohnnyVizz/claude-kit?style=flat-square&label=%20) |
 | [ni](https://github.com/antfu-collective/ni) | 패키지 매니저 통합 |
 | [Peon Ping](https://github.com/PeonPing/peon-ping) | 작업 알림 |
 | [abtop](https://github.com/graykode/abtop) | 터미널 모니터링 |
@@ -117,7 +118,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
 | [AgentsView](https://github.com/kenn-io/agentsview) | 코딩 에이전트 세션 검색·토큰 비용·도구 실행 패턴 분석<br>[가이드](tools/ui/agentsview.md) | `독립 앱 / CLI` | ![Stars](https://img.shields.io/github/stars/kenn-io/agentsview?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/kenn-io/agentsview?style=flat-square&label=%20) |
-| [Claude Code Filetree](https://github.com/data-goblin/claude-code-filetree) | Claude Code의 Git 변경과 현재 파일을 사이드 트리로 표시<br>[가이드](tools/ui/claude-code-filetree.md) · [시연](https://github.com/data-goblin/claude-code-filetree/blob/main/media/filetree-shimmer.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/data-goblin/claude-code-filetree?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/data-goblin/claude-code-filetree?style=flat-square&label=%20) |
+| [Claude Code Filetree](https://github.com/data-goblin/claude-code-filetree) | Claude Code가 읽고 수정하는 파일을 실시간 강조하고 Git 상태·diff를 표시<br>[가이드](tools/ui/claude-code-filetree.md) · [시연](https://github.com/data-goblin/claude-code-filetree/blob/main/media/filetree-shimmer.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/data-goblin/claude-code-filetree?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/data-goblin/claude-code-filetree?style=flat-square&label=%20) |
 | [Claude Code Mods](https://github.com/hamzafer/claude-code-mods) | Claude Code 모드·훅·화면 확장을 선택 설치하는 CLI<br>[가이드](tools/ui/claude-code-mods.md) · [시연](https://github.com/hamzafer/claude-code-mods/blob/main/images/mission-control.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/hamzafer/claude-code-mods?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/hamzafer/claude-code-mods?style=flat-square&label=%20) |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) 🧑‍💻 | 이미지 붙여넣기 미리보기·주석·자르기 지원<br>[가이드](tools/ui/claude-code-paste-preview.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/alan890104/claude-code-paste-preview?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/alan890104/claude-code-paste-preview?style=flat-square&label=%20) |
 | [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) 🧑‍💻 | Claude Code 컨텍스트·비용·권한·서브에이전트 실시간 대시보드<br>[가이드](tools/ui/claude-flightdeck.md) · [시연](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
@@ -178,6 +179,8 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Craft Anything](https://github.com/storytold/craft-anything) | 소프트웨어 분석·유사 구현 |
 
 *앱별 개발 단계와 지원 플랫폼은 서로 다릅니다. 이 목록은 존재와 용도만 소개하며, 완성도·안전성·에이전트 호환성을 보증하지 않습니다.*
+
+**[Replay Theater](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater)**: Claude Code에서 마지막 턴의 파일 편집을 순서대로 넘기며 각 단계의 diff를 검토하는 시각화 Mod입니다. `/replay`로 열 수 있으며, 실제 편집을 되돌리는 기능은 아닙니다. 모드 설치·실행은 아직 검증하지 않았습니다.
 
 **[wterm](https://github.com/vercel-labs/wterm)**: Vercel Labs의 웹 터미널 에뮬레이터입니다. Zig·WASM 코어와 DOM 렌더링을 사용하며, React·Vue·Svelte 연동 및 선택형 Ghostty 기반 터미널 코어를 제공합니다.
 
