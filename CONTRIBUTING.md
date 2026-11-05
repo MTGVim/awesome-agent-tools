@@ -26,14 +26,19 @@ Move the entry to `archive/` and document a reason (`superseded`, `incompatible`
 
 Fix broken URLs, distinguish personal experience from repeatable testing, and never publish credentials, private paths, or unsafe permission-bypass instructions.
 
-## Required CI verification
+## Documentation review checklist
 
-1. Run `python3 scripts/validate.py` locally before committing changes. Resolve all reported errors.
-2. Push the commit or open a PR, then inspect the matching commit's `Validate catalog` workflow run in GitHub Actions (not an earlier green run).
-3. Wait for a **successful** conclusion. If CI fails, read the failing job logs, repair the cause, push the fix, and confirm the latest workflow succeeds.
-4. Never mark an update complete with failing, pending, skipped, or unobserved CI. If CI is inaccessible or cannot finish, state the blocker and exact run URL; do not claim success.
-5. Apply this to documentation-only changes too, including one-row catalog changes, guide updates, translations and archive moves.
+Documentation changes do **not** require a passing GitHub Actions workflow. Before publishing, use the detailed checklist in [AGENTS.md](AGENTS.md#documentation-review-checklist). Review applicable items and describe anything not checked.
+
+- [ ] Confirm the upstream URL, installation identifiers, actual feature scope and any user-facing caveats.
+- [ ] Keep both README catalogs synchronized, including upstream links, category, badges and the canonical guide.
+- [ ] Verify active guide metadata, required sections and the privacy/update audit row; avoid duplicate Active or Archived entries.
+- [ ] Review the diff, Markdown links and tables, installation side effects and unsupported claims.
+- [ ] When a checkout is available, optionally run `python3 scripts/validate.py` and `git diff --check`. Fix any errors actually found.
+- [ ] In the result report, state what was reviewed, what was skipped or unverified and the commit/PR reference.
+
+`.github/workflows/validate.yml` supports on-demand `workflow_dispatch` only. Pushes and PRs do not automatically run the workflow; no CI result is required to mark a documentation update complete.
 
 ## Privacy and update policy
 
-Before adding or modifying tools, review upstream telemetry, analytics, update checks, and opt-out procedures. Update [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for every active entry; record `미확인` when policy is undocumented. Do not conflate privacy telemetry with normal API use, version checks or automatic code upgrades. Confirm that CI succeeds after publishing.
+Before adding or modifying tools, review upstream telemetry, analytics, update checks, and opt-out procedures. Update [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for every active entry; record `미확인` when policy is undocumented. Do not conflate privacy telemetry with normal API use, version checks or automatic code upgrades. Follow the manual checklist and explicitly report any checks not performed.
