@@ -6,7 +6,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 > 이 목록은 큐레이터가 선별한 도구를 소개합니다. 포함 여부는 호환성이나 안전성 보증이 아닙니다.
 
-**개인정보·네트워크 점검:** 활성 도구 38개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
+**개인정보·네트워크 점검:** 활성 도구 40개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
 
 **🧑‍💻 = My Daily Setup에서 현재 사용하는 도구입니다.** 일반 카탈로그에서만 표시하며, 추천 등급이나 호환성 보증을 의미하지 않습니다.
 
@@ -38,7 +38,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## My Daily Setup
 
-실제로 사용 중인 조합(2026-11-06 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
+실제로 사용 중인 조합(2026-11-07 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
 
 | 도구 | 용도 |
 |---|---|
@@ -46,6 +46,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Orca](https://github.com/stablyai/orca) | 에이전트 병렬 개발 환경 |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | 에이전트 폭주 방지·큰 컨텍스트에서 Compact 제안 |
+| [Engram](https://github.com/Gentleman-Programming/engram) | 세션 간 프로젝트 메모리와 키워드 검색 |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | 코드 그래프 탐색 |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | 프롬프트 캐시 유지 |
@@ -114,6 +115,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
+| [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | 프로젝트별 결정과 해결책을 로컬에 저장하고 여러 키워드로 검색<br>[가이드](tools/context/engram.md) · [시연](https://github.com/Gentleman-Programming/engram/blob/main/assets/tui-dashboard.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
 | [Context Mode](https://github.com/mksglu/context-mode) | 로컬에서 도구 출력을 관리해 컨텍스트 소비 절감<br>[가이드](tools/context/context-mode.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/mksglu/context-mode?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/mksglu/context-mode?style=flat-square&label=%20) |
 | [RTK](https://github.com/rtk-ai/rtk) 🧑‍💻 | 개발 명령 출력을 압축해 에이전트 토큰 사용량 절감<br>[가이드](tools/context/rtk.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rtk-ai/rtk?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Claude Code의 과도한 에이전트 호출·재시도·사용량 급증 방지<br>[가이드](tools/context/agent-usage-guard.md) · [시연](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |

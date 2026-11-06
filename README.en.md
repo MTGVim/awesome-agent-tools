@@ -6,7 +6,7 @@ A curated collection of **AI coding-agent skills, plugins, mods, MCP servers, an
 
 > English edition. [한국어 기본 카탈로그](README.md). This is a curated list, not a compatibility or security guarantee.
 
-**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 38 active entries. Unknowns remain explicitly marked.
+**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 40 active entries. Unknowns remain explicitly marked.
 
 **🧑‍💻 = A tool currently in My Daily Setup.** Shown only in the general catalog; it is not a quality rating or compatibility guarantee.
 
@@ -42,7 +42,7 @@ For tool additions, removal, or guide maintenance, an agent should first read [A
 
 ## My Daily Setup
 
-Tools reported as actively used (as of 2026-11-06). This is separate from recommendations and may vary by environment.
+Tools reported as actively used (as of 2026-11-07). This is separate from recommendations and may vary by environment.
 
 | Tool | Purpose |
 |---|---|
@@ -50,6 +50,7 @@ Tools reported as actively used (as of 2026-11-06). This is separate from recomm
 | [Orca](https://github.com/stablyai/orca) | Parallel agent workspace |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | Subagent model and effort tuning |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | Agent usage guardrails with a compact-before-send option |
+| [Engram](https://github.com/Gentleman-Programming/engram) | Cross-session project memory and keyword search |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | Code graph exploration |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | Overengineering guard |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | Prompt cache maintenance |
@@ -119,6 +120,7 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 | Tool | Description · Guide | Agents | GitHub Activity |
 |---|---|---|---|
+| [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | Stores project decisions and fixes locally and retrieves them by keyword<br>[Guide](tools/context/engram.md) · [Demo](https://github.com/Gentleman-Programming/engram/blob/main/assets/tui-dashboard.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
 | [Context Mode](https://github.com/mksglu/context-mode) | Locally manages tool output to reduce agent context usage<br>[Guide](tools/context/context-mode.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/mksglu/context-mode?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/mksglu/context-mode?style=flat-square&label=%20) |
 | [RTK](https://github.com/rtk-ai/rtk) 🧑‍💻 | Compresses development command output to save agent tokens<br>[Guide](tools/context/rtk.md) | `Standalone CLI` | ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rtk-ai/rtk?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Guards against excessive Claude Code agents, retries and usage<br>[Guide](tools/context/agent-usage-guard.md) · [Demo](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |
