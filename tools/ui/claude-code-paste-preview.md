@@ -47,6 +47,10 @@ Image View와 동일한 이미지 미리보기 영역을 사용하므로 하나�
 
 macOS에서는 네이티브 편집기를 빌드할 수 있으며, Linux·Windows에서는 브라우저 앱 창을 사용할 수 있습니다. 그래픽 미지원 터미널은 대체 텍스트를 표시할 수 있습니다.
 
+### Orca 터미널에서 이미지 표시 문제 (2026-11-06)
+
+개인 Orca 환경에서 편집 이미지 전송 직후 inline image의 base64 문자열이 그대로 표시됐습니다. Ctrl+L로 화면을 다시 그리면 정상화됩니다. 반복된다면 이미지 전송 이벤트 뒤 약 1초 후 조건부 화면 재그리기를 수행하는 임시 shim을 고려할 수 있습니다. 터미널 핸들 확인, 다른 mod의 훅 실행 보장, 우회책 제거 기준은 [Orca 가이드](../workflows/orca.md)를 참고합니다.
+
 ## References
 
 - [Upstream](https://github.com/alan890104/claude-code-paste-preview)
