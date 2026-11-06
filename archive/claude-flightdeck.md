@@ -57,3 +57,11 @@ Glowup과 사이드 패널 영역이 겹칩니다. 사용자 설정에서는 펄
 ## References
 
 - [Upstream](https://github.com/scasella/claude-flightdeck)
+
+## Archived decision
+
+- **Archived on:** 2026-11-06
+- **Previous state:** Active and My Daily Setup
+- **Reason:** `superseded`
+- **Curator observation:** Savvy Progress를 서브에이전트 상태·진행률 패널로 채택하면서 개인 작업 환경에서 Flightdeck을 대체했습니다. 기능 전체의 동등성이나 Flightdeck 자체의 결함을 의미하지는 않습니다.
+- **Scope:** This is a curator-specific workflow decision, not a claim that upstream is abandoned or unusable.

@@ -53,6 +53,14 @@ macOS·Windows·Linux용 앱이며, 원격 SSH 및 워크트리·모바일 기�
 
 설치 안내를 확인한 것이지 실제 사용자 환경에서 작동을 검증했다는 뜻은 아닙니다.
 
+### Orca 터미널 inline image 표시 문제 (2026-11-06)
+
+Paste Preview에서 편집한 이미지를 전송하거나 Prismantis의 Mermaid pie 차트를 답변에 출력하면 inline image의 base64 문자열이 그대로 노출되는 현상이 관찰됐습니다. Ctrl+L로 화면 전체를 다시 그리면 정상 표시됩니다. 정확한 원인은 확인되지 않았습니다.
+
+반복적으로 발생한다면 로컬 Claude Code mod에서 이미지 전송 완료 또는 Mermaid pie 답변 출력 완료를 감지하고 약 1초 뒤 Orca 터미널에 Ctrl+L을 보내는 임시 shim을 권장합니다. 이미지의 최초 렌더링 이후에 재그리기가 실행되어야 합니다. ORCA_TERMINAL_HANDLE 환경 변수가 없다면 아무것도 실행하지 않고, 이벤트 훅에서는 다른 mod의 동작을 방해하지 않도록 next(e)를 호출해야 합니다. 지연 중 터미널이 종료되거나 대상이 바뀐 경우에도 입력을 보내지 않으며, 해당 이미지 출력이 없으면 불필요한 재그리기를 수행하지 않습니다.
+
+이는 설치된 해결책이 아니라 구현과 검증이 필요한 우회 방법입니다. Orca 또는 Claude Code 렌더러가 수정되면 제거합니다.
+
 ## References
 
 - [Upstream](https://github.com/stablyai/orca)
