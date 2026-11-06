@@ -2,7 +2,7 @@
 
 [한국어 README](../README.md) · [English README](../README.en.md)
 
-> **조사 범위:** 활성 카탈로그 39개(2026-11-05 기준)의 상류 README와 공개 개인정보 처리 안내를 확인했습니다. 기존 38개는 2026-11-04에, 새 Savvy Progress 항목은 2026-11-05에 확인했습니다. 일부 도구는 README 수준에서만 확인했으며, **소스 코드 전체 감사나 실제 네트워크 패킷 검증은 수행하지 않았습니다.** `미확인`은 기능이 없다는 뜻이 아닙니다.
+> **조사 범위:** 활성 카탈로그 38개(2026-11-06 기준)의 상류 README와 공개 개인정보 처리 안내를 확인했습니다. 기존 항목은 2026-11-04에, Savvy Progress 항목은 2026-11-05에 확인했습니다. 2026-11-06 Claude Flightdeck을 개인 설정에서 Savvy Progress로 대체하여 아카이브했습니다. 일부 도구는 README 수준에서만 확인했으며, **소스 코드 전체 감사나 실제 네트워크 패킷 검증은 수행하지 않았습니다.** `미확인`은 기능이 없다는 뜻이 아닙니다.
 
 **구분:** 텔레메트리(사용 통계), 버전 확인(업데이트 존재 여부 조회), 자동 업데이트(코드 설치·교체), 정상적인 API/MCP·클라우드 통신은 서로 다릅니다. 상류 문서의 기본값과 해제 방법만 사실로 표기합니다. 일반 에이전트·패키지 매니저가 별도로 만드는 네트워크 요청은 포함하지 않습니다.
 
@@ -31,7 +31,6 @@
 | [Claude Code Filetree](../tools/ui/claude-code-filetree.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/data-goblin/claude-code-filetree) |
 | [Claude Code Mods](../tools/ui/claude-code-mods.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/hamzafer/claude-code-mods) |
 | [Claude Code Paste Preview](../tools/ui/claude-code-paste-preview.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/alan890104/claude-code-paste-preview) |
-| [Claude Flightdeck](../tools/ui/claude-flightdeck.md) | 네트워크 요청 없음 명시 | 미확인 | 원본 README 기준 세션 상태의 로컬 처리, 자체 네트워크 요청 없음 · [원본](https://github.com/scasella/claude-flightdeck) |
 | [Claude HUD](../tools/ui/claude-hud.md) | 미확인 | 마켓플레이스 자동 갱신 선택 | Claude Code 서드파티 마켓플레이스 자동 갱신은 기본 비활성. 자체 텔레메트리 여부는 README에서 확인되지 않음 · [원본](https://github.com/jarrodwatts/claude-hud) |
 | [Claude Image View](../tools/ui/claude-image-view.md) | 네트워크 요청 없음 명시 | 미확인 | 원본 README 기준 이미지 처리는 로컬에서 수행하고 자체 네트워크 요청 없음 · [원본](https://github.com/jarrodwatts/claude-image-view) |
 | [Prompt Rail](../tools/ui/prompt-rail.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/oikon48/prompt-rail) |
