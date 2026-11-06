@@ -10,6 +10,14 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 **🧑‍💻 = My Daily Setup에서 현재 사용하는 도구입니다.** 일반 카탈로그에서만 표시하며, 추천 등급이나 호환성 보증을 의미하지 않습니다.
 
+## 에이전트 기여 전 필수 확인
+
+이 저장소를 수정하는 에이전트는 **작업 시작 전에 [AGENTS.md](AGENTS.md) 전문을 읽고 규칙을 따라야 합니다.** README의 안내는 AGENTS.md를 대체하지 않습니다.
+
+**모든 카탈로그 변경의 필수 점검:** 수정 범위와 관계없이 한글·영문 README의 **전체** `My Daily Setup` 목록과 일반 카탈로그의 `🧑‍💻` 표시를 양방향 대조합니다. 사용 중인 도구에는 정확히 하나의 표시가 있어야 하고, 사용하지 않는 도구에는 없어야 합니다. **이번에 수정하지 않은 항목도 반드시 검사**합니다. 불일치는 수정하거나 병합 전에 차단 사유를 보고합니다.
+
+자동 CI 통과는 필수가 아니지만, 위 수동 점검과 [문서 검토 체크리스트](AGENTS.md#documentation-review-checklist)는 생략하지 않습니다. 검증 결과를 변경 보고에 명시합니다.
+
 ## 시작하기
 
 1. 아래 표에서 필요한 기능과 **무엇을 하나요?** 설명을 확인합니다.
@@ -46,6 +54,9 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | 미디어·QA 시각화 |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | 이미지 편집·미리보기 |
 | [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | 서브에이전트 진행률·상태 패널 |
+| [Prismantis](https://github.com/NahumLitvin/prismantis) | 표·코드·Mermaid 렌더링 |
+| [Stats](https://github.com/exelban/stats) | macOS 자원 사용량 모니터링 |
+| [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | macOS 창 관리·메뉴 막대 유틸리티 |
 | [Claude HUD](https://github.com/jarrodwatts/claude-hud) | 컨텍스트·사용량 statusLine |
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) | 이전 프롬프트 탐색 |
 | [ni](https://github.com/antfu-collective/ni) | 패키지 매니저 통합 |
@@ -133,7 +144,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 |---|---|---|---|
 | [Archify](https://github.com/tt-a1i/archify) | 설명·계획·코드 구조를 탐색 가능한 인터랙티브 HTML로 제작<br>[가이드](tools/visual/archify.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/tt-a1i/archify?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/tt-a1i/archify?style=flat-square&label=%20) |
 | [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) | HTML 발표자료 제작·시각적 테마 선택·PPT 변환 스킬<br>[가이드](tools/visual/frontend-slides.md) · [시연](https://www.youtube.com/watch?v=372Iksaz8b0) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/zarazhangrui/frontend-slides?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/zarazhangrui/frontend-slides?style=flat-square&label=%20) |
-| [Prismantis](https://github.com/NahumLitvin/prismantis) | Claude Code 터미널의 표·코드·Mermaid·차트·LaTeX 렌더링<br>[가이드](tools/visual/prismantis.md) · [시연](https://github.com/NahumLitvin/prismantis/blob/main/docs/tour.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/NahumLitvin/prismantis?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/NahumLitvin/prismantis?style=flat-square&label=%20) |
+| [Prismantis](https://github.com/NahumLitvin/prismantis) 🧑‍💻 | Claude Code 터미널의 표·코드·Mermaid·차트·LaTeX 렌더링<br>[가이드](tools/visual/prismantis.md) · [시연](https://github.com/NahumLitvin/prismantis/blob/main/docs/tour.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/NahumLitvin/prismantis?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/NahumLitvin/prismantis?style=flat-square&label=%20) |
 
 ## 디자인
 
@@ -150,8 +161,8 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [ni](https://github.com/antfu-collective/ni) 🧑‍💻 | 프로젝트에 맞는 npm·pnpm·yarn·bun 패키지 명령 자동 선택<br>[가이드](tools/utilities/ni.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/antfu-collective/ni?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/antfu-collective/ni?style=flat-square&label=%20) |
 | [Peon Ping](https://github.com/PeonPing/peon-ping) 🧑‍💻 | 에이전트 완료·승인 대기를 게임 음성과 화면 알림으로 안내<br>[가이드](tools/utilities/peon-ping.md) · [시연](https://github.com/PeonPing/peon-ping/blob/main/docs/peon-hero.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/PeonPing/peon-ping?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/PeonPing/peon-ping?style=flat-square&label=%20) |
 | [abtop](https://github.com/graykode/abtop) 🧑‍💻 | Claude Code·Codex·OpenCode 세션의 토큰·한도·프로세스 실시간 모니터<br>[가이드](tools/utilities/abtop.md) · [시연](https://github.com/graykode/abtop/blob/main/assets/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/graykode/abtop?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/graykode/abtop?style=flat-square&label=%20) |
-| [Stats](https://github.com/exelban/stats) | macOS 메뉴 막대의 CPU·GPU·메모리·네트워크 모니터<br>[가이드](tools/utilities/stats.md) · [시연](https://github.com/exelban/stats) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/exelban/stats?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/exelban/stats?style=flat-square&label=%20) |
-| [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | 창 관리·볼륨·클립보드·모니터링을 통합한 macOS 메뉴 막대 앱<br>[가이드](tools/utilities/vorssaint-utils.md) · [시연](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
+| [Stats](https://github.com/exelban/stats) 🧑‍💻 | macOS 메뉴 막대의 CPU·GPU·메모리·네트워크 모니터<br>[가이드](tools/utilities/stats.md) · [시연](https://github.com/exelban/stats) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/exelban/stats?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/exelban/stats?style=flat-square&label=%20) |
+| [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) 🧑‍💻 | 창 관리·볼륨·클립보드·모니터링을 통합한 macOS 메뉴 막대 앱<br>[가이드](tools/utilities/vorssaint-utils.md) · [시연](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
 | [Yazi](https://github.com/sxyazi/yazi) 🧑‍💻 | 비동기 파일 탐색·미리보기·플러그인을 지원하는 Rust 터미널 파일 관리자<br>[가이드](tools/utilities/yazi.md) · [시연](https://github.com/sxyazi/yazi) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat-square&label=%20) |
 
 ## Cool Finds

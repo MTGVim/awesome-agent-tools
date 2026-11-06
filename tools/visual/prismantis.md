@@ -1,13 +1,13 @@
 # Prismantis
 
-<!-- catalog: {"name": "Prismantis", "upstream": "https://github.com/NahumLitvin/prismantis", "types": ["plugin", "mod"], "agents": ["Claude Code", "Codex"], "category": "visual", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
+<!-- catalog: {"name": "Prismantis", "upstream": "https://github.com/NahumLitvin/prismantis", "types": ["plugin", "mod"], "agents": ["Claude Code", "Codex"], "category": "visual", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 표·코드·Mermaid·차트 렌더링
 
 - **Upstream:** https://github.com/NahumLitvin/prismantis
 - **Types:** plugin/mod
 - **Agents:** Claude Code, Codex
-- **Verification:** metadata
+- **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-03
 
@@ -53,7 +53,7 @@ Claude Code에서는 마켓플레이스와 `prismantis@prismantis`를 갱신합�
 
 ### 개인 셋업 메모 (2026-11-03)
 
-2026-11-03 당시 개인 Daily Setup에서는 꺼두었습니다. 이후 Orca에서 Mermaid pie 출력 문제를 관찰했으며 현재 활성화 상태는 별도 확인이 필요합니다. 사용자 환경에서 Show Your Work와 전역 출력 렌더러가 충돌했고, `next()` 없이 명령 출력 줄을 처리해 후속 렌더러를 막는 현상이 관찰되었습니다. 모든 버전에서 동일하다는 뜻은 아닙니다.
+2026-11-03 당시에는 개인 Daily Setup에서 비활성화했지만, 2026-11-06 사용자가 현재 사용 중이라고 확인하여 Daily Setup에 다시 포함했습니다. 이전 충돌 사례는 당시의 기록이며, 현재 환경에서도 동일한 문제가 지속된다고 단정하지 않습니다. 사용자 환경에서 Show Your Work와 전역 출력 렌더러가 충돌했고, `next()` 없이 명령 출력 줄을 처리해 후속 렌더러를 막는 현상이 관찰되었습니다. 모든 버전에서 동일하다는 뜻은 아닙니다.
 
 Codex와 Claude Code의 기능은 완전히 동일하지 않습니다. 다른 터미널 렌더러 모드와 동시 사용 시 충돌할 수 있습니다.
 
