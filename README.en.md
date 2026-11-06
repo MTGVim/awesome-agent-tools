@@ -178,6 +178,8 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 Interesting projects noted for later exploration, **not yet promoted to the main recommendations or Daily Setup**. These finds do not come with verified installation, update or removal guides.
 
+**[agent-qa](https://vostride.com)**: AI QA agent for plain-English web, Android and iOS tests, with persistent memidex memory and self-improvement from validated run evidence.
+
 **[Kilobat CLI](https://github.com/seifip/kilobat-cli)**: macOS network diagnostics CLI with JSON output and a local stdio MCP server. The CLI is GPL-3.0-only; the separate desktop app is proprietary.
 
 **[ArtCraft](https://getartcraft.com/)**: An open-source creative software ecosystem, including [ArtCraft Studio](https://github.com/storytold/artcraft) for AI image and video production and [ArtCraft Launcher](https://github.com/storytold/craft-launcher) for installing and updating apps. See the [full lineup](https://getartcraft.com/apps).
