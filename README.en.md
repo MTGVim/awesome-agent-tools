@@ -10,6 +10,14 @@ A curated collection of **AI coding-agent skills, plugins, mods, MCP servers, an
 
 **🧑‍💻 = A tool currently in My Daily Setup.** Shown only in the general catalog; it is not a quality rating or compatibility guarantee.
 
+## Required agent contribution checks
+
+**Before editing this repository, agents must read [AGENTS.md](AGENTS.md) in full and follow its rules.** This README summary does not replace AGENTS.md.
+
+**Mandatory for every catalog change, regardless of scope:** Reconcile the **entire** `My Daily Setup` inventory against all canonical `🧑‍💻` catalog markers in **both** READMEs, in both directions. Each daily tool must have exactly one marked catalog row; non-daily tools must have none. **Unchanged entries are not exempt.** Fix drift or report a blocker before merging.
+
+Passing CI is not mandatory, but this manual audit and the [documentation checklist](AGENTS.md#documentation-review-checklist) must not be skipped. Report the checks actually performed.
+
 ## Quick start
 
 For tool additions, removal, or guide maintenance, an agent should first read [AGENTS.md](AGENTS.md). You can give the agent a GitHub URL and ask it to add, update, archive, or remove that entry.
