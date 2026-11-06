@@ -1,13 +1,13 @@
 # Savvy Progress
 
-<!-- catalog: {"name": "Savvy Progress", "upstream": "https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress", "types": ["mod"], "agents": ["Claude Code"], "category": "ui", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-05"} -->
+<!-- catalog: {"name": "Savvy Progress", "upstream": "https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress", "types": ["mod"], "agents": ["Claude Code"], "category": "ui", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-05"} -->
 
 > Claude Code 작업 진행률 표시와 서브에이전트 상태 패널
 
 - **Upstream:** https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress
 - **Types:** mod
 - **Agents:** Claude Code
-- **Verification:** metadata
+- **Verification:** personal
 - **Install mode:** agent-guide
 - **Last reviewed:** 2026-11-05
 
@@ -15,7 +15,7 @@
 
 Claude Code 입력창 위에 작업 진행률 막대를 표시하고, `/agents-info`로 실행 중·완료·예정된 서브에이전트의 모델, effort, 작업 단계, 컨텍스트, 추정 비용·소요 시간을 확인합니다. [savvy-flow](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-flow)와 함께 사용하면 계획·작업 수락 현황이 진행률에 반영되지만, **savvy-progress 자체는 독립적으로 설치**할 수 있으며 일반 서브에이전트도 패널에서 표시합니다.
 
-[Claude Flightdeck](claude-flightdeck.md)과 비교해 볼 시험 사용 후보입니다. Flightdeck이 제공하는 모든 컨텍스트·권한 정보를 그대로 대체한다고 가정하지 않습니다.
+개인 Daily Setup에서는 [Claude Flightdeck](../../archive/claude-flightdeck.md)을 대체해 사용합니다. 두 도구의 기능이 완전히 동일하다는 의미는 아니며, Flightdeck의 기존 기능과 차이는 각 가이드에서 확인할 수 있습니다.
 
 ## Requirements
 
@@ -61,11 +61,11 @@ Claude Code 플러그인 관리에서 `savvy-progress@claude-kit`만 제거합�
 1. 세션을 재시작하고 `/agents-info`로 패널이 열리는지 확인합니다.
 2. autoOpen: any를 적용한 경우 일반 Haiku 서브에이전트를 실행해 패널이 자동으로 열리는지 확인합니다. 미적용 상태에서는 /agents-info로 수동으로 열어 상태와 모델을 확인합니다.
 3. `savvy-flow`를 설치했다면 계획 단계와 수락된 작업 수가 진행률에 반영되는지 확인합니다.
-4. Flightdeck과는 **각각 단독 실행**해 패널 가독성, 중복 표시 및 추가 도구 호출·토큰 사용량을 비교합니다.
+4. 패널 가독성, 다른 모드와의 출력 충돌, 추정 비용 표시와 추가 토큰 사용량을 점검합니다.
 
 ## Caveats
 
-- **개인 환경에서 활성화 확인:** 기본값에서는 일반 서브에이전트 실행만으로 패널이 자동으로 열리지 않았습니다. any 설정 후 자동 열기와 Flightdeck 대체 적합성은 아직 검증하지 않았습니다.
+- **개인 환경에서 활성화 확인:** 기본값에서는 일반 서브에이전트 실행만으로 패널이 자동으로 열리지 않았습니다. any 설정 후 자동 열기는 아직 검증하지 않았습니다. 개인 작업 환경에서는 Flightdeck 대신 이 도구를 채택했습니다.
 - 기본 `autoOpen: savvy`는 savvy-flow 작업 또는 계획 보고 시 패널을 자동으로 열고, `autoOpen: any`는 일반 서브에이전트 시작 시에도 엽니다. 일반 작업의 계획 진행률은 자동으로 정확하게 생성되는 값이 아니며, 보고가 없는 작업자는 컨텍스트 사용량이 회색으로 표시될 수 있습니다.
 - 비용 표시는 모델별 내장 가격표에 따른 **추정치**이며 실제 청구액이 아닙니다. 상류 문서의 가격표 기준일은 2026-10-10입니다.
 - 다른 Mod와 동일한 입력창 위 영역·패널을 사용한다면 화면 충돌 여부를 별도로 확인해야 합니다.
