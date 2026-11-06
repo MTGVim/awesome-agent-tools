@@ -8,9 +8,10 @@
 
 | 도구 | 텔레메트리 | 업데이트·버전 확인 | 근거·해제 방법 |
 |---|---|---|---|
+| [Context Mode](../tools/context/context-mode.md) | 로컬 처리 설명, 세부 미확인 | 미확인 | Gateway는 별도 호스팅 서비스 · [원본](https://github.com/mksglu/context-mode) |
+| [RTK](../tools/context/rtk.md) | 미확인 | 미확인 | 텔레메트리·자동 갱신 정책 미확인 · [원본](https://github.com/rtk-ai/rtk) |
 | [TigerKit](../tools/workflows/tigerkit.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/MTGVim/tiger-kit) |
 | [Orca](../tools/workflows/orca.md) | 사용 통계 전송 | 기본 자동 업데이트(플랫폼별 차이) | PostHog Cloud로 익명 사용 이벤트 전송. 공식 개인정보 문서에 초기값 미명시. 1.4.148 Windows 환경에서 초기 활성화 사용자 보고가 있으나 버전 전체에 일반화할 수 없음. `Settings → Privacy`, `DO_NOT_TRACK=1`, `ORCA_TELEMETRY_DISABLED=1`로 끌 수 있음. 자동 업데이트는 공식 설치 문서 참고 · [원본](https://www.onorca.dev/docs/telemetry) |
-| [Autoharness](../tools/workflows/autoharness.md) | 미확인 | 마켓플레이스 자동 갱신 선택 | Claude Code 서드파티 마켓플레이스 자동 갱신은 기본 비활성이고 별도 활성화 가능. 자체 텔레메트리는 README에서 확인되지 않음 · [원본](https://github.com/tigerless-labs/autoharness) |
 | [Skill Creator](../tools/workflows/skill-creator.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/openai/skills) |
 | [Subagent Tuner](../tools/workflows/subagent-tuner.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/Kruhlikau/subagent-tuner) |
 | [Autoharness Codex](../tools/workflows/autoharness-codex.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/arm092/autoharness-codex) |
@@ -23,7 +24,6 @@
 | [Ponytail](../tools/coding/ponytail.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/dietrichgebert/ponytail) |
 | [Agent Usage Guard](../tools/context/agent-usage-guard.md) | 네트워크 요청 없음 명시 | 미확인 | 원본 README 기준 자체 네트워크 요청·추가 프로세스 없음 · [원본](https://github.com/rbartoli/agent-usage-guard) |
 | [Cache Tax](../tools/context/cache-tax.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/karanb192/cache-tax) |
-| [Engram](../tools/context/engram.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/Gentleman-Programming/engram) |
 | [Chrome DevTools MCP](../tools/browser/chrome-devtools-mcp.md) | 기본 활성 | 버전 확인 | `--no-usage-statistics` 또는 `CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS=1`; 업데이트 확인은 `CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS=1` · [원본](https://github.com/ChromeDevTools/chrome-devtools-mcp#usage-statistics) |
 | [Claude Show Your Work](../tools/browser/claude-show-your-work.md) | 선택적 공유 | 자체 버전 확인·업데이트 | PostHog로 익명 사용량 공유(설정 선택). `SHOW_YOUR_WORK_TELEMETRY=0`/`DO_NOT_TRACK=1`; `SHOW_YOUR_WORK_AUTO_UPDATE=0`으로 자체 버전 확인 끔 · [원본](https://github.com/iamumeransari/claude-show-your-work/blob/main/PRIVACY.md) |
 | [Cua](../tools/browser/cua.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/trycua/cua) |

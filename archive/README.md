@@ -4,12 +4,12 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 
 | Tool | Reason | Details |
 |---|---|---|
+| [Autoharness](https://github.com/tigerless-labs/autoharness) | `low-value` | [Why](./autoharness.md) |
+| [Engram](https://github.com/Gentleman-Programming/engram) | `incompatible` | [Why](./engram.md) |
 | [Session Titles](https://github.com/zhangbububu/session-titles) | `low-value` | [Why](./session-titles.md) |
 | [Claude Auto Handoff](https://github.com/alexknowshtml/claude-auto-handoff) | `superseded` | [Why](./claude-auto-handoff.md) |
 | [Context7](https://github.com/upstash/context7) | `needs-review` | [Why](./context7.md) |
 | [Paseo](https://github.com/getpaseo/paseo) | `low-value` | [Why](./paseo.md) |
-| [Context Mode](https://github.com/mksglu/context-mode) | `low-value` | [Why](./context-mode.md) |
-| [RTK](https://github.com/rtk-ai/rtk) | `low-value` | [Why](./rtk.md) |
 | [Plain Writing Skill](https://github.com/docwriter-org/plain-writing-skill) | `integrated` | [Why](./plain-writing-skill.md) |
 | [im-not-ai](https://github.com/epoko77-ai/im-not-ai) | `integrated` | [Why](./im-not-ai.md) |
 | [humanizer-kr](https://github.com/hjongc/humanizer-kr) | `integrated` | [Why](./humanizer-kr.md) |

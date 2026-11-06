@@ -44,13 +44,12 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 |---|---|
 | [TigerKit](https://github.com/MTGVim/tiger-kit) | 개발·리뷰·검증을 위한 Claude Code·Codex·Hermes 통합 스킬 |
 | [Orca](https://github.com/stablyai/orca) | 에이전트 병렬 개발 환경 |
-| [Autoharness](https://github.com/tigerless-labs/autoharness) | 스킬 자동 관리 |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | 에이전트 폭주 방지·큰 컨텍스트에서 Compact 제안 |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | 코드 그래프 탐색 |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | 프롬프트 캐시 유지 |
-| [Engram](https://github.com/Gentleman-Programming/engram) | 세션 메모리 |
+| [RTK](https://github.com/rtk-ai/rtk) | 개발 명령 출력 압축. 개인 실측 절감률 12.7% |
 | [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | 미디어·QA 시각화 |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | 이미지 편집·미리보기 |
 | [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | 서브에이전트 진행률·상태 패널 |
@@ -65,6 +64,9 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Yazi](https://github.com/sxyazi/yazi) | 터미널 파일 관리 |
 
 ### 설정 메모
+
+- **[Prismantis](tools/visual/prismantis.md):** 사용 중이며 `diagramHints: false`. 프롬프트당 약 630토큰, 주간 비용 약 1%는 개인 환경의 관찰·추정치입니다.
+- **[RTK](tools/context/rtk.md):** 기본 설정 사용. 실측 절감률 12.7%이며 Context Mode 효과와 단순 합산할 수 없습니다.
 
 - **[abtop](tools/utilities/abtop.md):** 세션 제목·요약 생성에 `claude --print`를 사용하므로 추가 AI 토큰이 소모될 수 있습니다. 비용 절감을 위해 `ANTHROPIC_MODEL=haiku abtop`처럼 저비용 모델을 지정해 실행하는 방법을 검토합니다. 실제 모델 적용 여부는 실행 환경에서 확인합니다.
 
@@ -92,7 +94,6 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
 | [Orca](https://github.com/stablyai/orca) 🧑‍💻 | Claude Code·Codex·Hermes를 워크트리별로 병렬 실행·편집·리뷰하는 통합 개발 환경<br>[가이드](tools/workflows/orca.md) · [시연](https://github.com/stablyai/orca/blob/main/docs/assets/readme-hero.jpg) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/stablyai/orca?style=flat-square&label=%20) |
-| [Autoharness](https://github.com/tigerless-labs/autoharness) 🧑‍💻 | Claude Code 세션에서 스킬을 학습하고 중복 병합·갱신·정리<br>[가이드](tools/workflows/autoharness.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/tigerless-labs/autoharness?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/tigerless-labs/autoharness?style=flat-square&label=%20) |
 | [Skill Creator](https://github.com/openai/skills) | Codex 스킬 제작·개선 도구. 기존 openai/skills 저장소는 폐기 안내 중<br>[가이드](tools/workflows/skill-creator.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/openai/skills?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/openai/skills?style=flat-square&label=%20) |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) 🧑‍💻 | Claude Code 서브에이전트마다 모델·추론 수준 자동 선택<br>[가이드](tools/workflows/subagent-tuner.md) · [시연](https://github.com/Kruhlikau/subagent-tuner/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Kruhlikau/subagent-tuner?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Kruhlikau/subagent-tuner?style=flat-square&label=%20) |
 | [Autoharness Codex](https://github.com/arm092/autoharness-codex) | Codex 세션 기록으로 스킬을 학습·검증·정리<br>[가이드](tools/workflows/autoharness-codex.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/arm092/autoharness-codex?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/arm092/autoharness-codex?style=flat-square&label=%20) |
@@ -113,9 +114,10 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
+| [Context Mode](https://github.com/mksglu/context-mode) | 로컬에서 도구 출력을 관리해 컨텍스트 소비 절감<br>[가이드](tools/context/context-mode.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/mksglu/context-mode?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/mksglu/context-mode?style=flat-square&label=%20) |
+| [RTK](https://github.com/rtk-ai/rtk) 🧑‍💻 | 개발 명령 출력을 압축해 에이전트 토큰 사용량 절감<br>[가이드](tools/context/rtk.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rtk-ai/rtk?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Claude Code의 과도한 에이전트 호출·재시도·사용량 급증 방지<br>[가이드](tools/context/agent-usage-guard.md) · [시연](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |
 | [Cache Tax](https://github.com/karanb192/cache-tax) 🧑‍💻 | Claude Code 프롬프트 캐시 유지·만료 비용 경고<br>[가이드](tools/context/cache-tax.md) · [시연](https://github.com/karanb192/cache-tax/blob/main/site/assets/refusal.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/karanb192/cache-tax?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/karanb192/cache-tax?style=flat-square&label=%20) |
-| [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | 여러 코딩 에이전트를 위한 지속 메모리·프로젝트별 검색<br>[가이드](tools/context/engram.md) · [시연](https://github.com/Gentleman-Programming/engram/blob/main/assets/tui-dashboard.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
 
 ## 브라우저·QA
 

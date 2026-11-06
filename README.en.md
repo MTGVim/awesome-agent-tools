@@ -48,13 +48,12 @@ Tools reported as actively used (as of 2026-11-06). This is separate from recomm
 |---|---|
 | [TigerKit](https://github.com/MTGVim/tiger-kit) | Development, review and verification skills across Claude Code, Codex and Hermes |
 | [Orca](https://github.com/stablyai/orca) | Parallel agent workspace |
-| [Autoharness](https://github.com/tigerless-labs/autoharness) | Skill lifecycle manager |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | Subagent model and effort tuning |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | Agent usage guardrails with a compact-before-send option |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | Code graph exploration |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | Overengineering guard |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | Prompt cache maintenance |
-| [Engram](https://github.com/Gentleman-Programming/engram) | Cross-session memory |
+| [RTK](https://github.com/rtk-ai/rtk) | Compressed development command output; 12.7% observed savings |
 | [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | Media and visual QA |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | Image preview and annotation |
 | [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Subagent progress and status panel |
@@ -69,6 +68,9 @@ Tools reported as actively used (as of 2026-11-06). This is separate from recomm
 | [Yazi](https://github.com/sxyazi/yazi) | Terminal file manager |
 
 ### Setup notes
+
+- **[Prismantis](tools/visual/prismantis.md):** Active with `diagramHints: false`. ~630 tokens per prompt and ~1% weekly cost are personal estimates.
+- **[RTK](tools/context/rtk.md):** Uses defaults; 12.7% measured savings, not additive to Context Mode results.
 
 - **[abtop](tools/utilities/abtop.md):** Generating session titles and summaries can invoke `claude --print` and consume extra model tokens. Consider `ANTHROPIC_MODEL=haiku abtop` to select a lower-cost model, and verify that the model override actually takes effect in your environment.
 
@@ -97,7 +99,6 @@ Projects maintained by the curator are listed separately from third-party recomm
 | Tool | Description · Guide | Agents | GitHub Activity |
 |---|---|---|---|
 | [Orca](https://github.com/stablyai/orca) 🧑‍💻 | AI development workspace for parallel agents, worktrees, editing and review<br>[Guide](tools/workflows/orca.md) · [Demo](https://github.com/stablyai/orca/blob/main/docs/assets/readme-hero.jpg) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/stablyai/orca?style=flat-square&label=%20) |
-| [Autoharness](https://github.com/tigerless-labs/autoharness) 🧑‍💻 | Learns, merges, updates and prunes skills from Claude Code sessions<br>[Guide](tools/workflows/autoharness.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/tigerless-labs/autoharness?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/tigerless-labs/autoharness?style=flat-square&label=%20) |
 | [Skill Creator](https://github.com/openai/skills) | Codex skill authoring tool; original openai/skills repository is deprecated<br>[Guide](tools/workflows/skill-creator.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/openai/skills?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/openai/skills?style=flat-square&label=%20) |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) 🧑‍💻 | Chooses models and reasoning effort per Claude Code subagent<br>[Guide](tools/workflows/subagent-tuner.md) · [Demo](https://github.com/Kruhlikau/subagent-tuner/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Kruhlikau/subagent-tuner?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Kruhlikau/subagent-tuner?style=flat-square&label=%20) |
 | [Autoharness Codex](https://github.com/arm092/autoharness-codex) | Learns, verifies and consolidates skills from Codex sessions<br>[Guide](tools/workflows/autoharness-codex.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/arm092/autoharness-codex?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/arm092/autoharness-codex?style=flat-square&label=%20) |
@@ -118,9 +119,10 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 | Tool | Description · Guide | Agents | GitHub Activity |
 |---|---|---|---|
+| [Context Mode](https://github.com/mksglu/context-mode) | Locally manages tool output to reduce agent context usage<br>[Guide](tools/context/context-mode.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/mksglu/context-mode?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/mksglu/context-mode?style=flat-square&label=%20) |
+| [RTK](https://github.com/rtk-ai/rtk) 🧑‍💻 | Compresses development command output to save agent tokens<br>[Guide](tools/context/rtk.md) | `Standalone CLI` | ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rtk-ai/rtk?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Guards against excessive Claude Code agents, retries and usage<br>[Guide](tools/context/agent-usage-guard.md) · [Demo](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |
 | [Cache Tax](https://github.com/karanb192/cache-tax) 🧑‍💻 | Keeps Claude Code prompt caches warm and warns about expiration costs<br>[Guide](tools/context/cache-tax.md) · [Demo](https://github.com/karanb192/cache-tax/blob/main/site/assets/refusal.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/karanb192/cache-tax?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/karanb192/cache-tax?style=flat-square&label=%20) |
-| [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | Persistent project-aware memory and search for coding agents<br>[Guide](tools/context/engram.md) · [Demo](https://github.com/Gentleman-Programming/engram/blob/main/assets/tui-dashboard.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
 
 ## Browser & QA
 

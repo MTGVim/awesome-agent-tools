@@ -48,3 +48,7 @@ Claude Code 공식 플러그인 업데이트 경로를 이용합니다. 진행 �
 ## References
 
 - [Upstream](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization)
+
+### 개인 사용 평가 (2026-11-06)
+
+한 차례 시험에서 효과를 확인하지 못했고 스킬 목록이 예산 한도에 가까워 플러그인을 비활성화했습니다. 개인 경험이므로 Active 카탈로그에서는 유지합니다.

@@ -64,3 +64,7 @@ Mermaid pie 차트를 출력할 때 inline image의 base64 문자열이 그대�
 ## References
 
 - [Upstream](https://github.com/NahumLitvin/prismantis)
+
+### 설정 갱신 (2026-11-06)
+
+현재 사용 중이며 `diagramHints: false`로 설정했습니다. 힌트 주입량 약 630토큰/프롬프트와 주간 비용 약 1%는 개인 환경의 관찰·추정치입니다. 과거 500~600토큰 및 전체 약 2% 분석과는 기준이 다릅니다.
