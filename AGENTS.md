@@ -251,3 +251,5 @@ Use this checklist for each catalog addition, update, archive, restoration or Co
 ## Dependabot security automation
 
 The maintainer authorized security-only dependency PRs on 2026-11-08. The dedicated dependency check may run for Dependabot PRs and manual verification; patch security updates may merge after that required check passes. The existing catalog validator workflow remains manual, and ordinary catalog publishing keeps its manual review policy.
+
+🤖 본 지침는 AI가 작성했습니다.
