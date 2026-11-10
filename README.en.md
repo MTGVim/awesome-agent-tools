@@ -181,7 +181,7 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 Interesting projects noted for later exploration, **not yet promoted to the main recommendations or Daily Setup**. These finds do not come with verified installation, update or removal guides.
 
-**[agent-qa](https://vostride.com)**: AI QA agent for plain-English web, Android and iOS tests, with persistent memidex memory and self-improvement from validated run evidence.
+**[agent-qa](https://github.com/vostride/agent-qa)**: A QA tool for natural-language web, Android and iOS tests with recorded evidence and persistent memory. [FSL-1.1-ALv2](https://github.com/vostride/agent-qa/blob/main/LICENSE.md) restricts competing commercial offerings; disable [usage analytics](https://vostride.com/docs/agent-qa/safety) with `analytics.privacy: true`. Installation and runtime behavior are unverified.
 
 **[Kilobat CLI](https://github.com/seifip/kilobat-cli)**: macOS network diagnostics CLI with JSON output and a local stdio MCP server. The CLI is GPL-3.0-only; the separate desktop app is proprietary.
 

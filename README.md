@@ -176,7 +176,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 당장 데일리 셋업에 넣거나 추천 목록으로 승격하지는 않았지만, 흥미로워서 기록한 프로젝트입니다. **설치·업데이트·삭제 가이드와 사용 검증은 제공하지 않습니다.**
 
-**[agent-qa](https://vostride.com)**: 자연어로 웹·Android·iOS 앱을 테스트하며, memidex의 영구 메모리와 검증된 실행 근거를 바탕으로 지속 개선하는 AI QA 에이전트.
+**[agent-qa](https://github.com/vostride/agent-qa)**: 자연어로 웹·Android·iOS 앱을 테스트하고 실행 근거와 메모리를 남기는 QA 도구입니다. [FSL-1.1-ALv2](https://github.com/vostride/agent-qa/blob/main/LICENSE.md)로 경쟁 서비스 제공이 제한되며, [사용 통계 전송](https://vostride.com/docs/agent-qa/safety)은 `analytics.privacy: true`로 끌 수 있습니다. 설치·동작은 미검증입니다.
 
 **[Kilobat CLI](https://github.com/seifip/kilobat-cli)**: JSON 출력을 지원하는 macOS 네트워크 진단 CLI와 로컬 stdio MCP 서버입니다. CLI는 GPL-3.0-only이며 별도의 데스크톱 앱은 독점 소프트웨어입니다.
 
