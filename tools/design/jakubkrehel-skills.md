@@ -1,6 +1,6 @@
-# Interfaces
+# jakubkrehel/skills
 
-<!-- catalog: {"name": "Interfaces", "upstream": "https://github.com/jakubkrehel/skills", "types": ["skill", "plugin"], "agents": ["Claude Code"], "category": "design", "verification": "personal", "install_mode": "agent-guide", "installers": ["skills-cli"], "last_reviewed": "2026-11-10"} -->
+<!-- catalog: {"name": "jakubkrehel/skills", "upstream": "https://github.com/jakubkrehel/skills", "types": ["skill", "plugin"], "agents": ["Claude Code"], "category": "design", "verification": "personal", "install_mode": "agent-guide", "installers": ["skills-cli"], "last_reviewed": "2026-11-10"} -->
 
 > UI·타이포그래피·색상·접근성·레이아웃·제품 문구의 제작·리뷰를 위한 스킬 모음
 
@@ -30,7 +30,7 @@ npx skills add jakubkrehel/skills
 
 `skills/better-interface/SKILL.md` 등 개별 스킬 디렉터리가 있습니다. 필요한 스킬만 선택하고 모음 전체 설치를 기본으로 강제하지 않습니다. `better-interface`의 종합 리뷰에는 관련 `better-*` 스킬도 필요합니다.
 
-Claude Code 공식 플러그인 경로:
+Claude Code에서는 `interfaces`를 플러그인과 마켓플레이스 ID로 사용합니다.
 
 ```text
 /plugin marketplace add jakubkrehel/skills
