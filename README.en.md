@@ -6,7 +6,7 @@ A curated collection of **AI coding-agent skills, plugins, mods, MCP servers, an
 
 > English edition. [한국어 기본 카탈로그](README.md). This is a curated list, not a compatibility or security guarantee.
 
-**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 40 active entries. Unknowns remain explicitly marked.
+**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 42 active entries. Unknowns remain explicitly marked.
 
 **🧑‍💻 = A tool currently in My Daily Setup.** Shown only in the general catalog; it is not a quality rating or compatibility guarantee.
 
@@ -42,7 +42,7 @@ For tool additions, removal, or guide maintenance, an agent should first read [A
 
 ## My Daily Setup
 
-Tools reported as actively used (as of 2026-11-07). This is separate from recommendations and may vary by environment.
+Tools reported as actively used (as of 2026-11-10). This is separate from recommendations and may vary by environment.
 
 | Tool | Purpose |
 |---|---|
@@ -57,7 +57,7 @@ Tools reported as actively used (as of 2026-11-07). This is separate from recomm
 | [RTK](https://github.com/rtk-ai/rtk) | Compressed development command output; 12.7% observed savings |
 | [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | Media and visual QA |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | Image preview and annotation |
-| [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Subagent progress and status panel |
+| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | Context, cost, permission checks and subagent status panel |
 | [Prismantis](https://github.com/NahumLitvin/prismantis) | Tables, code and Mermaid rendering |
 | [Stats](https://github.com/exelban/stats) | macOS resource monitoring |
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | macOS window management and menu-bar utilities |
@@ -67,6 +67,7 @@ Tools reported as actively used (as of 2026-11-07). This is separate from recomm
 | [Peon Ping](https://github.com/PeonPing/peon-ping) | Task notifications |
 | [abtop](https://github.com/graykode/abtop) | Terminal resource monitor |
 | [Yazi](https://github.com/sxyazi/yazi) | Terminal file manager |
+| [Interfaces](https://github.com/jakubkrehel/skills) | Skills for building and reviewing UI, typography, color, accessibility, layout and product copy |
 
 ### Setup notes
 
@@ -80,7 +81,7 @@ These are adjustments and caveats from this particular environment. For installa
 
 - **[Show Your Work](tools/browser/claude-show-your-work.md):** If Prismantis is also enabled, place Show Your Work before it in Claude Code's `enabledPlugins` ordering. This is an observed ordering workaround, not a guarantee of renderer interoperability. Disable usage statistics through `/show-your-work` → **Don't share**, or `SHOW_YOUR_WORK_TELEMETRY=0`. Set `SHOW_YOUR_WORK_AUTO_UPDATE=0` to disable its own version checks and updates.
 - **[Paste Preview](tools/ui/claude-code-paste-preview.md):** It shares the image-preview region with Image View; enable one at a time.
-- **[Savvy Progress](tools/ui/savvy-progress.md):** Replaces Flightdeck in this setup. To open the panel when any subagent starts, configure `autoOpen: any`; the observed default was `savvy`. Use `/agents-info` to open it manually.
+- **[Claude Flightdeck](tools/ui/claude-flightdeck.md):** Back in use; `/flightdeck` opens the panel. Savvy Progress is no longer in daily use but remains in the general recommendations.
 - **[Claude Code · Cache Tax · Agent Usage Guard](tools/context/cache-tax.md):** Disable idle-only compaction with `idleCompaction: false` while keeping standard autocompact. Configure Cache Tax with `keepwarm: always` and warning-only `guard: warn`, and Agent Usage Guard with `AGENT_GUARD_DORMANT_SECONDS=21600` (6 hours). The `/cache-tax` new-session guard indicator still needs verification; keepwarm itself consumes tokens.
 - **[Orca · Paste Preview · Prismantis](tools/workflows/orca.md):** If inline-image base64 appears after sending an edited image or rendering Mermaid pie, redraw with `Ctrl+L`. A conditional delayed redraw shim is a temporary workaround, not a confirmed fix.
 - **[Claude Code Filetree](tools/ui/claude-code-filetree.md):** Removed from this environment after its panel caused pointer click coordinates to shift left; the cause and cross-platform reproducibility are unverified.
@@ -145,7 +146,8 @@ Projects maintained by the curator are listed separately from third-party recomm
 | [Claude HUD](https://github.com/jarrodwatts/claude-hud) 🧑‍💻 | Claude Code status line for usage, context and active tools<br>[Guide](tools/ui/claude-hud.md) · [Demo](https://github.com/jarrodwatts/claude-hud/blob/main/claude-hud-preview-5-2.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square&label=%20) |
 | [Claude Image View](https://github.com/jarrodwatts/claude-image-view) | Shows original-aspect thumbnails of pasted images<br>[Guide](tools/ui/claude-image-view.md) · [Demo](https://github.com/jarrodwatts/claude-image-view/blob/main/claude-image-view.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-image-view?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-image-view?style=flat-square&label=%20) |
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) 🧑‍💻 | Previews past prompts and jumps to transcript turns<br>[Guide](tools/ui/prompt-rail.md) · [Demo](https://github.com/oikon48/prompt-rail/blob/main/docs/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/oikon48/prompt-rail?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/oikon48/prompt-rail?style=flat-square&label=%20) |
-| [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) 🧑‍💻 | Claude Code progress bar and agent panel showing models, context and estimated cost<br>[Guide](tools/ui/savvy-progress.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/JohnnyVizz/claude-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/JohnnyVizz/claude-kit?style=flat-square&label=%20) |
+| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) 🧑‍💻 | Live context, cost, permission checks and subagent cards or swimlanes<br>[Guide](tools/ui/claude-flightdeck.md) · [Demo](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
+| [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Claude Code progress bar and agent panel showing models, context and estimated cost<br>[Guide](tools/ui/savvy-progress.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/JohnnyVizz/claude-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/JohnnyVizz/claude-kit?style=flat-square&label=%20) |
 
 ## Visual & Content
 
@@ -159,6 +161,7 @@ Projects maintained by the curator are listed separately from third-party recomm
 
 | Tool | Description · Guide | Agents | GitHub Activity |
 |---|---|---|---|
+| [Interfaces](https://github.com/jakubkrehel/skills) 🧑‍💻 | Skills for building and reviewing UI, typography, color, accessibility, layout and product copy<br>[Guide](tools/design/interfaces.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/jakubkrehel/skills?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jakubkrehel/skills?style=flat-square&label=%20) |
 | [Figma Desktop MCP](https://developers.figma.com/docs/figma-mcp-server/local-server-installation/) | Exposes Figma desktop Dev Mode design context and assets via MCP<br>[Guide](tools/design/figma-desktop-mcp.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | — |
 | [Open Design](https://github.com/nexu-io/open-design) | Collaborative AI design workspace for prototypes, apps and slides<br>[Guide](tools/design/open-design.md) · [Demo](https://github.com/nexu-io/open-design/blob/main/docs/assets/readme-hero-design-agent.webp) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/nexu-io/open-design?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/nexu-io/open-design?style=flat-square&label=%20) |
 
@@ -208,6 +211,10 @@ Interesting projects noted for later exploration, **not yet promoted to the main
 **[Replay Theater](https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater)**: A Claude Code visualization mod for stepping through the previous turn's file edits and inspecting each diff with `/replay`. It does not undo edits; installation and runtime behavior have not been independently tested.
 
 **[wterm](https://github.com/vercel-labs/wterm)**: A web terminal emulator from Vercel Labs with a Zig/WASM core, DOM rendering, React/Vue/Svelte integrations, and an optional Ghostty-powered terminal core.
+
+**[Waza](https://github.com/tw93/Waza)**: Engineering-habit skills for requirements and design review, UI creation, debugging, code verification, writing, research, and agent setup audits.
+
+**[Kami](https://github.com/tw93/Kami)**: A skill providing layout rules and templates for AI agents to produce resumes, reports, slide decks, and other documents as PDF, PNG, and editable PowerPoint.
 
 ## Archived
 

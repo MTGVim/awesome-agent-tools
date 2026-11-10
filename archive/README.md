@@ -4,6 +4,7 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 
 | Tool | Reason | Details |
 |---|---|---|
+| [XERJ](https://github.com/xerj-org/xerj) | `needs-review` | [Why](./xerj.md) |
 | [Autoharness](https://github.com/tigerless-labs/autoharness) | `low-value` | [Why](./autoharness.md) |
 | [Session Titles](https://github.com/zhangbububu/session-titles) | `low-value` | [Why](./session-titles.md) |
 | [Claude Auto Handoff](https://github.com/alexknowshtml/claude-auto-handoff) | `superseded` | [Why](./claude-auto-handoff.md) |
@@ -33,4 +34,3 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 | [Glowup](https://github.com/NovusEdge/glowup) | `incompatible` | [Why](./glowup.md) |
 | [Claude Skins](https://github.com/hellosverre/claude-skins) | `low-value` | [Why](./claude-skins.md) |
 | [Inbox](https://github.com/petekp/inbox) | `superseded` | [Why](./inbox.md) |
-| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | `superseded` | [Why](./claude-flightdeck.md) |

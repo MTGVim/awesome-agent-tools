@@ -247,3 +247,9 @@ Use this checklist for each catalog addition, update, archive, restoration or Co
 - Avoid dependence on a third-party repo for day-to-day catalog functioning; upstream docs may change.
 - GitHub API and image badges are only activity signals. Do not treat stars, last commit or `Archived` as safety or quality verdicts.
 - After changes, run validation and inspect links, row counts, duplicates and README ↔ guide ↔ archive consistency. If something cannot be checked, name it.
+
+## Dependabot security automation
+
+The maintainer authorized security-only dependency PRs on 2026-11-08. The dedicated dependency check may run for Dependabot PRs and manual verification; patch security updates may merge after that required check passes. The existing catalog validator workflow remains manual, and ordinary catalog publishing keeps its manual review policy.
+
+🤖 본 지침는 AI가 작성했습니다.
