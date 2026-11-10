@@ -1,5 +1,18 @@
 # Claude Show Your Work
 
+- **Status:** Archived
+- **Reason:** `low-value`
+- **Archived on:** 2026-11-11
+- **Upstream:** https://github.com/iamumeransari/claude-show-your-work
+
+## Why archived
+
+2026-11-11 기준 개인 사용 기록에서 923개 세션 중 22개 세션에 걸쳐 69회 사용했습니다. 대부분 정적 이미지였고, 미리보기 화질이 낮아 원본을 다시 열어야 했습니다. 데일리 셋업에서 제외하고 현재 추천 목록에서도 보관합니다. 이는 개인 사용 평가이며 업스트림 전체에 대한 결함 판정이 아닙니다.
+
+## Historical guide
+
+아래는 보관 당시의 가이드입니다. 설치·업데이트 명령은 현재 절차로 간주하지 말고 업스트림 문서를 확인합니다.
+
 <!-- catalog: {"name": "Claude Show Your Work", "upstream": "https://github.com/iamumeransari/claude-show-your-work", "types": ["plugin"], "agents": ["Claude Code"], "category": "browser", "verification": "metadata", "install_mode": "agent-guide", "last_reviewed": "2026-11-03"} -->
 
 > 미디어 재생 및 테스트 전후 비교

@@ -1,5 +1,18 @@
 # Engram
 
+- **Status:** Archived
+- **Reason:** `low-value`
+- **Archived on:** 2026-11-11
+- **Upstream:** https://github.com/Gentleman-Programming/engram
+
+## Why archived
+
+개인 환경에서 첫 프롬프트 지연과 훅 관리 부담을 경험해 2026-11-06에 보관했습니다. 2026-11-07 복원 기록에는 메모리 워크플로를 유지하려는 당시 판단이 남아 있습니다. 사용자는 2026-11-09 활성화가 의도하지 않은 상태 변경이었다고 확인했고, 2026-11-11 현재 추천과 데일리 셋업에서 다시 제외하기로 했습니다. 이는 개인 환경에 대한 판단이며 업스트림 전체의 문제를 뜻하지 않습니다. 기존 개인 데이터는 이 카탈로그 변경의 영향을 받지 않습니다.
+
+## Historical guide
+
+아래는 보관 당시의 가이드입니다. 설치·업데이트 명령은 현재 절차로 간주하지 말고 업스트림 문서를 확인합니다.
+
 <!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool", "mcp"], "agents": ["Claude Code", "Codex"], "category": "context", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-07"} -->
 
 > 코딩 에이전트가 세션을 넘어 프로젝트 결정과 작업 중 얻은 지식을 저장하고 검색하는 로컬 메모리 도구입니다.

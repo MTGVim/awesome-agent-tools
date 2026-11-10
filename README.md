@@ -6,7 +6,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 > 이 목록은 큐레이터가 선별한 도구를 소개합니다. 포함 여부는 호환성이나 안전성 보증이 아닙니다.
 
-**개인정보·네트워크 점검:** 활성 도구 42개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
+**개인정보·네트워크 점검:** 활성 도구 39개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
 
 **🧑‍💻 = My Daily Setup에서 현재 사용하는 도구입니다.** 일반 카탈로그에서만 표시하며, 추천 등급이나 호환성 보증을 의미하지 않습니다.
 
@@ -38,7 +38,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## My Daily Setup
 
-실제로 사용 중인 조합(2026-11-10 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
+실제로 사용 중인 조합(2026-11-11 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
 
 | 도구 | 용도 |
 |---|---|
@@ -46,12 +46,10 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Orca](https://github.com/stablyai/orca) | 에이전트 병렬 개발 환경 |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | 에이전트 폭주 방지·큰 컨텍스트에서 Compact 제안 |
-| [Engram](https://github.com/Gentleman-Programming/engram) | 세션 간 프로젝트 메모리와 키워드 검색 |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | 코드 그래프 탐색 |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | 프롬프트 캐시 유지 |
 | [RTK](https://github.com/rtk-ai/rtk) | 개발 명령 출력 압축. 개인 실측 절감률 12.7% |
-| [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | 미디어·QA 시각화 |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | 이미지 편집·미리보기 |
 | [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | 컨텍스트·비용·권한 검사·서브에이전트 상태 패널 |
 | [Prismantis](https://github.com/NahumLitvin/prismantis) | 표·코드·Mermaid 렌더링 |
@@ -75,7 +73,6 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 현재 구성에서 조정하거나 확인해 둔 사항입니다. 도구별 설치·업데이트·삭제 방법은 아래 카탈로그의 가이드에서 확인할 수 있습니다.
 
-- **[Show Your Work](tools/browser/claude-show-your-work.md):** Prismantis도 함께 활성화한다면 Claude Code 설정의 `enabledPlugins`에서 Show Your Work를 앞에 둡니다. 이는 출력 처리 순서에 관한 사용자 환경의 우회 방법으로, 모든 렌더러 조합에서 정상 동작을 보장하지는 않습니다. `/show-your-work`의 **Don't share** 또는 `SHOW_YOUR_WORK_TELEMETRY=0`으로 사용 통계 전송을 끌 수 있습니다. 자체 버전 확인·업데이트를 끄려면 `SHOW_YOUR_WORK_AUTO_UPDATE=0`을 설정합니다.
 - **[Paste Preview](tools/ui/claude-code-paste-preview.md):** Image View와 같은 이미지 미리보기 영역을 사용하므로 하나만 활성화합니다.
 - **[Claude HUD](tools/ui/claude-hud.md):** `statusLine` 설정은 HUD의 정상 기능입니다. 다른 플러그인이 기존 설정을 덮어쓰는지만 확인합니다.
 - **[Claude Code · Cache Tax · Agent Usage Guard](tools/context/cache-tax.md):** `idleCompaction: false`로 유휴 압축만 끄고 일반 autocompact는 유지합니다. Cache Tax는 `keepwarm: always`, `guard: warn`(비용 경고만 표시)으로, Agent Usage Guard는 `AGENT_GUARD_DORMANT_SECONDS=21600`(6시간)으로 설정했습니다. Cache Tax 변경은 새 세션의 `/cache-tax`에서 `guard warn only` 표시 확인이 남았습니다. 캐시 유지에도 토큰 비용이 듭니다.
@@ -116,7 +113,6 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
-| [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | 프로젝트별 결정과 해결책을 로컬에 저장하고 여러 키워드로 검색<br>[가이드](tools/context/engram.md) · [시연](https://github.com/Gentleman-Programming/engram/blob/main/assets/tui-dashboard.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
 | [RTK](https://github.com/rtk-ai/rtk) 🧑‍💻 | 개발 명령 출력을 압축해 에이전트 토큰 사용량 절감<br>[가이드](tools/context/rtk.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rtk-ai/rtk?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Claude Code의 과도한 에이전트 호출·재시도·사용량 급증 방지<br>[가이드](tools/context/agent-usage-guard.md) · [시연](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |
 | [Cache Tax](https://github.com/karanb192/cache-tax) 🧑‍💻 | Claude Code 프롬프트 캐시 유지·만료 비용 경고<br>[가이드](tools/context/cache-tax.md) · [시연](https://github.com/karanb192/cache-tax/blob/main/site/assets/refusal.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/karanb192/cache-tax?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/karanb192/cache-tax?style=flat-square&label=%20) |
@@ -126,7 +122,6 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
 | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Chrome 브라우저 디버깅·성능 분석·자동화를 MCP와 CLI로 제공<br>[가이드](tools/browser/chrome-devtools-mcp.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/ChromeDevTools/chrome-devtools-mcp?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/ChromeDevTools/chrome-devtools-mcp?style=flat-square&label=%20) |
-| [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) 🧑‍💻 | Claude Code 안에서 이미지·영상·Playwright QA 결과 시각화<br>[가이드](tools/browser/claude-show-your-work.md) · [시연](https://github.com/iamumeransari/claude-show-your-work/blob/main/docs/homepage.jpg) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/iamumeransari/claude-show-your-work?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/iamumeransari/claude-show-your-work?style=flat-square&label=%20) |
 | [Cua](https://github.com/trycua/cua) | AI 에이전트용 가상 데스크톱·GUI 드라이버·컴퓨터 사용 SDK<br>[가이드](tools/browser/cua.md) | `SDK·플랫폼` | ![Stars](https://img.shields.io/github/stars/trycua/cua?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/trycua/cua?style=flat-square&label=%20) |
 
 ## 터미널 UI

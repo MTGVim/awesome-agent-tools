@@ -35,3 +35,5 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 | [Glowup](https://github.com/NovusEdge/glowup) | `incompatible` | [Why](./glowup.md) |
 | [Claude Skins](https://github.com/hellosverre/claude-skins) | `low-value` | [Why](./claude-skins.md) |
 | [Inbox](https://github.com/petekp/inbox) | `superseded` | [Why](./inbox.md) |
+| [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | `low-value` | [Why](./claude-show-your-work.md) |
+| [Engram](https://github.com/Gentleman-Programming/engram) | `low-value` | [Why](./engram.md) |
