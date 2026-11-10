@@ -207,6 +207,10 @@ Interesting projects noted for later exploration, **not yet promoted to the main
 
 **[wterm](https://github.com/vercel-labs/wterm)**: A web terminal emulator from Vercel Labs with a Zig/WASM core, DOM rendering, React/Vue/Svelte integrations, and an optional Ghostty-powered terminal core.
 
+**[Waza](https://github.com/tw93/Waza)**: Engineering-habit skills for requirements and design review, UI creation, debugging, code verification, writing, research, and agent setup audits.
+
+**[Kami](https://github.com/tw93/Kami)**: A skill providing layout rules and templates for AI agents to produce resumes, reports, slide decks, and other documents as PDF, PNG, and editable PowerPoint.
+
 ## Archived
 
 [Archived tools and reasons](archive/README.md). Archived does not necessarily mean the upstream project is abandoned; it may simply be unsuitable for this curator's workflow.

@@ -202,6 +202,10 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 **[wterm](https://github.com/vercel-labs/wterm)**: Vercel Labs의 웹 터미널 에뮬레이터입니다. Zig·WASM 코어와 DOM 렌더링을 사용하며, React·Vue·Svelte 연동 및 선택형 Ghostty 기반 터미널 코어를 제공합니다.
 
+**[Waza](https://github.com/tw93/Waza)**: 요구 사항·설계 검토, UI 제작, 디버깅, 코드 검증, 글쓰기·조사와 에이전트 환경 점검을 위한 엔지니어링 습관 스킬 모음입니다.
+
+**[Kami](https://github.com/tw93/Kami)**: AI 에이전트가 이력서·보고서·슬라이드 등을 PDF·PNG·편집 가능한 PowerPoint로 제작하도록 레이아웃 규칙과 템플릿을 제공하는 스킬입니다.
+
 ## Archived · 추천 제외
 
 [추천 제외 도구와 사유 보기](archive/README.md). 제외는 개인적인 큐레이션 판단이며 원본 프로젝트가 중단되었다는 뜻은 아닙니다.
