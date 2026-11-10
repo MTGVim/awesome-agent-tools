@@ -2,13 +2,14 @@
 
 [한국어 README](../README.md) · [English README](../README.en.md)
 
-> **조사 범위:** 활성 카탈로그 39개(2026-11-11 기준)의 상류 README와 공개 개인정보 처리 안내를 확인했습니다. 기존 항목은 2026-11-04에, Savvy Progress 항목은 2026-11-05에 확인했습니다. Engram은 2026-11-07 복원 시 확인했습니다. Claude Flightdeck은 2026-11-06 보관했다가 2026-11-10 사용 재개 확인과 upstream 재검토 후 복원했습니다. `jakubkrehel/skills`는 2026-11-10 README·manifest·일부 스킬과 자원을 확인했습니다. 일부 도구는 README 수준에서만 확인했으며, **소스 코드 전체 감사나 실제 네트워크 패킷 검증은 수행하지 않았습니다.** `미확인`은 기능이 없다는 뜻이 아닙니다.
+> **조사 범위:** 활성 카탈로그 40개(2026-11-11 기준)의 상류 README와 공개 개인정보 처리 안내를 확인했습니다. 기존 항목은 2026-11-04에, Savvy Progress 항목은 2026-11-05에 확인했습니다. Engram은 2026-11-11 데일리 셋업 복원 시 상류 README·설치·에이전트 설정·환경 변수 문서를 재확인했습니다. Claude Flightdeck은 2026-11-06 보관했다가 2026-11-10 사용 재개 확인과 upstream 재검토 후 복원했습니다. `jakubkrehel/skills`는 2026-11-10 README·manifest·일부 스킬과 자원을 확인했습니다. 일부 도구는 README 수준에서만 확인했으며, **소스 코드 전체 감사나 실제 네트워크 패킷 검증은 수행하지 않았습니다.** `미확인`은 기능이 없다는 뜻이 아닙니다.
 
 **구분:** 텔레메트리(사용 통계), 버전 확인(업데이트 존재 여부 조회), 자동 업데이트(코드 설치·교체), 정상적인 API/MCP·클라우드 통신은 서로 다릅니다. 상류 문서의 기본값과 해제 방법만 사실로 표기합니다. 일반 에이전트·패키지 매니저가 별도로 만드는 네트워크 요청은 포함하지 않습니다.
 
 | 도구 | 텔레메트리 | 업데이트·버전 확인 | 근거·해제 방법 |
 |---|---|---|---|
 | [jakubkrehel/skills](../tools/design/jakubkrehel-skills.md) | 자체 통계의 데이터·기본값·수신자·opt-out 미확인 | 자체 버전 확인·자동 갱신 미확인; 설치 관리자 통신과 구분 | 2026-11-10 정적 확인. Figma MCP, 브라우저·연결 서비스 사용은 별도 업무 통신이며 전체 소스 감사는 아님 · [README](https://github.com/jakubkrehel/skills/blob/72bdd6121cd595f47fd21c9f23e374028c9cbacd/README.md) · [afk](https://github.com/jakubkrehel/skills/blob/72bdd6121cd595f47fd21c9f23e374028c9cbacd/skills/afk/SKILL.md) · [build-design](https://github.com/jakubkrehel/skills/blob/72bdd6121cd595f47fd21c9f23e374028c9cbacd/skills/build-design/SKILL.md) |
+| [Engram](../tools/context/engram.md) | 사용 통계 정책 미확인; 기본 메모리 저장은 로컬 | 일부 CLI·TUI의 GitHub Releases 버전 확인; 바이너리 자동 교체와 구분 | `ENGRAM_NO_UPDATE_CHECK=1`로 버전 확인 해제. Cloud Autosync는 기본 비활성(`ENGRAM_CLOUD_AUTOSYNC=1`과 토큰·서버 설정 필요); 활성화 시 설정한 서버로 메모리 동기화. 플러그인 갱신은 `engram setup claude-code` 재실행 및 호스트 설정과 구분. 2026-11-11 문서 정적 확인 · [환경 변수](https://github.com/Gentleman-Programming/engram/blob/main/DOCS.md#environment-variables) · [설정](https://github.com/Gentleman-Programming/engram/blob/main/docs/AGENT-SETUP.md) |
 | [RTK](../tools/context/rtk.md) | 미확인 | 미확인 | 텔레메트리·자동 갱신 정책 미확인 · [원본](https://github.com/rtk-ai/rtk) |
 | [TigerKit](../tools/workflows/tigerkit.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/MTGVim/tiger-kit) |
 | [Orca](../tools/workflows/orca.md) | 사용 통계 전송 | 기본 자동 업데이트(플랫폼별 차이) | PostHog Cloud로 익명 사용 이벤트 전송. 공식 개인정보 문서에 초기값 미명시. 1.4.148 Windows 환경에서 초기 활성화 사용자 보고가 있으나 버전 전체에 일반화할 수 없음. `Settings → Privacy`, `DO_NOT_TRACK=1`, `ORCA_TELEMETRY_DISABLED=1`로 끌 수 있음. 자동 업데이트는 공식 설치 문서 참고 · [원본](https://www.onorca.dev/docs/telemetry) |

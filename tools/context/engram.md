@@ -1,28 +1,15 @@
 # Engram
 
-- **Status:** Archived
-- **Reason:** `low-value`
-- **Archived on:** 2026-11-11
-- **Upstream:** https://github.com/Gentleman-Programming/engram
-
-## Why archived
-
-개인 환경에서 첫 프롬프트 지연과 훅 관리 부담을 경험해 2026-11-06에 보관했습니다. 2026-11-07 복원 기록에는 메모리 워크플로를 유지하려는 당시 판단이 남아 있습니다. 사용자는 2026-11-09 활성화가 의도하지 않은 상태 변경이었다고 확인했고, 2026-11-11 현재 추천과 데일리 셋업에서 다시 제외하기로 했습니다. 이는 개인 환경에 대한 판단이며 업스트림 전체의 문제를 뜻하지 않습니다. 기존 개인 데이터는 이 카탈로그 변경의 영향을 받지 않습니다.
-
-## Historical guide
-
-아래는 보관 당시의 가이드입니다. 설치·업데이트 명령은 현재 절차로 간주하지 말고 업스트림 문서를 확인합니다.
-
-<!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool", "mcp"], "agents": ["Claude Code", "Codex"], "category": "context", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-07"} -->
+<!-- catalog: {"name": "Engram", "upstream": "https://github.com/Gentleman-Programming/engram", "types": ["tool", "mcp"], "agents": ["Claude Code", "Codex"], "category": "context", "verification": "personal", "install_mode": "agent-guide", "last_reviewed": "2026-11-11"} -->
 
 > 코딩 에이전트가 세션을 넘어 프로젝트 결정과 작업 중 얻은 지식을 저장하고 검색하는 로컬 메모리 도구입니다.
 
 - **Upstream:** https://github.com/Gentleman-Programming/engram
 - **Types:** tool, mcp
 - **Agents:** Claude Code, Codex
-- **Verification:** personal (Claude Code에서 이전 사용 기록 확인)
+- **Verification:** personal (Claude Code 사용 기록 및 2026-11-11 계속 사용 확인)
 - **Install mode:** agent-guide
-- **Last reviewed:** 2026-11-07
+- **Last reviewed:** 2026-11-11
 
 ## Why use it?
 
@@ -54,14 +41,18 @@
 
 ## Caveats
 
+현재 My Daily Setup에서 사용 중입니다. 2026-11-11 사용자는 적합한 대체제가 없어 Engram을 계속 사용한다고 확인하고, 활성 카탈로그와 데일리 셋업 복원을 요청했습니다. 과거 훅 지연 경험은 주의사항이며 현재 사용 중단을 뜻하지 않습니다.
+
 ### 개인 사용 기록
 
 - **2026-11-06 보관:** 개인 환경의 7일 기록에서 첫 프롬프트 훅이 10초 제한에 걸린 사례가 243건 있었습니다. 긴 프롬프트를 처리하는 Bash 훅을 로컬에서 수정한 뒤 해당 측정은 약 0.06초로 줄었습니다. 당시에는 훅과 상주 서비스의 관리 부담 때문에 보관했습니다. 한국어, 누적 데이터량, 최신 배포판에서의 재현 여부는 확인되지 않았습니다.
 - **2026-11-07 복원:** 현재 에이전트가 메모를 직접 고르고 여러 키워드를 한 번에 검색하는 기존 흐름을 유지하기 위해 다시 사용하기로 했습니다. 지연이 재발하면 Bare MCP로 분리해 비교합니다. 재활성화 후 지연은 아직 측정하지 않았습니다.
 
+- **2026-11-11 복원:** 첫 프롬프트 지연과 훅 관리 부담을 근거로 다시 보관되어 있었으나, 사용자가 대체제 부재와 계속 사용 중임을 확인하여 활성 카탈로그와 데일리 셋업으로 복원했습니다. 과거 지연 사례를 보존하며 현재 버전의 성능 개선을 주장하지 않습니다.
+
 ## Privacy & Updates
 
-2026-11-07 상류 문서와 버전 확인 코드를 검토했습니다. 사용 통계 전송 정책은 미확인입니다. 기본 저장은 로컬입니다. 선택형 Cloud Autosync는 활성화한 경우 설정한 Engram Cloud 서버와 메모리 변경분을 동기화합니다. `ENGRAM_CLOUD_AUTOSYNC`를 설정하지 않거나 `1` 이외의 값으로 두면 비활성입니다. Git 동기화 역시 별도 기능이므로 저장소에 내보내는 데이터 범위를 확인합니다.
+2026-11-11 상류 README·설치·에이전트 설정·환경 변수 문서를 재확인했습니다. 사용 통계 전송 정책은 미확인입니다. 기본 저장은 로컬입니다. 선택형 Cloud Autosync는 활성화한 경우 설정한 Engram Cloud 서버와 메모리 변경분을 동기화합니다. `ENGRAM_CLOUD_AUTOSYNC`를 설정하지 않거나 `1` 이외의 값으로 두면 비활성입니다. Git 동기화 역시 별도 기능이므로 저장소에 내보내는 데이터 범위를 확인합니다.
 
 일부 CLI 명령과 TUI는 GitHub Releases API에 버전 확인 요청을 보냅니다. `ENGRAM_NO_UPDATE_CHECK=1`로 끌 수 있습니다. 이 버전 확인은 설치 파일을 교체하지 않습니다. Claude Code 통합의 사용자 범위 플러그인 갱신은 위 설정 명령을 다시 실행할 때 수행됩니다. [상류 환경 변수 문서](https://github.com/Gentleman-Programming/engram/blob/main/DOCS.md#environment-variables)
 
