@@ -4,6 +4,7 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 
 | Tool | Reason | Details |
 |---|---|---|
+| [Context Mode](https://github.com/mksglu/context-mode) | `low-value` | [Why](./context-mode.md) |
 | [XERJ](https://github.com/xerj-org/xerj) | `needs-review` | [Why](./xerj.md) |
 | [Autoharness](https://github.com/tigerless-labs/autoharness) | `low-value` | [Why](./autoharness.md) |
 | [Session Titles](https://github.com/zhangbububu/session-titles) | `low-value` | [Why](./session-titles.md) |

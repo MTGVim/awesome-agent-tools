@@ -63,12 +63,12 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Peon Ping](https://github.com/PeonPing/peon-ping) | 작업 알림 |
 | [abtop](https://github.com/graykode/abtop) | 터미널 모니터링 |
 | [Yazi](https://github.com/sxyazi/yazi) | 터미널 파일 관리 |
-| [Interfaces](https://github.com/jakubkrehel/skills) | UI·타이포그래피·색상·접근성·레이아웃·제품 문구 제작·리뷰 스킬 |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | UI·타이포그래피·색상·접근성·레이아웃·제품 문구 제작·리뷰 스킬 |
 
 ### 설정 메모
 
 - **[Prismantis](tools/visual/prismantis.md):** 사용 중이며 `diagramHints: false`. 프롬프트당 약 630토큰, 주간 비용 약 1%는 개인 환경의 관찰·추정치입니다.
-- **[RTK](tools/context/rtk.md):** 기본 설정 사용. 실측 절감률 12.7%이며 Context Mode 효과와 단순 합산할 수 없습니다.
+- **[RTK](tools/context/rtk.md):** 기본 설정을 사용하며, 개인 환경에서 실측한 절감률은 12.7%입니다.
 
 - **[abtop](tools/utilities/abtop.md):** 세션 제목·요약 생성에 `claude --print`를 사용하므로 추가 AI 토큰이 소모될 수 있습니다. 비용 절감을 위해 `ANTHROPIC_MODEL=haiku abtop`처럼 저비용 모델을 지정해 실행하는 방법을 검토합니다. 실제 모델 적용 여부는 실행 환경에서 확인합니다.
 
@@ -117,7 +117,6 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
 | [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | 프로젝트별 결정과 해결책을 로컬에 저장하고 여러 키워드로 검색<br>[가이드](tools/context/engram.md) · [시연](https://github.com/Gentleman-Programming/engram/blob/main/assets/tui-dashboard.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
-| [Context Mode](https://github.com/mksglu/context-mode) | 로컬에서 도구 출력을 관리해 컨텍스트 소비 절감<br>[가이드](tools/context/context-mode.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/mksglu/context-mode?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/mksglu/context-mode?style=flat-square&label=%20) |
 | [RTK](https://github.com/rtk-ai/rtk) 🧑‍💻 | 개발 명령 출력을 압축해 에이전트 토큰 사용량 절감<br>[가이드](tools/context/rtk.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rtk-ai/rtk?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Claude Code의 과도한 에이전트 호출·재시도·사용량 급증 방지<br>[가이드](tools/context/agent-usage-guard.md) · [시연](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |
 | [Cache Tax](https://github.com/karanb192/cache-tax) 🧑‍💻 | Claude Code 프롬프트 캐시 유지·만료 비용 경고<br>[가이드](tools/context/cache-tax.md) · [시연](https://github.com/karanb192/cache-tax/blob/main/site/assets/refusal.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/karanb192/cache-tax?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/karanb192/cache-tax?style=flat-square&label=%20) |
@@ -156,7 +155,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
-| [Interfaces](https://github.com/jakubkrehel/skills) 🧑‍💻 | UI·타이포그래피·색상·접근성·레이아웃·제품 문구의 제작·리뷰 스킬 모음<br>[가이드](tools/design/interfaces.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/jakubkrehel/skills?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jakubkrehel/skills?style=flat-square&label=%20) |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) 🧑‍💻 | UI·타이포그래피·색상·접근성·레이아웃·제품 문구의 제작·리뷰 스킬 모음<br>[가이드](tools/design/jakubkrehel-skills.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/jakubkrehel/skills?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jakubkrehel/skills?style=flat-square&label=%20) |
 | [Figma Desktop MCP](https://developers.figma.com/docs/figma-mcp-server/local-server-installation/) | Figma 데스크톱 Dev Mode 디자인 정보·에셋을 MCP로 제공<br>[가이드](tools/design/figma-desktop-mcp.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | — |
 | [Open Design](https://github.com/nexu-io/open-design) | AI 에이전트와 프로토타입·웹·슬라이드를 제작·피드백하는 워크스페이스<br>[가이드](tools/design/open-design.md) · [시연](https://github.com/nexu-io/open-design/blob/main/docs/assets/readme-hero-design-agent.webp) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/nexu-io/open-design?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/nexu-io/open-design?style=flat-square&label=%20) |
 

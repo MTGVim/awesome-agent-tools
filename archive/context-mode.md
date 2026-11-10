@@ -1,5 +1,17 @@
 # Context Mode
 
+- **Status:** Archived
+- **Reason:** `low-value`
+- **Archived on:** 2026-11-10
+
+## Why archived
+
+큐레이터가 시험 사용한 결과 이미지 등을 읽는 작업에 방해가 됐으며, 적용 후 세션이 더 길어졌다는 체감은 없었습니다.
+
+## Historical guide
+
+아래는 시험 당시의 가이드입니다. 현재 설치 절차는 업스트림 문서를 확인합니다.
+
 <!-- catalog: {"name":"Context Mode","upstream":"https://github.com/mksglu/context-mode","types":["plugin"],"agents":["Claude Code"],"category":"context","verification":"trial","install_mode":"agent-guide","last_reviewed":"2026-11-06"} -->
 
 > 도구 출력을 로컬에서 분리·검색해 컨텍스트를 절약하는 플러그인
@@ -39,11 +51,11 @@
 
 ### 개인 사용 평가 (2026-11-06)
 
-재독량 중 약 17%인 도구 결과를 줄이려고 1주 시험합니다. 아직 실측 절감률은 확인되지 않았으며 RTK와 단순 합산할 수 없습니다. 시험 중이므로 My Daily Setup에는 포함하지 않았습니다. 무료 로컬 플러그인과 별도 유료 Gateway를 구분합니다.
+재독량 중 약 17%인 도구 결과를 줄이려고 1주 시험합니다. 시험 당시 절감률을 측정하지 않았으며 My Daily Setup에도 포함하지 않았습니다. 무료 로컬 플러그인과 별도 유료 Gateway를 구분합니다.
 
 ## Privacy & Updates
 
-텔레메트리와 버전 확인·자동 갱신에 관한 상세 정책은 미확인입니다. [원본](https://github.com/mksglu/context-mode) (2026-11-06 확인).
+2026-11-10에 확인한 업스트림 문서에 따르면 로컬 플러그인은 사용 통계와 오류 보고를 전송하지 않습니다. `context-mode doctor`를 실행하면 npm에서 버전을 조회하며, 필요하면 Git 릴리스 태그를 조회합니다. 호스트의 자동 갱신 여부는 확인하지 않았습니다. Gateway에는 별도 정책이 적용됩니다. [보안 및 개인정보 안내](https://github.com/mksglu/context-mode#security-and-privacy)
 
 ## References
 
