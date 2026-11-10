@@ -184,6 +184,8 @@ Interesting projects noted for later exploration, **not yet promoted to the main
 
 **[Kilobat CLI](https://github.com/seifip/kilobat-cli)**: macOS network diagnostics CLI with JSON output and a local stdio MCP server. The CLI is GPL-3.0-only; the separate desktop app is proprietary.
 
+**[Imagera](https://github.com/alexadams6ix/imagera-skills)**: A remote MCP server (OAuth sign-in) and 37 agent skills for generating and editing images, video, voice and music from a coding agent, with a cost estimate before each run. The repo is MIT; the hosted service is paid (Imagera credits).
+
 **[ArtCraft](https://getartcraft.com/)**: An open-source creative software ecosystem, including [ArtCraft Studio](https://github.com/storytold/artcraft) for AI image and video production and [ArtCraft Launcher](https://github.com/storytold/craft-launcher) for installing and updating apps. See the [full lineup](https://getartcraft.com/apps).
 
 | Crafting app | What it does |
