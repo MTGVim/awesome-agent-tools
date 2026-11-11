@@ -6,7 +6,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 > 이 목록은 큐레이터가 선별한 도구를 소개합니다. 포함 여부는 호환성이나 안전성 보증이 아닙니다.
 
-**개인정보·네트워크 점검:** 활성 도구 40개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
+**개인정보·네트워크 점검:** 활성 도구 41개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
 
 **🧑‍💻 = My Daily Setup에서 현재 사용하는 도구입니다.** 일반 카탈로그에서만 표시하며, 추천 등급이나 호환성 보증을 의미하지 않습니다.
 
@@ -96,6 +96,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Orca](https://github.com/stablyai/orca) 🧑‍💻 | Claude Code·Codex·Hermes를 워크트리별로 병렬 실행·편집·리뷰하는 통합 개발 환경<br>[가이드](tools/workflows/orca.md) · [시연](https://github.com/stablyai/orca/blob/main/docs/assets/readme-hero.jpg) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/stablyai/orca?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/stablyai/orca?style=flat-square&label=%20) |
 | [Skill Creator](https://github.com/openai/skills) | Codex 스킬 제작·개선 도구. 기존 openai/skills 저장소는 폐기 안내 중<br>[가이드](tools/workflows/skill-creator.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/openai/skills?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/openai/skills?style=flat-square&label=%20) |
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) 🧑‍💻 | Claude Code 서브에이전트마다 모델·추론 수준 자동 선택<br>[가이드](tools/workflows/subagent-tuner.md) · [시연](https://github.com/Kruhlikau/subagent-tuner/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Kruhlikau/subagent-tuner?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Kruhlikau/subagent-tuner?style=flat-square&label=%20) |
+| [Autoharness](https://github.com/tigerless-labs/autoharness) | Claude Code 세션 기록에서 반복 교훈을 스킬로 학습하고 실제 사용 빈도로 유지·통합·보관<br>[가이드](tools/workflows/autoharness.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/tigerless-labs/autoharness?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/tigerless-labs/autoharness?style=flat-square&label=%20) |
 | [Autoharness Codex](https://github.com/arm092/autoharness-codex) | Codex 세션 기록으로 스킬을 학습·검증·정리<br>[가이드](tools/workflows/autoharness-codex.md) | ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/arm092/autoharness-codex?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/arm092/autoharness-codex?style=flat-square&label=%20) |
 | [Darwin Skill](https://github.com/alchaincyf/darwin-skill) | 실험·평가를 반복해 Agent Skills를 최적화<br>[가이드](tools/workflows/darwin-skill.md) | [![Skills CLI](https://img.shields.io/badge/Skills_CLI-multi--agent-5965A8?style=flat-square)](https://github.com/vercel-labs/skills) | ![Stars](https://img.shields.io/github/stars/alchaincyf/darwin-skill?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/alchaincyf/darwin-skill?style=flat-square&label=%20) |
 | [MCP Atlassian](https://github.com/sooperset/mcp-atlassian) | Jira·Confluence의 이슈와 문서를 MCP로 연결<br>[가이드](tools/workflows/mcp-atlassian.md) · [시연](https://github.com/sooperset/mcp-atlassian#quick-start) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/sooperset/mcp-atlassian?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sooperset/mcp-atlassian?style=flat-square&label=%20) |
@@ -171,6 +172,12 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 ## Cool Finds
 
 당장 데일리 셋업에 넣거나 추천 목록으로 승격하지는 않았지만, 흥미로워서 기록한 프로젝트입니다. **설치·업데이트·삭제 가이드와 사용 검증은 제공하지 않습니다.**
+
+**[Self-Improving Skills](https://github.com/UniM0cha/self-improving-skills)**: Hermes식 학습 루프를 Claude Code·Codex·Claude Cowork·ChatGPT Work로 옮긴 프로젝트입니다. 스킬 상한·유사도 중복 방지는 현재 Claude Code판에서만 확인했습니다. 2026-11-11 확인한 최근 commit은 2026-09-13이며, 다른 변형의 동등한 보호 기능·실행은 미검증입니다.
+
+**[Hermes Self-Improvement Claude Plugin](https://github.com/lilpacy/hermes-self-improvement-claude-plugin)**: Hermes의 스킬 검토 프롬프트를 원문 그대로 가져오고 기본 10턴마다 `claude -p --safe-mode`로 놓친 교훈을 스킬에 반영하는 Claude Code 플러그인입니다. 설치·실행은 미검증입니다.
+
+**[auto-improve](https://github.com/denisraison/claude-plugins/tree/main/plugins/auto-improve)**: 기본 사용자 5턴 간격 또는 정정·저장 요청 신호에서 Haiku 백그라운드 검토를 실행해 메모리와 스킬을 갱신하는 Claude Code 플러그인입니다. 최소 4턴·사소한 후속 응답 제외 등의 조건이 있으며 설치·실행은 미검증입니다.
 
 **[agent-qa](https://github.com/vostride/agent-qa)**: 자연어로 웹·Android·iOS 앱을 테스트하고 실행 근거와 메모리를 남기는 QA 도구입니다. [FSL-1.1-ALv2](https://github.com/vostride/agent-qa/blob/main/LICENSE.md)로 경쟁 서비스 제공이 제한되며, [사용 통계 전송](https://vostride.com/docs/agent-qa/safety)은 `analytics.privacy: true`로 끌 수 있습니다. 설치·동작은 미검증입니다.
 

@@ -64,7 +64,7 @@ Claude Code 2.1.286+, macOS 또는 Linux, kitty 그래픽 프로토콜을 사용
 
 사용 통계 공유는 설정으로 선택하며 PostHog에 전송됩니다. `SHOW_YOUR_WORK_TELEMETRY=0` 또는 `DO_NOT_TRACK=1`로 중단할 수 있습니다. 별도의 하루 1회 자체 버전 확인은 `SHOW_YOUR_WORK_AUTO_UPDATE=0`으로 끕니다. [Privacy](https://github.com/iamumeransari/claude-show-your-work/blob/main/PRIVACY.md)
 
-상태 비교: [Privacy, Telemetry & Updates](../../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
+상태 비교: [Privacy, Telemetry & Updates](../docs/privacy-and-updates.md). 실제 설치된 버전의 설정을 다시 확인합니다.
 
 ### 개인 셋업 메모 (2026-11-03)
 

@@ -202,10 +202,10 @@ Maintain one document per entry with: title; a `<!-- catalog: {...} -->` comment
 1. `## Why use it?`: practical value, recommendation rationale, any ownership disclosure.
 2. `## Requirements`: supported OS/agent/version/terminal/runtime and whether known vs pending verification.
 3. `## Install`: exact official commands only when confirmed, otherwise safe agent-guided steps.
-4. `## Update`: official updater or inspection procedure, preserving user changes.
-5. `## Uninstall`: reverse only the files/registrations introduced by this tool; preserve shared dependencies.
+4. `## Update`: official updater or inspection procedure, preserving user changes. If a plugin’s manifest version does not change between commits, note that `claude plugin update` compares versions only and give a commit-based refresh procedure.
+5. `## Uninstall`: reverse only the files/registrations introduced by this tool; preserve shared dependencies. For tools that persist learned or session state, list global and per-repository state paths that uninstall leaves behind.
 6. `## Verify`: differentiate presence, successful installation and actual behavior.
-7. `## Caveats`: collisions, tokens, permissions, breakage risk, compatibility, unknowns.
+7. `## Caveats`: collisions, tokens, permissions, breakage risk, compatibility, unknowns. For tools that spawn headless agent sessions, state the child's isolation flags and their defaults (e.g. `--setting-sources ""`, `--strict-mcp-config`, `--safe-mode`; `--bare` requires an API key), its model, and whether it consumes the user's plan quota.
 8. `## References`: canonical upstream docs and significant sources.
 
 Do not claim unknown versions, commands, performance results, platforms, stars, or dates. Record uncertainty plainly rather than inventing instructions. Diátaxis is a **lightweight organizing inspiration**, not a demand for four documents per tool.
