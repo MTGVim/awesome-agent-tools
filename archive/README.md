@@ -35,3 +35,4 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 | [Claude Skins](https://github.com/hellosverre/claude-skins) | `low-value` | [Why](./claude-skins.md) |
 | [Inbox](https://github.com/petekp/inbox) | `superseded` | [Why](./inbox.md) |
 | [Claude Show Your Work](https://github.com/iamumeransari/claude-show-your-work) | `low-value` | [Why](./claude-show-your-work.md) |
+| [RTK](https://github.com/rtk-ai/rtk) | `external-api-dependency` | [Why](./rtk.md) |
