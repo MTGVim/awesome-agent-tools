@@ -42,7 +42,7 @@ For tool additions, removal, or guide maintenance, an agent should first read [A
 
 ## My Daily Setup
 
-Tools reported as actively used (as of 2026-11-11). This is separate from recommendations and may vary by environment.
+Tools reported as actively used (as of 2026-11-17). This is separate from recommendations and may vary by environment.
 
 | Tool | Purpose |
 |---|---|
@@ -55,7 +55,7 @@ Tools reported as actively used (as of 2026-11-11). This is separate from recomm
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | Overengineering guard |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | Prompt cache maintenance |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | Image preview and annotation |
-| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | Context, cost, permission checks and subagent status panel |
+| [Subagent Monitor](https://github.com/blogchik/subagent-monitor) | Live subagent activity, model, effort, tokens and transcripts |
 | [Prismantis](https://github.com/NahumLitvin/prismantis) | Tables, code and Mermaid rendering |
 | [Stats](https://github.com/exelban/stats) | macOS resource monitoring |
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | macOS window management and menu-bar utilities |
@@ -77,7 +77,7 @@ Tools reported as actively used (as of 2026-11-11). This is separate from recomm
 These are adjustments and caveats from this particular environment. For installation, updates and removal, see the tool guides in the catalog below.
 
 - **[Paste Preview](tools/ui/claude-code-paste-preview.md):** It shares the image-preview region with Image View; enable one at a time.
-- **[Claude Flightdeck](tools/ui/claude-flightdeck.md):** Back in use; `/flightdeck` opens the panel. Savvy Progress is no longer in daily use but remains in the general recommendations.
+- **[Subagent Monitor](tools/ui/subagent-monitor.md):** Replaces Flightdeck in daily use; the panel opens automatically or via `/subagents`.
 - **[Claude Code · Cache Tax · Agent Usage Guard](tools/context/cache-tax.md):** Disable idle-only compaction with `idleCompaction: false` while keeping standard autocompact. Configure Cache Tax with `keepwarm: always` and warning-only `guard: warn`, and Agent Usage Guard with `AGENT_GUARD_DORMANT_SECONDS=21600` (6 hours). The `/cache-tax` new-session guard indicator still needs verification; keepwarm itself consumes tokens.
 - **[Orca · Paste Preview · Prismantis](tools/workflows/orca.md):** If inline-image base64 appears after sending an edited image or rendering Mermaid pie, redraw with `Ctrl+L`. A conditional delayed redraw shim is a temporary workaround, not a confirmed fix.
 - **[Claude Code Filetree](tools/ui/claude-code-filetree.md):** Removed from this environment after its panel caused pointer click coordinates to shift left; the cause and cross-platform reproducibility are unverified.
@@ -140,7 +140,8 @@ Projects maintained by the curator are listed separately from third-party recomm
 | [Claude HUD](https://github.com/jarrodwatts/claude-hud) 🧑‍💻 | Claude Code status line for usage, context and active tools<br>[Guide](tools/ui/claude-hud.md) · [Demo](https://github.com/jarrodwatts/claude-hud/blob/main/claude-hud-preview-5-2.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square&label=%20) |
 | [Claude Image View](https://github.com/jarrodwatts/claude-image-view) | Shows original-aspect thumbnails of pasted images<br>[Guide](tools/ui/claude-image-view.md) · [Demo](https://github.com/jarrodwatts/claude-image-view/blob/main/claude-image-view.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-image-view?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-image-view?style=flat-square&label=%20) |
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) 🧑‍💻 | Previews past prompts and jumps to transcript turns<br>[Guide](tools/ui/prompt-rail.md) · [Demo](https://github.com/oikon48/prompt-rail/blob/main/docs/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/oikon48/prompt-rail?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/oikon48/prompt-rail?style=flat-square&label=%20) |
-| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) 🧑‍💻 | Live context, cost, permission checks and subagent cards or swimlanes<br>[Guide](tools/ui/claude-flightdeck.md) · [Demo](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
+| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | Live context, cost, permission checks and subagent cards or swimlanes<br>[Guide](tools/ui/claude-flightdeck.md) · [Demo](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
+| [Subagent Monitor](https://github.com/blogchik/subagent-monitor) 🧑‍💻 | Live subagent cards with model, effort, token context, tool activity and transcripts<br>[Guide](tools/ui/subagent-monitor.md) · [Demo](https://github.com/blogchik/subagent-monitor#subagent-monitor) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/blogchik/subagent-monitor?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/blogchik/subagent-monitor?style=flat-square&label=%20) |
 | [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Claude Code progress bar and agent panel showing models, context and estimated cost<br>[Guide](tools/ui/savvy-progress.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/JohnnyVizz/claude-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/JohnnyVizz/claude-kit?style=flat-square&label=%20) |
 
 ## Visual & Content

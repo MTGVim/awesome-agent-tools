@@ -6,7 +6,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 > 이 목록은 큐레이터가 선별한 도구를 소개합니다. 포함 여부는 호환성이나 안전성 보증이 아닙니다.
 
-**개인정보·네트워크 점검:** 활성 도구 40개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
+**개인정보·네트워크 점검:** 활성 도구 41개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
 
 **🧑‍💻 = My Daily Setup에서 현재 사용하는 도구입니다.** 일반 카탈로그에서만 표시하며, 추천 등급이나 호환성 보증을 의미하지 않습니다.
 
@@ -38,7 +38,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## My Daily Setup
 
-실제로 사용 중인 조합(2026-11-11 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
+실제로 사용 중인 조합(2026-11-17 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
 
 | 도구 | 용도 |
 |---|---|
@@ -51,7 +51,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | 프롬프트 캐시 유지 |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | 이미지 편집·미리보기 |
-| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | 컨텍스트·비용·권한 검사·서브에이전트 상태 패널 |
+| [Subagent Monitor](https://github.com/blogchik/subagent-monitor) | 서브에이전트 실시간 활동·모델·effort·토큰·대화 기록 |
 | [Prismantis](https://github.com/NahumLitvin/prismantis) | 표·코드·Mermaid 렌더링 |
 | [Stats](https://github.com/exelban/stats) | macOS 자원 사용량 모니터링 |
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) | macOS 창 관리·메뉴 막대 유틸리티 |
@@ -76,7 +76,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 - **[Claude HUD](tools/ui/claude-hud.md):** `statusLine` 설정은 HUD의 정상 기능입니다. 다른 플러그인이 기존 설정을 덮어쓰는지만 확인합니다.
 - **[Claude Code · Cache Tax · Agent Usage Guard](tools/context/cache-tax.md):** `idleCompaction: false`로 유휴 압축만 끄고 일반 autocompact는 유지합니다. Cache Tax는 `keepwarm: always`, `guard: warn`(비용 경고만 표시)으로, Agent Usage Guard는 `AGENT_GUARD_DORMANT_SECONDS=21600`(6시간)으로 설정했습니다. Cache Tax 변경은 새 세션의 `/cache-tax`에서 `guard warn only` 표시 확인이 남았습니다. 캐시 유지에도 토큰 비용이 듭니다.
 - **[Orca · Paste Preview · Prismantis](tools/workflows/orca.md):** 편집 이미지 전송이나 Mermaid pie 출력 뒤 inline image의 base64가 보이면 `Ctrl+L`로 다시 그립니다. 반복 시 조건부 지연 redraw shim을 임시로 고려합니다.
-- **[Claude Flightdeck](tools/ui/claude-flightdeck.md):** 다시 사용 중이며 `/flightdeck`으로 패널을 엽니다. Savvy Progress는 사용만 중단했으며 일반 추천 목록에는 유지합니다.
+- **[Subagent Monitor](tools/ui/subagent-monitor.md):** Flightdeck을 대신 사용하며 첫 서브에이전트 실행 시 패널이 자동으로 열립니다. `/subagents`로 다시 열 수 있습니다.
 - **[Claude Code Filetree](tools/ui/claude-code-filetree.md):** 활성화 시 화면 전반의 클릭 좌표가 왼쪽으로 어긋나 개인 환경에서 사용을 중단하고 플러그인·마켓플레이스·캐시를 제거했습니다.
 
 ## 내 프로젝트 · My Works
@@ -135,7 +135,8 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Claude HUD](https://github.com/jarrodwatts/claude-hud) 🧑‍💻 | Claude Code 입력창 아래 사용량·컨텍스트·도구 상태 표시<br>[가이드](tools/ui/claude-hud.md) · [시연](https://github.com/jarrodwatts/claude-hud/blob/main/claude-hud-preview-5-2.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square&label=%20) |
 | [Claude Image View](https://github.com/jarrodwatts/claude-image-view) | 붙여넣은 이미지 썸네일을 원본 비율로 표시<br>[가이드](tools/ui/claude-image-view.md) · [시연](https://github.com/jarrodwatts/claude-image-view/blob/main/claude-image-view.png) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/jarrodwatts/claude-image-view?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/jarrodwatts/claude-image-view?style=flat-square&label=%20) |
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) 🧑‍💻 | 이전 프롬프트를 미리 보고 해당 대화로 이동<br>[가이드](tools/ui/prompt-rail.md) · [시연](https://github.com/oikon48/prompt-rail/blob/main/docs/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/oikon48/prompt-rail?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/oikon48/prompt-rail?style=flat-square&label=%20) |
-| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) 🧑‍💻 | 컨텍스트·비용·권한 검사·서브에이전트를 카드·스윔레인으로 표시<br>[가이드](tools/ui/claude-flightdeck.md) · [시연](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
+| [Claude Flightdeck](https://github.com/scasella/claude-flightdeck) | 컨텍스트·비용·권한 검사·서브에이전트를 카드·스윔레인으로 표시<br>[가이드](tools/ui/claude-flightdeck.md) · [시연](https://github.com/scasella/claude-flightdeck/blob/main/docs/media/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/scasella/claude-flightdeck?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/scasella/claude-flightdeck?style=flat-square&label=%20) |
+| [Subagent Monitor](https://github.com/blogchik/subagent-monitor) 🧑‍💻 | 서브에이전트별 모델·effort·토큰 컨텍스트·도구 활동·대화 기록을 실시간 카드로 표시<br>[가이드](tools/ui/subagent-monitor.md) · [시연](https://github.com/blogchik/subagent-monitor#subagent-monitor) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/blogchik/subagent-monitor?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/blogchik/subagent-monitor?style=flat-square&label=%20) |
 | [Savvy Progress](https://github.com/JohnnyVizz/claude-kit/tree/main/plugins/savvy-progress) | Claude Code 작업 진행률·서브에이전트별 모델·컨텍스트·추정 비용 패널<br>[가이드](tools/ui/savvy-progress.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/JohnnyVizz/claude-kit?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/JohnnyVizz/claude-kit?style=flat-square&label=%20) |
 
 ## 시각화·콘텐츠
