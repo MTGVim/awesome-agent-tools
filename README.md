@@ -38,7 +38,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## My Daily Setup
 
-실제로 사용 중인 조합(2026-11-17 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
+실제로 사용 중인 조합(2026-11-24 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
 
 | 도구 | 용도 |
 |---|---|
@@ -59,7 +59,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Prompt Rail](https://github.com/oikon48/prompt-rail) | 이전 프롬프트 탐색 |
 | [ni](https://github.com/antfu-collective/ni) | 패키지 매니저 통합 |
 | [Peon Ping](https://github.com/PeonPing/peon-ping) | 작업 알림 |
-| [abtop](https://github.com/graykode/abtop) | 터미널 모니터링 |
+| [agent-top](https://github.com/kannandreams/agent-top) | 코딩 에이전트 세션·비용·MCP 서버 모니터링 |
 | [Yazi](https://github.com/sxyazi/yazi) | 터미널 파일 관리 |
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | UI·타이포그래피·색상·접근성·레이아웃·제품 문구 제작·리뷰 스킬 |
 
@@ -67,7 +67,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 - **[Prismantis](tools/visual/prismantis.md):** 사용 중이며 `diagramHints: false`. 프롬프트당 약 630토큰, 주간 비용 약 1%는 개인 환경의 관찰·추정치입니다.
 
-- **[abtop](tools/utilities/abtop.md):** 세션 제목·요약 생성에 `claude --print`를 사용하므로 추가 AI 토큰이 소모될 수 있습니다. 비용 절감을 위해 `ANTHROPIC_MODEL=haiku abtop`처럼 저비용 모델을 지정해 실행하는 방법을 검토합니다. 실제 모델 적용 여부는 실행 환경에서 확인합니다.
+- **[agent-top](tools/utilities/agent-top.md):** 기존 세션 기록을 읽어 별도 LLM 호출 없이 통계를 표시합니다. 일일 업데이트 확인은 `AGENT_TOP_NO_UPDATE_CHECK=1`로 끌 수 있습니다.
 
 
 현재 구성에서 조정하거나 확인해 둔 사항입니다. 도구별 설치·업데이트·삭제 방법은 아래 카탈로그의 가이드에서 확인할 수 있습니다.
@@ -162,7 +162,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [OpenShip](https://github.com/oblien/openship) | Git 프로젝트 빌드·배포·라우팅·TLS를 관리하는 셀프호스팅 CI/CD<br>[가이드](tools/utilities/openship.md) · [시연](https://github.com/oblien/openship/blob/main/docs/screenshots/screen.png) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/oblien/openship?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/oblien/openship?style=flat-square&label=%20) |
 | [ni](https://github.com/antfu-collective/ni) 🧑‍💻 | 프로젝트에 맞는 npm·pnpm·yarn·bun 패키지 명령 자동 선택<br>[가이드](tools/utilities/ni.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/antfu-collective/ni?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/antfu-collective/ni?style=flat-square&label=%20) |
 | [Peon Ping](https://github.com/PeonPing/peon-ping) 🧑‍💻 | 에이전트 완료·승인 대기를 게임 음성과 화면 알림으로 안내<br>[가이드](tools/utilities/peon-ping.md) · [시연](https://github.com/PeonPing/peon-ping/blob/main/docs/peon-hero.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/PeonPing/peon-ping?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/PeonPing/peon-ping?style=flat-square&label=%20) |
-| [abtop](https://github.com/graykode/abtop) 🧑‍💻 | Claude Code·Codex·OpenCode 세션의 토큰·한도·프로세스 실시간 모니터<br>[가이드](tools/utilities/abtop.md) · [시연](https://github.com/graykode/abtop/blob/main/assets/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/graykode/abtop?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/graykode/abtop?style=flat-square&label=%20) |
+| [agent-top](https://github.com/kannandreams/agent-top) 🧑‍💻 | 로컬 코딩 에이전트 세션·토큰 비용·MCP 서버·프로세스를 통합 모니터링<br>[가이드](tools/utilities/agent-top.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/kannandreams/agent-top?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/kannandreams/agent-top?style=flat-square&label=%20) |
 | [Stats](https://github.com/exelban/stats) 🧑‍💻 | macOS 메뉴 막대의 CPU·GPU·메모리·네트워크 모니터<br>[가이드](tools/utilities/stats.md) · [시연](https://github.com/exelban/stats) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/exelban/stats?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/exelban/stats?style=flat-square&label=%20) |
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) 🧑‍💻 | 창 관리·볼륨·클립보드·모니터링을 통합한 macOS 메뉴 막대 앱<br>[가이드](tools/utilities/vorssaint-utils.md) · [시연](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
 | [Yazi](https://github.com/sxyazi/yazi) 🧑‍💻 | 비동기 파일 탐색·미리보기·플러그인을 지원하는 Rust 터미널 파일 관리자<br>[가이드](tools/utilities/yazi.md) · [시연](https://github.com/sxyazi/yazi) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat-square&label=%20) |
