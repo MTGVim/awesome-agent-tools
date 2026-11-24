@@ -47,7 +47,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Subagent Tuner](https://github.com/Kruhlikau/subagent-tuner) | 서브에이전트 모델·effort 조정 |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) | 에이전트 폭주 방지·큰 컨텍스트에서 Compact 제안 |
 | [Codegraph](https://github.com/colbymchenry/codegraph) | 코드 그래프 탐색 |
-| [Engram](https://github.com/Gentleman-Programming/engram) | 세션 간 프로젝트 메모리와 키워드 검색. 적합한 대체제가 없어 계속 사용 |
+| [Déjà Vu](https://github.com/vshulcz/deja-vu) | 로컬 세션 기록 검색·에이전트 간 인계 (시험 사용 중) |
 | [Ponytail](https://github.com/dietrichgebert/ponytail) | 과도한 구현 억제 |
 | [Cache Tax](https://github.com/karanb192/cache-tax) | 프롬프트 캐시 유지 |
 | [Claude Code Paste Preview](https://github.com/alan890104/claude-code-paste-preview) | 이미지 편집·미리보기 |
@@ -113,7 +113,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 | 도구 | 설명 · 가이드 | 지원 에이전트 | GitHub 활동 |
 |---|---|---|---|
-| [Engram](https://github.com/Gentleman-Programming/engram) 🧑‍💻 | 프로젝트별 결정과 해결책을 로컬에 저장하고 여러 키워드로 검색<br>[가이드](tools/context/engram.md) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) | ![Stars](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/Gentleman-Programming/engram?style=flat-square&label=%20) |
+| [Déjà Vu](https://github.com/vshulcz/deja-vu) 🧑‍💻 | 로컬 코딩 에이전트 대화 기록 검색·복구·에이전트 간 인계<br>[가이드](tools/context/deja-vu.md) · [시연](https://github.com/vshulcz/deja-vu/blob/main/assets/demo.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white) ![Hermes](https://img.shields.io/badge/Hermes-9A641C?style=flat-square) | ![Stars](https://img.shields.io/github/stars/vshulcz/deja-vu?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vshulcz/deja-vu?style=flat-square&label=%20) |
 | [Agent Usage Guard](https://github.com/rbartoli/agent-usage-guard) 🧑‍💻 | Claude Code의 과도한 에이전트 호출·재시도·사용량 급증 방지<br>[가이드](tools/context/agent-usage-guard.md) · [시연](https://github.com/rbartoli/agent-usage-guard) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/rbartoli/agent-usage-guard?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/rbartoli/agent-usage-guard?style=flat-square&label=%20) |
 | [Cache Tax](https://github.com/karanb192/cache-tax) 🧑‍💻 | Claude Code 프롬프트 캐시 유지·만료 비용 경고<br>[가이드](tools/context/cache-tax.md) · [시연](https://github.com/karanb192/cache-tax/blob/main/site/assets/refusal.gif) | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white) | ![Stars](https://img.shields.io/github/stars/karanb192/cache-tax?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/karanb192/cache-tax?style=flat-square&label=%20) |
 
