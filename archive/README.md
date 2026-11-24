@@ -4,6 +4,7 @@ Archived = not currently recommended by this curator, **not** a claim that the u
 
 | Tool | Reason | Details |
 |---|---|---|
+| [abtop](https://github.com/graykode/abtop) | `low-value` | [Why](./abtop.md) |
 | [Context Mode](https://github.com/mksglu/context-mode) | `low-value` | [Why](./context-mode.md) |
 | [XERJ](https://github.com/xerj-org/xerj) | `needs-review` | [Why](./xerj.md) |
 | [Session Titles](https://github.com/zhangbububu/session-titles) | `low-value` | [Why](./session-titles.md) |
