@@ -6,7 +6,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 > 이 목록은 큐레이터가 선별한 도구를 소개합니다. 포함 여부는 호환성이나 안전성 보증이 아닙니다.
 
-**개인정보·네트워크 점검:** 활성 도구 41개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
+**개인정보·네트워크 점검:** 활성 도구 42개의 텔레메트리·업데이트 확인·해제 방법은 [Privacy, Telemetry & Updates](docs/privacy-and-updates.md)에 정리했습니다. 정책이 확인되지 않은 항목은 `미확인`으로 구분합니다.
 
 **🧑‍💻 = My Daily Setup에서 현재 사용하는 도구입니다.** 일반 카탈로그에서만 표시하며, 추천 등급이나 호환성 보증을 의미하지 않습니다.
 
@@ -38,7 +38,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 
 ## My Daily Setup
 
-실제로 사용 중인 조합(2026-11-24 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
+실제로 사용 중인 조합(2026-11-26 기준)입니다. 추천 등급과는 별개이며, 사용 환경에 따라 달라집니다.
 
 | 도구 | 용도 |
 |---|---|
@@ -61,6 +61,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Peon Ping](https://github.com/PeonPing/peon-ping) | 작업 알림 |
 | [agent-top](https://github.com/kannandreams/agent-top) | 코딩 에이전트 세션·비용·MCP 서버 모니터링 |
 | [Yazi](https://github.com/sxyazi/yazi) | 터미널 파일 관리 |
+| [Mole](https://github.com/tw93/Mole) | macOS 유지보수·개발 캐시 정리 |
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | UI·타이포그래피·색상·접근성·레이아웃·제품 문구 제작·리뷰 스킬 |
 
 ### 설정 메모
@@ -166,6 +167,7 @@ AI 코딩 에이전트에 활용할 만한 **Skills·Plugins·Mods·MCP 서버·
 | [Stats](https://github.com/exelban/stats) 🧑‍💻 | macOS 메뉴 막대의 CPU·GPU·메모리·네트워크 모니터<br>[가이드](tools/utilities/stats.md) · [시연](https://github.com/exelban/stats) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/exelban/stats?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/exelban/stats?style=flat-square&label=%20) |
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) 🧑‍💻 | 창 관리·볼륨·클립보드·모니터링을 통합한 macOS 메뉴 막대 앱<br>[가이드](tools/utilities/vorssaint-utils.md) · [시연](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `독립 앱` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
 | [Yazi](https://github.com/sxyazi/yazi) 🧑‍💻 | 비동기 파일 탐색·미리보기·플러그인을 지원하는 Rust 터미널 파일 관리자<br>[가이드](tools/utilities/yazi.md) · [시연](https://github.com/sxyazi/yazi) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat-square&label=%20) |
+| [Mole](https://github.com/tw93/Mole) 🧑‍💻 | macOS 시스템 청소·앱 제거·디스크 분석·최적화·프로젝트 빌드 산출물 정리<br>[가이드](tools/utilities/mole.md) | `독립 CLI` | ![Stars](https://img.shields.io/github/stars/tw93/Mole?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/tw93/Mole?style=flat-square&label=%20) |
 
 ## Cool Finds
 

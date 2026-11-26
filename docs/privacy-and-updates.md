@@ -2,7 +2,7 @@
 
 [한국어 README](../README.md) · [English README](../README.en.md)
 
-> **조사 범위:** 활성 카탈로그 41개(2026-11-24 기준)의 상류 README와 공개 개인정보 처리 안내를 확인했습니다. Autoharness는 2026-11-11 `57a8f4e`의 README·manifest·child 실행 경로와 `src/` 검색을 확인해 복원했으며, Autoharness Codex는 같은 날 `f48cd10`의 README·child 격리·설치 경로를 재검토했습니다. 기존 항목은 2026-11-04에, Savvy Progress 항목은 2026-11-05에 확인했습니다. Engram은 2026-11-11 데일리 셋업 복원 시 상류 README·설치·에이전트 설정·환경 변수 문서를 재확인했습니다. Claude Flightdeck은 2026-11-06 보관했다가 2026-11-10 사용 재개 확인과 upstream 재검토 후 복원했습니다. `jakubkrehel/skills`는 2026-11-10 README·manifest·일부 스킬과 자원을 확인했습니다. 일부 도구는 README 수준에서만 확인했으며, **소스 코드 전체 감사나 실제 네트워크 패킷 검증은 수행하지 않았습니다.** `미확인`은 기능이 없다는 뜻이 아닙니다.
+> **조사 범위:** 활성 카탈로그 42개(2026-11-26 기준)의 상류 README와 공개 개인정보 처리 안내를 확인했습니다. Autoharness는 2026-11-11 `57a8f4e`의 README·manifest·child 실행 경로와 `src/` 검색을 확인해 복원했으며, Autoharness Codex는 같은 날 `f48cd10`의 README·child 격리·설치 경로를 재검토했습니다. 기존 항목은 2026-11-04에, Savvy Progress 항목은 2026-11-05에 확인했습니다. Engram은 2026-11-11 데일리 셋업 복원 시 상류 README·설치·에이전트 설정·환경 변수 문서를 재확인했습니다. Claude Flightdeck은 2026-11-06 보관했다가 2026-11-10 사용 재개 확인과 upstream 재검토 후 복원했습니다. `jakubkrehel/skills`는 2026-11-10 README·manifest·일부 스킬과 자원을 확인했습니다. 일부 도구는 README 수준에서만 확인했으며, **소스 코드 전체 감사나 실제 네트워크 패킷 검증은 수행하지 않았습니다.** `미확인`은 기능이 없다는 뜻이 아닙니다.
 
 **구분:** 텔레메트리(사용 통계), 버전 확인(업데이트 존재 여부 조회), 자동 업데이트(코드 설치·교체), 정상적인 API/MCP·클라우드 통신은 서로 다릅니다. 상류 문서의 기본값과 해제 방법만 사실로 표기합니다. 일반 에이전트·패키지 매니저가 별도로 만드는 네트워크 요청은 포함하지 않습니다.
 
@@ -49,6 +49,7 @@
 | [Stats](../tools/utilities/stats.md) | 없음 명시 | 버전 확인 | 텔레메트리·분석 없음. 업데이트 확인과 공인 IP 조회를 위한 외부 API 사용 · [원본](https://github.com/exelban/stats#external-api) |
 | [Vorssaint Utils](../tools/utilities/vorssaint-utils.md) | 없음 명시 | 버전 확인 | 분석·추적 없음. 업데이트 확인, 속도 테스트, Homebrew, 선택적 온라인 기능은 네트워크 사용 · [원본](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/PRIVACY.md) |
 | [Yazi](../tools/utilities/yazi.md) | 미확인 | 미확인 | 상류 README에서 명시적 정책을 확인하지 못함. 설치 전에 원본 설정·코드·네트워크 동작 재확인 필요 · [원본](https://github.com/sxyazi/yazi) |
+| [Mole](../tools/utilities/mole.md) | 사용 통계 전송·수신처·opt-out 미확인 | `mo update` 수동 업데이트 지원; 자동 버전 확인·자동 설치 기본값 및 해제 방법 미확인 | 2026-11-26 상류 README 확인. `MO_NO_OPLOG=1`은 로컬 작업 로그만 비활성화하며 텔레메트리 설정이 아님 · [원본](https://github.com/tw93/Mole) |
 
 ## 실무 점검 절차
 

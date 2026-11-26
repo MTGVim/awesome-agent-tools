@@ -6,7 +6,7 @@ A curated collection of **AI coding-agent skills, plugins, mods, MCP servers, an
 
 > English edition. [한국어 기본 카탈로그](README.md). This is a curated list, not a compatibility or security guarantee.
 
-**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 40 active entries. Unknowns remain explicitly marked.
+**Privacy & network audit:** See [Privacy, Telemetry & Updates](docs/privacy-and-updates.md) for telemetry, update checks and opt-outs across all 42 active entries. Unknowns remain explicitly marked.
 
 **🧑‍💻 = A tool currently in My Daily Setup.** Shown only in the general catalog; it is not a quality rating or compatibility guarantee.
 
@@ -42,7 +42,7 @@ For tool additions, removal, or guide maintenance, an agent should first read [A
 
 ## My Daily Setup
 
-Tools reported as actively used (as of 2026-11-17). This is separate from recommendations and may vary by environment.
+Tools reported as actively used (as of 2026-11-26). This is separate from recommendations and may vary by environment.
 
 | Tool | Purpose |
 |---|---|
@@ -65,6 +65,7 @@ Tools reported as actively used (as of 2026-11-17). This is separate from recomm
 | [Peon Ping](https://github.com/PeonPing/peon-ping) | Task notifications |
 | [agent-top](https://github.com/kannandreams/agent-top) | Local coding-agent session, cost and MCP monitoring |
 | [Yazi](https://github.com/sxyazi/yazi) | Terminal file manager |
+| [Mole](https://github.com/tw93/Mole) | macOS maintenance and developer cache cleanup |
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | Skills for building and reviewing UI, typography, color, accessibility, layout and product copy |
 
 ### Setup notes
@@ -171,6 +172,7 @@ Projects maintained by the curator are listed separately from third-party recomm
 | [Stats](https://github.com/exelban/stats) 🧑‍💻 | macOS menu-bar CPU, GPU, memory and network monitor<br>[Guide](tools/utilities/stats.md) · [Demo](https://github.com/exelban/stats) | `Standalone app` | ![Stars](https://img.shields.io/github/stars/exelban/stats?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/exelban/stats?style=flat-square&label=%20) |
 | [Vorssaint Utils](https://github.com/vorssaint/vorssaint-utils) 🧑‍💻 | macOS menu bar toolkit for windows, sound, clipboard and monitoring<br>[Guide](tools/utilities/vorssaint-utils.md) · [Demo](https://github.com/vorssaint/vorssaint-utils/blob/main/docs/assets/readme/window-switcher.gif) | `Standalone app` | ![Stars](https://img.shields.io/github/stars/vorssaint/vorssaint-utils?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/vorssaint/vorssaint-utils?style=flat-square&label=%20) |
 | [Yazi](https://github.com/sxyazi/yazi) 🧑‍💻 | Asynchronous Rust terminal file manager with previews and plugins<br>[Guide](tools/utilities/yazi.md) · [Demo](https://github.com/sxyazi/yazi) | `Standalone CLI` | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat-square&label=%20) |
+| [Mole](https://github.com/tw93/Mole) 🧑‍💻 | macOS cleanup, app removal, disk analysis, system maintenance and project build-artifact cleanup<br>[Guide](tools/utilities/mole.md) | `Standalone CLI` | ![Stars](https://img.shields.io/github/stars/tw93/Mole?style=flat-square&label=%20)<br>![Last commit](https://img.shields.io/github/last-commit/tw93/Mole?style=flat-square&label=%20) |
 
 ## Cool Finds
 
